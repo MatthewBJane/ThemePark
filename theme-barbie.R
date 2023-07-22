@@ -1,5 +1,5 @@
 theme_barbie <- function(legend.position = "none"){
-  theme(panel.grid.minor = element_blank(),
+  ggplot2::theme(panel.grid.minor = element_blank(),
         panel.grid.major = element_blank(),
         title = element_text(color = '#a62675ff'),
         panel.background = element_rect(fill = '#fdf6faff'),
@@ -15,4 +15,4 @@ theme_barbie <- function(legend.position = "none"){
 }
 
 
-scale_fill_barbie <- ggplot::scale_fill_gradient(low = '#eeb4d7ff', high = '#bf2986ff')
+scale_fill_barbie <- ggplot2::scale_fill_gradient(low = '#eeb4d7ff', high = '#bf2986ff')
