@@ -6,5 +6,5 @@
 ## Use
 ```
 library('devtools')
-source_url("https://raw.githubusercontent.com/MatthewBJane/theme_barbie/main/theme-barbie.R")
+source_url("https://raw.githubusercontent.com/MatthewBJane/theme_barbie/main/theme_barbie.R")
 ```
