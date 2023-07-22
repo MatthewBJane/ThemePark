@@ -10,7 +10,7 @@ theme_barbie <- function(legend.position = "none"){
         axis.text.x = element_text(size=12, color = '#a62675ff'),
         axis.text.y = element_text(size=12, color = '#a62675ff'),
         axis.ticks = element_line(color = '#d74ea2ff',linewidth=1),
-        legend.background = '#fdf6faff',
+        legend.background = element_rect(fill = '#fdf6faff', color = NA),,
         legend.text = element_text(color = '#a62675ff')
        )
 }
