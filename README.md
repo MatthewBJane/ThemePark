@@ -4,5 +4,7 @@
 
 
 ## Use
-
-Just copy and paste what you want from the R script
+```
+library('devtools')
+source_url("https://raw.githubusercontent.com/MatthewBJane/theme_barbie/main/theme-barbie.R")
+```
