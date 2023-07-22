@@ -18,3 +18,11 @@ theme_barbie <- function(legend.position = "none"){
 
 
 scale_fill_barbie <- ggplot2::scale_fill_gradient(low = '#eeb4d7ff', high = '#bf2986ff')
+
+
+text_color_barbie    <- '#a62675ff'
+panel_color_barbie   <- '#fdf6faff'
+border_color_barbie  <- '#d74ea2ff'
+light_color_barbie   <- '#eeb4d7ff'
+medium_color_barbie  <- '#d74ea2ff'
+dark_color_barbie    <- '#bf2986ff'
