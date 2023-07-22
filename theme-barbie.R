@@ -1,3 +1,5 @@
+require(ggplot2)
+
 theme_barbie <- function(legend.position = "none"){
   ggplot2::theme(panel.grid.minor = element_blank(),
         panel.grid.major = element_blank(),
