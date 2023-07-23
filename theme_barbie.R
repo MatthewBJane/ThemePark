@@ -1,7 +1,7 @@
 require('ggplot2')
 require('showtext')
 
-font_add_google(name = "Sansita Swashed", family = "barbie")
+showtext::font_add_google(name = "Sansita Swashed", family = "barbie")
 
 
 text_color_barbie    <- '#a62675ff'
@@ -13,7 +13,7 @@ dark_color_barbie    <- '#bf2986ff'
 
 
 theme_barbie <- function(barbie_font = TRUE){
-  font_family = ifelse(barbie_font,"barbie_font","Arial")
+  font_family = ifelse(barbie_font,"barbie","Arial")
   element_text(color = text_color_barbie)
   ggplot2::theme(
         panel.grid.minor = element_blank(),
