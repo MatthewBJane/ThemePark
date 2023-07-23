@@ -29,7 +29,7 @@ ggplot(data=NULL, aes(x = `x variable`,y = `y variable`)) +
 ```
 @software{JaneBarbie2023,
   author = {Jané, Matthew B},
-  month = {12},
+  month = {6},
   title = {barbie_theme: ggplot theme for the Barbie movie},
   url = {https://github.com/MatthewBJane/theme_barbie},
   version = {0.0.1},
