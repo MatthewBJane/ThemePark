@@ -8,7 +8,7 @@ library('devtools')
 source_url("https://raw.githubusercontent.com/MatthewBJane/theme_barbie/main/theme_barbie.R")
 ```
 
-# Example
+## Example
 
 ```
 `X variable` = rnorm(50,0,1)
@@ -20,3 +20,19 @@ ggplot(data=NULL, aes(x = `x variable`,y = `y variable`)) +
        geom_point(color = medium_color_barbie) +
        ggtitle('Barbie Scatter Plot')
 ```
+
+## Citation (if you really need to cite me for this, you can)
+
+###BibTeX:
+```
+@software{JaneBarbie2023,
+  author = {Jané, Matthew B},
+  month = {12},
+  title = {barbie_theme: ggplot theme for the Barbie movie},
+  url = {https://github.com/MatthewBJane/theme_barbie},
+  version = {0.0.1},
+  year = {2023}
+}
+```
+### APA:
+Jané, M.B. (2023). barbie_theme: ggplot theme for the Barbie movie (Version 0.0.1) [R Script]. https://github.com/MatthewBJane/theme_barbie
