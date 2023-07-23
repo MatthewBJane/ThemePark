@@ -19,10 +19,11 @@ theme_barbie <- function(barbie_font = TRUE){
         panel.grid.minor = element_blank(),
         panel.grid.major = element_blank(),
         text = element_text(color = text_color_barbie, family = font_family),
+        title = element_text(size=20),
         panel.background = element_rect(fill = panel_color_barbie),
         panel.border = element_rect(fill = NA, color = border_color_barbie,linewidth=1.2),
-        axis.title = element_text(size=16),
-        axis.text = element_text(size=12),
+        axis.title = element_text(size=17),
+        axis.text = element_text(size=13),
         axis.ticks = element_line(color = border_color_barbie,linewidth=1),
         legend.background = element_rect(fill = panel_color_barbie, color = NA)
        )
