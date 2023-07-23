@@ -1,4 +1,4 @@
-## Barbie theme for ggplot2
+## barbie_theme: ggplot theme for the Barbie movie
 
 <img width="534" alt="image" src="https://github.com/MatthewBJane/theme_barbie/assets/52077481/cc45bdd6-d1f6-44a9-b9f3-cb52736f4188">
 
