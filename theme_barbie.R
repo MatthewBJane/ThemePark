@@ -18,7 +18,7 @@ theme_barbie <- function(barbie_font = TRUE){
   ggplot2::theme(
         panel.grid.minor = element_blank(),
         panel.grid.major = element_blank(),
-        text = element_text(color = text_color_barbie, family = font_family)
+        text = element_text(color = text_color_barbie, family = font_family),
         panel.background = element_rect(fill = panel_color_barbie),
         panel.border = element_rect(fill = NA, color = border_color_barbie,linewidth=1.2),
         axis.title = element_text(size=14),
