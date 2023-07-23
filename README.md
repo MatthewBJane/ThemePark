@@ -23,7 +23,7 @@ ggplot(data=NULL, aes(x = `x variable`,y = `y variable`)) +
 
 ## Citation (if you really feel the need to cite me for this)
 
-###BibTeX:
+### BibTeX:
 ```
 @software{JaneBarbie2023,
   author = {Jané, Matthew B},
