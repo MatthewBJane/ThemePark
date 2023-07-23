@@ -35,4 +35,4 @@ ggplot(data=NULL, aes(x = `x variable`,y = `y variable`)) +
 }
 ```
 ### APA:
-Jané, M.B. (2023). barbie_theme: ggplot theme for the Barbie movie (Version 0.0.1) [R Script]. https://github.com/MatthewBJane/theme_barbie
+Jané, M.B. (2023). barbie_theme: ggplot theme for the Barbie movie (Version 0.0.1) [Source Code]. https://github.com/MatthewBJane/theme_barbie
