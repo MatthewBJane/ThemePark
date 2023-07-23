@@ -1,4 +1,4 @@
-<img width="454" alt="image" src="https://github.com/MatthewBJane/theme_barbie/assets/52077481/f9ede64e-5175-4065-b779-8cceb05fcb2b">
+<img width="454" alt="image" align="center" src="https://github.com/MatthewBJane/theme_barbie/assets/52077481/f9ede64e-5175-4065-b779-8cceb05fcb2b">
 
 ## barbie_theme: ggplot theme for the Barbie movie
 
