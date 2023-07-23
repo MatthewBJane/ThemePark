@@ -21,7 +21,7 @@ ggplot(data=NULL, aes(x = `x variable`,y = `y variable`)) +
        ggtitle('Barbie Scatter Plot')
 ```
 
-## Citation (if you really need to cite me for this, you can)
+## Citation (if you really feel the need to cite me for this)
 
 ###BibTeX:
 ```
