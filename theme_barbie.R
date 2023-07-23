@@ -7,6 +7,7 @@ font_add_google(name = "Sansita Swashed", family = "barbie")
 text_color_barbie    <- '#a62675ff'
 panel_color_barbie   <- '#fdf6faff'
 border_color_barbie  <- '#d74ea2ff'
+lighter_color_barbie <- '#f5d1e6ff'
 light_color_barbie   <- '#eeb4d7ff'
 medium_color_barbie  <- '#d74ea2ff'
 dark_color_barbie    <- '#bf2986ff'
