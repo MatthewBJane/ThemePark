@@ -1,4 +1,8 @@
 require('ggplot2')
+require('showtext')
+
+font_add_google(name = "Sansita Swashed", family = "barbie")
+
 
 text_color_barbie    <- '#a62675ff'
 panel_color_barbie   <- '#fdf6faff'
@@ -8,11 +12,13 @@ medium_color_barbie  <- '#d74ea2ff'
 dark_color_barbie    <- '#bf2986ff'
 
 
-theme_barbie <- function(){
+theme_barbie <- function(barbie_font = TRUE){
+  font_family = ifelse(barbie_font,"barbie_font","Arial")
+  element_text(color = text_color_barbie)
   ggplot2::theme(
         panel.grid.minor = element_blank(),
         panel.grid.major = element_blank(),
-        text = element_text(color = text_color_barbie)
+        text = element_text(color = text_color_barbie, family = font_family)
         panel.background = element_rect(fill = panel_color_barbie),
         panel.border = element_rect(fill = NA, color = border_color_barbie,linewidth=1.2),
         axis.title = element_text(size=14),
