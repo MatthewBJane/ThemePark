@@ -4,7 +4,7 @@
 
 # CUSTOM FONT: Not required (also does not work well): add a custom font from google fonts
 font_add_google(name = "Sansita Swashed", family = "XXXX")
-
+showtext_auto()
 
 # COLOR: add, remove, or edit the colors to fit your scheme (hex code preferred, but you can use any type). Names should be
 text_color_XXXX    <- '#a62675ff'
@@ -36,3 +36,5 @@ theme_XXXX <- function(XXXX_font = FALSE){
 # COLOR SCALES: Make pretty color scales 
 scale_fill_XXXX <- ggplot2::scale_fill_gradient(low = lighter_color_XXXX, high = dark_color_XXXX)
 scale_color_XXXX <- ggplot2::scale_color_gradient(low = lighter_color_XXXX, high = dark_color_XXXX)
+
+
