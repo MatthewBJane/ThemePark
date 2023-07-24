@@ -1,9 +1,18 @@
-require('ggplot2')
-require('showtext')
 
+# SETUP: Needs ggplot2
+require('ggplot2')
+
+
+## YOUR NAME
+## theme_XXXX
+## Date Created
+
+# CUSTOM FONT: Not required (also does not work well): add a custom font from google fonts
+require('showtext')
 font_add_google(name = "Sansita Swashed", family = "barbie")
 
 
+# COLOR: add, remove, or edit the colors to fit your scheme. Names should be
 text_color_barbie    <- '#a62675ff'
 panel_color_barbie   <- '#fdf6faff'
 border_color_barbie  <- '#d74ea2ff'
@@ -13,9 +22,9 @@ medium_color_barbie  <- '#d74ea2ff'
 dark_color_barbie    <- '#bf2986ff'
 
 
-theme_barbie <- function(barbie_font = TRUE){
-  font_family = ifelse(barbie_font,"barbie","Arial")
-  element_text(color = text_color_barbie)
+# THEME: rename function and theme() arguments according to your theme design, feel free to edit this how you would like
+theme_barbie <- function(barbie_font = FALSE){
+  font_family = ifelse(barbie_font,"barbie","Arial") # use this line if you have a custom font 
   ggplot2::theme(
         panel.grid.minor = element_blank(),
         panel.grid.major = element_blank(),
@@ -30,7 +39,7 @@ theme_barbie <- function(barbie_font = TRUE){
        )
 }
 
-
+# COLOR SCALES: Make pretty color scales 
 scale_fill_barbie <- ggplot2::scale_fill_gradient(low = '#eeb4d7ff', high = '#bf2986ff')
 scale_color_barbie <- ggplot2::scale_color_gradient(low = '#eeb4d7ff', high = '#bf2986ff')
 
