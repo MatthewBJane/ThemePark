@@ -7,8 +7,8 @@ Theme Park is a soon to be package for fun ggplot themes related to popular cult
 Please help grow this package by submitting your own custom ggplot theme for a movie, show, or videogame. To submit, edit the 'theme_template.R' script file and send the edited script to matthew.jane@uconn.edu. I will review it and add it or respond with suggested edits. Have fun with it!
 
 ## Contributors
-\item{Matthew B Jané}{`theme_oppenheimer`,`theme_barbie`}
-\item{Toki Liam}{`theme_oppenheimer`}
+- **Matthew B Jané** theme_oppenheimer`,`theme_barbie`
+- **Toki Liam** `theme_oppenheimer`
 
 
 ## Use
