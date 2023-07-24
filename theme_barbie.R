@@ -7,9 +7,10 @@ require('ggplot2')
 ## theme_XXXX
 ## Date Created
 
-# CUSTOM FONT: Not required (also does not work well): add a custom font from google fonts
+# CUSTOM FONT: add a custom font from google fonts
 require('showtext')
 font_add_google(name = "Sansita Swashed", family = "barbie")
+showtext_auto()
 
 
 # COLOR: add, remove, or edit the colors to fit your scheme. Names should be
