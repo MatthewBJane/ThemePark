@@ -31,6 +31,7 @@ ggplot(data=NULL, aes(x = `X variable`,y = `Y variable`)) +
        ggtitle('Barbie Scatter Plot')
 ```
 <img width="534" alt="image" src="https://github.com/MatthewBJane/theme_barbie/assets/52077481/cc45bdd6-d1f6-44a9-b9f3-cb52736f4188">
+
 ## Citation
 
 ### BibTeX:
