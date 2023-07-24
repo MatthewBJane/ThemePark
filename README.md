@@ -1,7 +1,5 @@
 ![theme_park_banner](https://github.com/MatthewBJane/theme_park/assets/52077481/6a02f463-9e79-4080-aab8-6c6d591aa958)
 
-<img width="534" alt="image" src="https://github.com/MatthewBJane/theme_barbie/assets/52077481/cc45bdd6-d1f6-44a9-b9f3-cb52736f4188">
-
 
 ## Submit a Theme
 Please help grow this package by submitting your own custom ggplot theme for a movie, show, or videogame. To submit, edit the 'theme_template.R' script file and send the edited script to matthew.jane@uconn.edu. I will review it and add it or respond with suggested edits. Have fun with it!
@@ -32,7 +30,7 @@ ggplot(data=NULL, aes(x = `X variable`,y = `Y variable`)) +
        geom_point(color = medium_color_barbie) +
        ggtitle('Barbie Scatter Plot')
 ```
-
+<img width="534" alt="image" src="https://github.com/MatthewBJane/theme_barbie/assets/52077481/cc45bdd6-d1f6-44a9-b9f3-cb52736f4188">
 ## Citation
 
 ### BibTeX:
