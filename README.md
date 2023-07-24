@@ -1,16 +1,26 @@
-<img width="454" alt="image" align="center" src="https://github.com/MatthewBJane/theme_barbie/assets/52077481/f9ede64e-5175-4065-b779-8cceb05fcb2b">
-
-## barbie_theme: ggplot theme for the Barbie movie
+![theme_park_banner](https://github.com/MatthewBJane/theme_park/assets/52077481/6a02f463-9e79-4080-aab8-6c6d591aa958)
 
 <img width="534" alt="image" src="https://github.com/MatthewBJane/theme_barbie/assets/52077481/cc45bdd6-d1f6-44a9-b9f3-cb52736f4188">
+
+
+## Submit a Theme
+Please help grow this package by submitting your own custom ggplot theme for a movie, show, or videogame. To submit, edit the 'theme_template.R' script file and send the edited script to matthew.jane@uconn.edu. I will review it and add it or respond with suggested edits. Have fun with it!
+
+## Contributors
+\item{Matthew B Jané}{`theme_oppenheimer`,`theme_barbie`}
+\item{Toki Liam}{`theme_oppenheimer`}
+
 
 ## Use
 ```
 library('devtools')
-source_url("https://raw.githubusercontent.com/MatthewBJane/theme_barbie/main/theme_barbie.R")
+theme_name = "theme_barbie" # Pick which theme you want
+
+paste("https://raw.githubusercontent.com/MatthewBJane/theme_park/main/", theme_name ,".R")
+source_url("https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_barbie.R")
 ```
 
-## Example
+## Example (theme_barbie)
 
 ```
 `X variable` = rnorm(50,0,1)
@@ -23,7 +33,7 @@ ggplot(data=NULL, aes(x = `X variable`,y = `Y variable`)) +
        ggtitle('Barbie Scatter Plot')
 ```
 
-## Citation (if you really feel the need to cite me for this)
+## Citation
 
 ### BibTeX:
 ```
@@ -37,4 +47,4 @@ ggplot(data=NULL, aes(x = `X variable`,y = `Y variable`)) +
 }
 ```
 ### APA:
-Jané, M.B. (2023). barbie_theme: ggplot theme for the Barbie movie (Version 0.0.1) [Source Code]. https://github.com/MatthewBJane/theme_barbie
+Jané, M.B. (2023). theme_park: popular culture ggplot themes (Version 0.0.1) [Source Code]. https://github.com/MatthewBJane/theme_park
