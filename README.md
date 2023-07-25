@@ -43,9 +43,9 @@ ggplot(data=NULL, aes(x = `X variable`,y = `Y variable`)) +
 @software{JaneBarbie2023,
   author = {Jané, Matthew B},
   month = {6},
-  title = {barbie_theme: ggplot theme for the Barbie movie},
-  url = {https://github.com/MatthewBJane/theme_barbie},
-  version = {0.0.1},
+  title = {theme_park: popular culture ggplot themes},
+  url = {https://github.com/MatthewBJane/theme_park},
+  version = {1.0.0},
   year = {2023}
 }
 ```
