@@ -31,7 +31,7 @@ theme_barbie <- function(barbie_font = FALSE){
         title = element_text(size=20),
         panel.background = element_rect(fill = panel_color_barbie),
         panel.border = element_rect(fill = NA, color = border_color_barbie,linewidth=1.2),
-        strip.background = element_rect(fill = lighter_color_barbie, colour = light_color_barbie),
+        strip.background = element_rect(fill = lighter_color_barbie, colour = border_color_barbie),
         strip.text = element_text(colour = text_color_barbie),
         axis.title = element_text(size=17),
         axis.text = element_text(size=13,color = text_color_barbie),
