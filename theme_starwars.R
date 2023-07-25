@@ -33,7 +33,9 @@ theme_starwars <- function(starwars_font=FALSE){
         axis.text = element_text(size=15,color = goldtext_color_starwars),
         axis.ticks = element_line(color = border_color_starwars,linewidth=1),
         legend.background = element_rect(fill = panel_color_starwars, color = NA),
-         plot.background = element_rect(fill = panel_color_starwars)
+         plot.background = element_rect(fill = panel_color_starwars),
+        strip.background = element_rect(fill = darktext_color_starwars, colour = border_color_starwars),
+        strip.text = element_text(colour = text_color_starwars)
        )
 }
 
