@@ -14,6 +14,7 @@ lighter_color_zelda <- '#C4F9F3'
 light_color_zelda   <- '#65D6B8'
 medium_color_zelda  <- '#3C92A6'
 dark_color_zelda    <- '#1F4C73'
+zelda_palette <- c('#494b4b', '#0e5135','#0d9263','#4aba91','#d4ce46')
 
 
 # THEME: rename function and theme() arguments according to your theme design, feel free to edit this how you would like
