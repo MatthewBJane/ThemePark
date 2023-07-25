@@ -1,11 +1,9 @@
+## Matthew B Jané
+## theme_barbie
+## 06/24/2023
 
 # SETUP: Needs ggplot2
 require('ggplot2')
-
-
-## YOUR NAME
-## theme_XXXX
-## Date Created
 
 # CUSTOM FONT: add a custom font from google fonts
 require('showtext')
