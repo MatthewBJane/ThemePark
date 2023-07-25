@@ -10,7 +10,7 @@ showtext_auto()
 
 
 panel_color_starwars     <- '#000000ff'
-border_color_starwars    <- '#000000ff'
+border_color_starwars    <- '#ffffffff'
 lightmain_color_starwars <- '#eeb4d7ff'
 goldtext_color_starwars  <- '#f1e81fff'
 darktext_color_starwars  <- '#111111ff'
