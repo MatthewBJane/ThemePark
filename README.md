@@ -9,6 +9,7 @@ Please help grow this package by submitting your own custom ggplot theme for a m
 ## Contributors
 - **Matthew B Jané** `theme_barbie`, `theme_oppenheimer`
 - **Toki Liam** `theme_oppenheimer`
+- **Alex Slavenko** `theme_zelda`
 
 
 ## Use
