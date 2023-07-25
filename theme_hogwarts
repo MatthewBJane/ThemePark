@@ -1,0 +1,123 @@
+## @bozemek
+## theme_Slytherin, theme_Ravenclaw, theme_Hufflepuff, theme_Gryffindor
+## 25.07.2023
+
+require('ggplot2')
+require('showtext')
+
+font_add_google(name = "Henny Penny", family = "HP") 
+showtext_auto()
+
+## GRYFFINDOR 
+text_color_Gryffindor    <- '#000000'
+panel_color_Gryffindor   <- '#ffb832'
+border_color_Gryffindor  <- '#5c0000'
+lighter_color_Gryffindor <- '#ffa700'
+light_color_Gryffindor   <- '#fb7e00'
+medium_color_Gryffindor  <- '#c50000'
+dark_color_Gryffindor    <- '#890000'
+
+theme_Gryffindor <- function(HP_font = TRUE){
+  font_family = ifelse(HP_font,"HP","Serif") # use this line if you have a custom font 
+  ggplot2::theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_blank(),
+    text = element_text(color = text_color_Gryffindor, family = font_family),
+    title = element_text(size=20),
+    panel.background = element_rect(fill = panel_color_Gryffindor),
+    panel.border = element_rect(fill = NA, color = border_color_Gryffindor,linewidth=1.2),
+    axis.title = element_text(size=17),
+    axis.text = element_text(size=13,color = text_color_Gryffindor),
+    axis.ticks = element_line(color = border_color_Gryffindor,linewidth=1),
+    legend.background = element_rect(fill = panel_color_Gryffindor, color = NA)
+  )
+}
+scale_fill_Gryffindor <- ggplot2::scale_fill_gradient(low = light_color_Gryffindor, high = dark_color_Gryffindor)
+scale_color_Gryffindor <- ggplot2::scale_color_gradient(low = light_color_Gryffindor, high = dark_color_Gryffindor)
+
+
+## RAWENCLAW ######
+text_color_Ravenclaw    <- "grey60"
+panel_color_Ravenclaw   <- '#0e1a40'
+border_color_Ravenclaw  <- 'grey80'
+lighter_color_Ravenclaw <- 'grey30'
+light_color_Ravenclaw   <- '#5d5d5d'
+medium_color_Ravenclaw  <- 'grey60'
+dark_color_Ravenclaw    <- 'grey95'
+
+theme_Ravenclaw <- function(HP_font = TRUE){
+  font_family = ifelse(HP_font,"HP","Serif") # use this line if you have a custom font 
+  ggplot2::theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_blank(),
+    text = element_text(color = text_color_Ravenclaw, family = font_family),
+    title = element_text(size=20),
+    panel.background = element_rect(fill = panel_color_Ravenclaw),
+    panel.border = element_rect(fill = NA, color = border_color_Ravenclaw,linewidth=1.2),
+    axis.title = element_text(size=17),
+    axis.text = element_text(size=13,color = text_color_Ravenclaw),
+    axis.ticks = element_line(color = border_color_Ravenclaw,linewidth=1),
+    legend.background = element_rect(fill = panel_color_Ravenclaw, color = NA),
+    legend.text=element_text(color=dark_color_Ravenclaw), legend.title = element_text(color=dark_color_Ravenclaw)
+  )
+}
+
+scale_fill_Ravenclaw <- ggplot2::scale_fill_gradient(low = lighter_color_Ravenclaw, high = dark_color_Ravenclaw)
+scale_color_Ravenclaw <- ggplot2::scale_color_gradient(low = lighter_color_Ravenclaw, high = dark_color_Ravenclaw)
+
+## HUFFLEPUFF #########
+text_color_Hufflepuff    <- "#38302c"
+panel_color_Hufflepuff   <- '#f8e7be'
+border_color_Hufflepuff  <- '#38302c'
+lighter_color_Hufflepuff <- '#eec55d'
+light_color_Hufflepuff   <- '#eeb527'
+medium_color_Hufflepuff  <- '#6d6158'
+dark_color_Hufflepuff    <- '#38302c'
+
+theme_Hufflepuff <- function(HP_font = TRUE){
+  font_family = ifelse(HP_font,"HP","Serif") # use this line if you have a custom font 
+  ggplot2::theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_blank(),
+    text = element_text(color = text_color_Hufflepuff, family = font_family),
+    title = element_text(size=20),
+    panel.background = element_rect(fill = panel_color_Hufflepuff),
+    panel.border = element_rect(fill = NA, color = border_color_Hufflepuff,linewidth=1.2),
+    axis.title = element_text(size=17),
+    axis.text = element_text(size=13,color = text_color_Hufflepuff),
+    axis.ticks = element_line(color = border_color_Hufflepuff,linewidth=1),
+    legend.background = element_rect(fill = panel_color_Hufflepuff, color = NA),
+    legend.text=element_text(color=dark_color_Hufflepuff), legend.title = element_text(color=dark_color_Hufflepuff)
+  )
+}
+
+scale_fill_Hufflepuff<- ggplot2::scale_fill_gradient(low = light_color_Hufflepuff, high = dark_color_Hufflepuff)
+scale_color_Hufflepuff <- ggplot2::scale_color_gradient(low = light_color_Hufflepuff, high = dark_color_Hufflepuff)
+
+### SLYTHERIN ######
+text_color_Slytherin   <- "#1a472a"
+panel_color_Slytherin   <- '#aaaaaa'
+border_color_Slytherin  <- '#2a623d'
+lighter_color_Slytherin <- '#aaaaaa'
+light_color_Slytherin   <- '#5d5d5d'
+medium_color_Slytherin  <- '#2a623d'
+dark_color_Slytherin    <- '#1a472a'
+
+theme_Slytherintherin <- function(HP_font = TRUE){
+  font_family = ifelse(HP_font,"HP","Serif") # use this line if you have a custom font 
+  ggplot2::theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_blank(),
+    text = element_text(color = text_color_Slytherin, family = font_family),
+    title = element_text(size=16),
+    panel.background = element_rect(fill = panel_color_Slytherin),
+    panel.border = element_rect(fill = NA, color = border_color_Slytherin,linewidth=1.2),
+    axis.title = element_text(size=17),
+    axis.text = element_text(size=13,color = text_color_Slytherin),
+    axis.ticks = element_line(color = border_color_Slytherin,linewidth=1),
+    legend.background = element_rect(fill = panel_color_Slytherin, color = border_color_Slytherin), 
+    legend.text=element_text(color=text_color_Slytherin), legend.title = element_text(color=text_color_Slytherin)
+  )
+}
+scale_fill_Slytherin<- ggplot2::scale_fill_gradient(low = light_color_Slytherin, high = dark_color_Slytherin)
+scale_color_Slytherin <- ggplot2::scale_color_gradient(low = light_color_Slytherin, high = dark_color_Slytherin)
