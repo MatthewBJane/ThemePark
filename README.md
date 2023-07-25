@@ -1,4 +1,5 @@
-![theme_park_banner](https://github.com/MatthewBJane/theme_park/assets/52077481/6a02f463-9e79-4080-aab8-6c6d591aa958)
+![theme_park_bannertwitter](https://github.com/MatthewBJane/theme_park/assets/52077481/bd4e5ae5-8d5a-4d0b-94d5-514e2d7ef577)
+
 
 # Theme Park
 Theme Park is a soon to be package for fun ggplot themes related to popular culture (movies, TV shows, video-games, etc.). I don't have much time to expand this further so please consider submitting a theme!
