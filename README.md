@@ -1,5 +1,4 @@
-![theme_park_bannertwitter](https://github.com/MatthewBJane/theme_park/assets/52077481/bd4e5ae5-8d5a-4d0b-94d5-514e2d7ef577)
-
+![theme_park_banner](https://github.com/MatthewBJane/theme_park/assets/52077481/4c2e2885-d879-46e6-b61d-b253d8382597)
 
 # Theme Park
 Theme Park is a soon to be package for fun ggplot themes related to popular culture (movies, TV shows, video-games, etc.). I don't have much time to expand this further so please consider submitting a theme!
@@ -8,9 +7,10 @@ Theme Park is a soon to be package for fun ggplot themes related to popular cult
 Please help grow this package by submitting your own custom ggplot theme for a movie, show, or videogame. To submit, edit the 'theme_template.R' script file and send the edited script to matthew.jane@uconn.edu. I will review it and add it or respond with suggested edits. Have fun with it!
 
 ## Contributors
-- **Matthew B Jané** `theme_barbie`, `theme_oppenheimer`
+- **Matthew B. Jané** `theme_barbie`, `theme_oppenheimer`
 - **Toki Liam** `theme_oppenheimer`
 - **Alex Slavenko** `theme_zelda`
+- **Velu P.K. Immonen** `theme_spiderman`
 
 
 ## Use
