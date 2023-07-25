@@ -12,8 +12,8 @@ panel_color_spiderman   <- '#de0619'
 border_color_spiderman  <- '#101010'
 medium_color_spiderman <- '#e55751'
 dark_color_spiderman   <- '#601a18'
-white_color_spiderman  <- '#fefefe'
-blue_color_spiderman    <- '#12ace3'
+white_color_spiderman  <-  '#fefefe'
+blue_color_spiderman    <- '#333399ff'
 
 
 # THEME: rename function and theme() arguments according to your theme design, feel free to edit this how you would like
@@ -21,7 +21,7 @@ theme_spiderman <- function(spiderman_font = FALSE){
     font_family = ifelse(spiderman_font,"spiderman","Arial") # use this line if you have a custom font
     ggplot2::theme(
         panel.grid.minor = element_blank(),
-        panel.grid.major = element_blank(),
+        panel.grid.major = element_line(color = '#00000055'),
         text = element_text(color = text_color_spiderman, family = font_family),
         title = element_text(size=20),
         panel.background = element_rect(fill = panel_color_spiderman),
