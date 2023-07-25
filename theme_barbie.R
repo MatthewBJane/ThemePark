@@ -34,7 +34,9 @@ theme_barbie <- function(barbie_font = FALSE){
         axis.title = element_text(size=17),
         axis.text = element_text(size=13,color = text_color_barbie),
         axis.ticks = element_line(color = border_color_barbie,linewidth=1),
-        legend.background = element_rect(fill = panel_color_barbie, color = NA)
+        legend.background = element_rect(fill = panel_color_barbie, color = NA),
+        strip.background = element_rect(fill = lighter_color_barbie, colour = border_color_barbie),
+        strip.text = element_text(colour = text_color_barbie)
        )
 }
 
