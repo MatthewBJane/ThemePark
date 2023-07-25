@@ -29,7 +29,9 @@ theme_spiderman <- function(spiderman_font = FALSE){
         axis.title = element_text(size=17),
         axis.text = element_text(size=13,color = text_color_spiderman),
         axis.ticks = element_line(color = border_color_spiderman,linewidth=1),
-        legend.background = element_rect(fill = panel_color_spiderman, color = NA)
+        legend.background = element_rect(fill = panel_color_spiderman, color = NA),
+        strip.background = element_rect(fill = medium_color_spiderman, colour = blue_color_spiderman),
+        strip.text = element_text(colour = text_color_spiderman)
     )
 }
 
