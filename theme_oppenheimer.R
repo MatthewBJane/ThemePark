@@ -29,7 +29,9 @@ theme_oppenheimer <- function(oppenheimer_font=FALSE){
         axis.title = element_text(size=17),
         axis.text = element_text(size=15,color = text_color_oppenheimer),
         axis.ticks = element_line(color = border_color_oppenheimer,linewidth=1),
-        legend.background = element_rect(fill = panel_color_oppenheimer, color = NA)
+        legend.background = element_rect(fill = panel_color_oppenheimer, color = NA),
+        strip.background = element_rect(fill = light_color_oppenheimer, colour = light_color_oppenheimer),
+        strip.text = element_text(colour = text_color_oppenheimer)
        )
 }
 
