@@ -15,10 +15,10 @@ showtext_auto()
 text_color_simpsons    <- '#3498dbff'
 panel_color_simpsons   <- '#f7dc6fff'
 border_color_simpsons  <- '#3498dbff'
-lighter_color_simpsons <- '#f4d03fff'
+lighter_color_simpsons <- '#fdfefeff'
 light_color_simpsons   <- '#1e8449ff'
-medium_color_simpsons  <- '#fdfefeff'
-dark_color_simpsons    <- '#fdfefeff'
+medium_color_simpsons  <- '#9c5b01ff'
+dark_color_simpsons    <- '#1c2833ff'
 
 
 # THEME: rename function and theme() arguments according to your theme design, feel free to edit this how you would like
