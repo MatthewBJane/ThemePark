@@ -14,6 +14,7 @@ Please help grow this package by submitting your own custom ggplot theme for a m
 - **Begum Ozemek** `theme_slytherin`, `theme_hufflepuff`, `theme_ravenclaw`, `theme_gryffindor`
 - **Tylor J. Harlow** `theme_futurama`, `theme_simpsons`
 - **Ethan Milne** `theme_lordoftherings`
+- **Brennan Antone** 'theme_gameofthrones'
 
 
 ## Use
