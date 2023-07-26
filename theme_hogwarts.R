@@ -5,7 +5,7 @@
 require('ggplot2')
 require('showtext')
 
-font_add_google(name = "Henny Penny", family = "HP") 
+font_add_google(name = "Henny Penny", family = "harrypotter") 
 showtext_auto()
 
 ## gryffindor 
@@ -17,8 +17,8 @@ light_color_gryffindor   <- '#fb7e00'
 medium_color_gryffindor  <- '#c50000'
 dark_color_gryffindor    <- '#890000'
 
-theme_gryffindor <- function(HP_font = TRUE){
-  font_family = ifelse(HP_font,"HP","Serif") # use this line if you have a custom font 
+theme_gryffindor <- function(gryffindor_font = TRUE){
+  font_family = ifelse(gryffindor_font,"harrypotter","Serif") # use this line if you have a custom font 
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
@@ -45,8 +45,8 @@ light_color_ravenclaw   <- '#5d5d5d'
 medium_color_ravenclaw  <- 'grey60'
 dark_color_ravenclaw    <- 'grey95'
 
-theme_ravenclaw <- function(HP_font = TRUE){
-  font_family = ifelse(HP_font,"HP","Serif") # use this line if you have a custom font 
+theme_ravenclaw <- function(ravenclaw_font = TRUE){
+  font_family = ifelse(ravenclaw_font,"harrypotter","Serif") # use this line if you have a custom font 
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
@@ -74,8 +74,8 @@ light_color_hufflepuff   <- '#eeb527'
 medium_color_hufflepuff  <- '#6d6158'
 dark_color_hufflepuff    <- '#38302c'
 
-theme_hufflepuff <- function(HP_font = TRUE){
-  font_family = ifelse(HP_font,"HP","Serif") # use this line if you have a custom font 
+theme_hufflepuff <- function(hufflepuff_font = TRUE){
+  font_family = ifelse(hufflepuff_font,"harrypotter","Serif") # use this line if you have a custom font 
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
@@ -103,8 +103,8 @@ light_color_slytherin   <- '#5d5d5d'
 medium_color_slytherin  <- '#2a623d'
 dark_color_slytherin    <- '#1a472a'
 
-theme_slytherin <- function(HP_font = TRUE){
-  font_family = ifelse(HP_font,"HP","Serif") # use this line if you have a custom font 
+theme_slytherin <- function(slytherin_font = TRUE){
+  font_family = ifelse(slytherin_font,"harrypotter","Serif") # use this line if you have a custom font 
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
