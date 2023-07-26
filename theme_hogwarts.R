@@ -1,4 +1,4 @@
-## @bozemek
+## Begum Ozemek
 ## theme_slytherin, theme_ravenclaw, theme_hufflepuff, theme_gryffindor
 ## 25.07.2023
 
