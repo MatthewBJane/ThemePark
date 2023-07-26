@@ -13,6 +13,7 @@ Please help grow this package by submitting your own custom ggplot theme for a m
 - **Velu P.K. Immonen** `theme_spiderman`
 - **Begum Ozemek** `theme_slytherin`, `theme_hufflepuff`, `theme_ravenclaw`, `theme_gryffindor`
 - **Tylor J. Harlow** `theme_futurama`
+- **Ethan Milne** `theme_lordoftherings`
 
 
 ## Use
