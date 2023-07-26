@@ -9,7 +9,7 @@ Please help grow this package by submitting your own custom ggplot theme for a m
 ## Contributors
 - **Matthew B. Jané** `theme_barbie`, `theme_oppenheimer`, `theme_starwars`
 - **Toki Liam** `theme_oppenheimer`
-- **Alex Slavenko** `theme_zelda`
+- **Alex Slavenko** `theme_zelda`, `theme_terminator`
 - **Velu P.K. Immonen** `theme_spiderman`
 - **Begum Ozemek** `theme_slytherin`, `theme_hufflepuff`, `theme_ravenclaw`, `theme_gryffindor`
 - **Tylor J. Harlow** `theme_futurama`
