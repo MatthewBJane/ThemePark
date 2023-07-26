@@ -1,3 +1,5 @@
+# Example code for the Game of Thrones theme (theme_gameofthrones)
+
 `X variable` = rnorm(50,0,1)
 `Y variable` = rnorm(50,0,1)
 
