@@ -17,11 +17,12 @@ Please help grow this package by submitting your own custom ggplot theme for a m
 
 
 ## Use
+For use, you can run the code below after installing both the ggplot2 and showtext packages.
 ```
 library('devtools')
 theme_name = "theme_barbie" # Pick which theme you want
 
-theme_url = paste("https://raw.githubusercontent.com/MatthewBJane/theme_park/main/", theme_name ,".R")
+theme_url = paste0("https://raw.githubusercontent.com/MatthewBJane/theme_park/main/", theme_name ,".R")
 source_url(theme_url)
 ```
 
