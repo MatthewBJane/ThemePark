@@ -103,7 +103,7 @@ light_color_slytherin   <- '#5d5d5d'
 medium_color_slytherin  <- '#2a623d'
 dark_color_slytherin    <- '#1a472a'
 
-theme_slytherintherin <- function(HP_font = TRUE){
+theme_slytherin <- function(HP_font = TRUE){
   font_family = ifelse(HP_font,"HP","Serif") # use this line if you have a custom font 
   ggplot2::theme(
     panel.grid.minor = element_blank(),
