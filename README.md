@@ -21,8 +21,8 @@ Please help grow this package by submitting your own custom ggplot theme for a m
 library('devtools')
 theme_name = "theme_barbie" # Pick which theme you want
 
-paste("https://raw.githubusercontent.com/MatthewBJane/theme_park/main/", theme_name ,".R")
-source_url("https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_barbie.R")
+theme_url = paste("https://raw.githubusercontent.com/MatthewBJane/theme_park/main/", theme_name ,".R")
+source_url(theme_url)
 ```
 
 ## Example (theme_barbie)
