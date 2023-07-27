@@ -3,8 +3,12 @@
 ## 07/26/2023
 # inspired by graphs from https://www.apple.com/newsroom/2021/10/introducing-m1-pro-and-m1-max-the-most-powerful-chips-apple-has-ever-built/
 
+require('ggplot2')
+require('showtext')
+
 # CUSTOM FONT: add a custom font from google fonts
 font_add_google(name = "Inter", family = "apple", regular.wt = 500, bold.wt = 600)
+showtext_auto()
 
 # COLORS: take from https://developer.apple.com/design/human-interface-guidelines/color
 apple_axis <- rgb(28,28,30, maxColorValue = 255)
@@ -41,8 +45,10 @@ theme_apple <- function(apple_font = FALSE){
     axis.text = element_text(size=8, color = apple_text),
     axis.ticks = element_blank(),
     axis.line = element_line(color = apple_axis, linewidth=0.5),
-    strip.text = element_text(size=8, colour = apple_text),
-    panel.background = element_rect(fill="white")
+    strip.text = element_text(size=8, colour = apple_text, face="bold"),
+    strip.background = element_rect(fill="white"),
+    panel.background = element_rect(fill="white"),
+    legend.key = element_rect(fill = "white")
   )
 }
 
