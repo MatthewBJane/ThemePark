@@ -29,7 +29,9 @@ theme_XXXX <- function(XXXX_font = FALSE){
         axis.title = element_text(size=17),
         axis.text = element_text(size=13,color = text_color_XXXX),
         axis.ticks = element_line(color = border_color_XXXX,linewidth=1),
-        legend.background = element_rect(fill = panel_color_XXXX, color = NA)
+        legend.background = element_rect(fill = panel_color_XXXX, color = NA),
+        strip.background = element_rect(fill = lighter_color_XXXX, colour = border_color_XXXX),
+        strip.text = element_text(colour = text_color_XXXX)
        )
 }
 

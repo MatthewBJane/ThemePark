@@ -1,25 +1,30 @@
 ![theme_park_banner](https://github.com/MatthewBJane/theme_park/assets/52077481/4c2e2885-d879-46e6-b61d-b253d8382597)
 
-# Theme Park
+# Welcome to the Theme Park
 Theme Park is a soon to be package for fun ggplot themes related to popular culture (movies, TV shows, video-games, etc.). I don't have much time to expand this further so please consider submitting a theme!
 
 ## Submit a Theme
-Please help grow this package by submitting your own custom ggplot theme for a movie, show, or videogame. To submit, edit the 'theme_template.R' script file and send the edited script to matthew.jane@uconn.edu. I will review it and add it or respond with suggested edits. Have fun with it!
+Please help grow this package by submitting your own custom ggplot theme for a movie, show, or videogame. To submit, edit the 'theme_template.R' script file and send the edited script to matthew.jane@uconn.edu or submit a pull request. I will review it and add it or respond with suggested edits. Have fun with it!
 
 ## Contributors
 - **Matthew B. Jané** `theme_barbie`, `theme_oppenheimer`, `theme_starwars`
 - **Toki Liam** `theme_oppenheimer`
-- **Alex Slavenko** `theme_zelda`
-- **Velu P.K. Immonen** `theme_spiderman`
+- **Alex Slavenko** `theme_zelda`, `theme_terminator`
+- **Velu P.K. Immonen** `theme_spiderman`, `theme_avatar`
+- **Begum Ozemek** `theme_slytherin`, `theme_hufflepuff`, `theme_ravenclaw`, `theme_gryffindor`
+- **Tylor J. Harlow** `theme_futurama`, `theme_simpsons`
+- **Ethan Milne** `theme_lordoftherings`
+- **Brennan Antone** `theme_gameofthrones`
 
 
 ## Use
+For use, you can run the code below after installing both the ggplot2 and showtext packages.
 ```
 library('devtools')
 theme_name = "theme_barbie" # Pick which theme you want
 
-paste("https://raw.githubusercontent.com/MatthewBJane/theme_park/main/", theme_name ,".R")
-source_url("https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_barbie.R")
+theme_url = paste0("https://raw.githubusercontent.com/MatthewBJane/theme_park/main/", theme_name ,".R")
+source_url(theme_url)
 ```
 
 ## Example (theme_barbie)
