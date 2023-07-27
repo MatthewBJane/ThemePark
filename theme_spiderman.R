@@ -10,6 +10,7 @@ showtext_auto()
 text_color_spiderman    <- '#101010'
 panel_color_spiderman   <- '#de0619'
 border_color_spiderman  <- '#101010'
+light_color_spiderman <- '#e27B78'
 medium_color_spiderman <- '#e55751'
 dark_color_spiderman   <- '#601a18'
 white_color_spiderman  <-  '#fefefe'
