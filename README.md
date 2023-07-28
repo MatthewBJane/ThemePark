@@ -6,24 +6,28 @@ Theme Park is a soon to be package for fun ggplot themes related to popular cult
 ## Submit a Theme
 Please help grow this package by submitting your own custom ggplot theme for a movie, show, or videogame. To submit, edit the 'theme_template.R' script file and send the edited script to matthew.jane@uconn.edu or submit a pull request. I will review it and add it or respond with suggested edits. Have fun with it!
 
-## `Themes` **Creator(s)**
-- `theme_barbie` **Matthew B. Jané**
-- `theme_oppenheimer` **Matthew B. Jané**, **Toki Liam**
-- `theme_starwars` **Matthew B. Jané**
-- `theme_zelda` **Alex Slavenko**
-- `theme_terminator` **Alex Slavenko**
-- `theme_spiderman` **Velu P.K. Immonen**
-- `theme_avatar` **Velu P.K. Immonen**
-- `theme_slytherin` **Begum Ozemek**
-- `theme_hufflepuff` **Begum Ozemek**
-- `theme_ravenclaw` **Begum Ozemek**
-- `theme_gryffindor` **Begum Ozemek**
-- `theme_futurama` **Tylor J. Harlow**
-- `theme_simpsons` **Tylor J. Harlow**
-- `theme_lordoftherings` **Ethan Milne**
-- `theme_gameofthrones` **Brennan Antone**
-- `theme_godfather` **Francisco Garre-Frutos**
-- `theme_nemo` **Christopher Kenny**
+## Themes contributed
+
+Name | Theme | Creator(s) | Source
+---- | ----- | ---------- | ------
+**Barbie** | `theme_barbie` | Matthew B. Jané | [theme_barbie.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_barbie.R)
+**Oppenheimer** | `theme_oppenheimer` | Matthew B. Jané & Toki Liam | [theme_oppenheimer.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_oppenheimer.R)
+**Starwars** | `theme_starwars` | Matthew B. Jané | [theme_starwars.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_starwars.R)
+**Zelda** | `theme_zelda` | Alex Slavenko | [theme_zelda.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_zelda.R)
+**Terminator** | `theme_terminator` | Alex Slavenko | [theme_terminator.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_terminator.R)
+**Spiderman** | `theme_spiderman` | Velu P.K. Immonen | [theme_spiderman.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_spiderman.R)
+**Avatar** | `theme_avatar` | Velu P.K. Immonen | [theme_avatar.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_avatar.R)
+**Gryffindor** | `theme_gryffindor` | Begum Ozemek | [theme_hogwarts.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_hogwarts.R)
+**Hufflepuff** | `theme_hufflepuff` | Begum Ozemek | [theme_hogwarts.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_hogwarts.R)
+**Ravenclaw** | `theme_ravenclaw` | Begum Ozemek | [theme_hogwarts.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_hogwarts.R)
+**Slytherin** | `theme_slytherin` | Begum Ozemek | [theme_hogwarts.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_hogwarts.R)
+**Futurama** | `theme_futurama` | Tylor J. Harlow | [theme_futurama.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_futurama.R)
+**Simpsons** | `theme_simpsons` | Tylor J. Harlow | [theme_simpsons.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_simpsons.R)
+**Lord of the Rings** | `theme_lordoftherings` | Ethan Milne | [theme_lordoftherings.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_lordoftherings.R)
+**Game of Thrones** | `theme_gameofthrones` | Brennan Antone | [theme_gameofthrones.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_gameofthrones.R)
+**Godfather** | `theme_godfather` | Francisco Garre-Frutos | [theme_godfather.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_godfather.R)
+**Finding Nemo** | `theme_nemo` | Christopher Kenny | [theme_nemo.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_nemo.R)
+
 
 
 ## Use
