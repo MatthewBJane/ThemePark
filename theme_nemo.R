@@ -158,8 +158,6 @@ scale_colour_nemo_c <- scale_color_nemo_c
 scale_colour_nemo_b <- scale_color_nemo_b
 
 # utility fn that can be moved to a utils.R file if turned into a pkg
-# from https://github.com/christopherkenny/crayons
-# licensed under MIT
 rot_pal <- function(pal) {
   pal <- unname(pal)
   function(n) {
