@@ -6,17 +6,24 @@ Theme Park is a soon to be package for fun ggplot themes related to popular cult
 ## Submit a Theme
 Please help grow this package by submitting your own custom ggplot theme for a movie, show, or videogame. To submit, edit the 'theme_template.R' script file and send the edited script to matthew.jane@uconn.edu or submit a pull request. I will review it and add it or respond with suggested edits. Have fun with it!
 
-## Contributors
-- **Matthew B. Jané** `theme_barbie`, `theme_oppenheimer`, `theme_starwars`
-- **Toki Liam** `theme_oppenheimer`
-- **Alex Slavenko** `theme_zelda`, `theme_terminator`
-- **Velu P.K. Immonen** `theme_spiderman`, `theme_avatar`
-- **Begum Ozemek** `theme_slytherin`, `theme_hufflepuff`, `theme_ravenclaw`, `theme_gryffindor`
-- **Tylor J. Harlow** `theme_futurama`, `theme_simpsons`
-- **Ethan Milne** `theme_lordoftherings`
-- **Brennan Antone** `theme_gameofthrones`
-- **Francisco Garre-Frutos** `theme_godfather`
-- **Christopher Kenny** `theme_nemo`
+## `Themes` **Creator(s)**
+- `theme_barbie` **Matthew B. Jané**
+- `theme_oppenheimer` **Matthew B. Jané**, **Toki Liam**
+- `theme_starwars` **Matthew B. Jané**
+- `theme_zelda` **Alex Slavenko**
+- `theme_terminator` **Alex Slavenko**
+- `theme_spiderman` **Velu P.K. Immonen**
+- `theme_avatar` **Velu P.K. Immonen**
+- `theme_slytherin` **Begum Ozemek**
+- `theme_hufflepuff` **Begum Ozemek**
+- `theme_ravenclaw` **Begum Ozemek**
+- `theme_gryffindor` **Begum Ozemek**
+- `theme_futurama` **Tylor J. Harlow**
+- `theme_simpsons` **Tylor J. Harlow**
+- `theme_lordoftherings` **Ethan Milne**
+- `theme_gameofthrones` **Brennan Antone**
+- `theme_godfather` **Francisco Garre-Frutos**
+- `theme_nemo` **Christopher Kenny**
 
 
 ## Use
