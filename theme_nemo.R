@@ -116,11 +116,6 @@ scale_color_nemo_b <- function(...) {
   ggplot2::binned_scale('color', 'nemo', palette = ramp, ...)
 }
 
-nemo_colors <- c(
-  '#E9F4FB', '#FE691D', '#015DC2', '#FCDD2E', '#7867A0', 
-  '#BE1D57', '#798A5A', '#005478','#1B1A3D'
-)
-
 #' @rdname scale_nemo
 #' @export
 scale_fill_nemo_b <- function(...) {
@@ -130,6 +125,11 @@ scale_fill_nemo_b <- function(...) {
   ramp <- scales::colour_ramp(c(light_color_nemo, dark_color_nemo))
   ggplot2::binned_scale('fill', 'nemo', palette = ramp, ...)
 }
+
+nemo_colors <- c(
+  '#E9F4FB', '#FE691D', '#015DC2', '#FCDD2E', '#7867A0', 
+  '#BE1D57', '#798A5A', '#005478','#1B1A3D'
+)
 
 #' @rdname scale_nemo
 #' @export
