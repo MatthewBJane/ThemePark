@@ -41,7 +41,7 @@ dark_color_XXXX       <- '#FA3C2E'
 #'   geom_smooth(method = 'lm') +
 #'   geom_point() +
 #'   labs(title = 'XXXX Scatter Plot') + 
-#'   theme_XXXX(XXXX_font = TRUE) 
+#'   theme_XXXX() 
 #' 
 #' ggplot(mpg, aes(cty)) +
 #' geom_density(aes(fill=factor(cyl)), alpha=0.8) + 
@@ -50,7 +50,7 @@ dark_color_XXXX       <- '#FA3C2E'
 #'        caption="Source: mpg",
 #'        x="City Mileage",
 #'        fill="# Cylinders") +
-#'   theme_XXXX(XXXX_font = TRUE) +
+#'   theme_XXXX() +
 #'   scale_fill_XXXX_d()
 #'
 #' 
@@ -96,7 +96,7 @@ theme_XXXX <- function(XXXX_font = TRUE) {
 #'        x="City Mileage",
 #'        fill="# Cylinders") +
 #'   facet_wrap(~(hwy > 29)) + 
-#'   theme_XXXX(XXXX_font = TRUE) +
+#'   theme_XXXX() +
 #'   scale_fill_XXXX_d()
 #'   
 scale_color_XXXX_c <- function(...) {
