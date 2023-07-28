@@ -24,3 +24,13 @@ ggplot(data=NULL, aes(x = `X variable`,y = `Y variable`)) +
   geom_smooth(method='lm',color=dark_color_avatar, fill = light_color_avatar) +
   geom_point(color = medium_color_avatar) +
   ggtitle('Game of Thrones Scatter Plot')
+
+# Example code for the godfather theme (theme_godfather)
+
+source("theme_godfather.R")
+
+ggplot(tibble(x = rnorm(100), y = rnorm(100)), aes(x, y)) +
+  geom_smooth(method='lm',color=dark_color_godfather, fill = light_color_godfather) +
+  geom_point(color = medium_color_godfather) +
+  labs(title = "The Godfather theme", x = "Variable x", y = "Variable y")+
+  theme_godfather(godfather_font = T)
