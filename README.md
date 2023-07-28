@@ -16,6 +16,7 @@ Please help grow this package by submitting your own custom ggplot theme for a m
 - **Ethan Milne** `theme_lordoftherings`
 - **Brennan Antone** `theme_gameofthrones`
 - **Francisco Garre-Frutos** `theme_godfather`
+- **Christopher Kenny** `theme_nemo`
 
 
 ## Use
