@@ -12,7 +12,7 @@ Name | Theme | Creator(s) | Source
 ---- | ----- | ---------- | ------
 **Barbie** | `theme_barbie` | Matthew B. Jané | [theme_barbie.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_barbie.R)
 **Oppenheimer** | `theme_oppenheimer` | Matthew B. Jané & Toki Liam | [theme_oppenheimer.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_oppenheimer.R)
-**Starwars** | `theme_starwars` | Matthew B. Jané | [theme_starwars.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_starwars.R)
+**Star Wars** | `theme_starwars` | Matthew B. Jané | [theme_starwars.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_starwars.R)
 **Zelda** | `theme_zelda` | Alex Slavenko | [theme_zelda.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_zelda.R)
 **Terminator** | `theme_terminator` | Alex Slavenko | [theme_terminator.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_terminator.R)
 **Spiderman** | `theme_spiderman` | Velu P.K. Immonen | [theme_spiderman.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_spiderman.R)
