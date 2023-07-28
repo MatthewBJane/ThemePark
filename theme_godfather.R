@@ -5,7 +5,7 @@
 require('ggplot2')
 require('showtext')
 
-font_add_google(name = "Rye", family = "godfather") 
+font_add_google(name = "Philosopher", family = "godfather") 
 showtext_auto()
 
 text_color_godfather    <- '#d3cfc3'
