@@ -16,5 +16,10 @@ rot_pal <- function(pal) {
 initialize_font <- function(name, family, ...) {
   if (missing(name)) stop('`name` must be specified.')
   if (missing(family)) family <- name
-  sysfonts::font_add_google(name = name, family = family, ...)
+  curr_families <- sysfonts::font_families()
+  if (!family %in% curr_families) {
+    sysfonts::font_add_google(name = name, family = family, ...)
+  } else {
+    invisible(curr_families)
+  }
 }
