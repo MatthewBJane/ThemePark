@@ -2,11 +2,11 @@
 ## theme_godfather
 ## 07/27/2023
 
-require('ggplot2')
-require('showtext')
 
-font_add_google(name = "Philosopher", family = "godfather") 
-showtext_auto()
+
+
+sysfonts::font_add_google(name = "Philosopher", family = "godfather") 
+showtext::showtext_auto()
 
 text_color_godfather    <- '#d3cfc3'
 panel_color_godfather   <- '#030303'

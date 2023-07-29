@@ -2,11 +2,11 @@
 ## theme_slytherin, theme_ravenclaw, theme_hufflepuff, theme_gryffindor
 ## 25.07.2023
 
-require('ggplot2')
-require('showtext')
 
-font_add_google(name = "Henny Penny", family = "harrypotter") 
-showtext_auto()
+
+
+sysfonts::font_add_google(name = "Henny Penny", family = "harrypotter") 
+showtext::showtext_auto()
 
 ## gryffindor 
 text_color_gryffindor    <- '#000000'

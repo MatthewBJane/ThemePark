@@ -2,13 +2,13 @@
 ## theme_simpsons
 ## 06/25/2023
 
-# SETUP: Needs ggplot2
-require('ggplot2')
+
+
 
 # CUSTOM FONT: add a custom font from google fonts
-require('showtext')
-font_add_google(name = "Rock Salt", family = "simpsons")
-showtext_auto()
+
+sysfonts::font_add_google(name = "Rock Salt", family = "simpsons")
+showtext::showtext_auto()
 
 
 # COLOR: add, remove, or edit the colors to fit your scheme. Names should be

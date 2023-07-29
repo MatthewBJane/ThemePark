@@ -1,17 +1,13 @@
+
 ## Template v2 for themes in `theme_park` https://github.com/MatthewBJane/theme_park   <<<  Remove this line
 
 ## YOUR NAME
 ## theme_XXXX
 ## Date Created
 
-
-# SETUP: Needs ggplot2
-require('ggplot2')
-
 # CUSTOM FONT: add a custom font from google fonts
-require('showtext')
-font_add_google(name = "GOOGLE FONT NAME", family = "XXXX") 
-showtext_auto()
+sysfonts::font_add_google(name = "GOOGLE FONT NAME", family = "XXXX")
+showtext::showtext_auto()
 
 # COLOR: add, remove, or edit the colors to fit your scheme. Names should be
 background_color_XXXX <- '#0739B9'
@@ -36,16 +32,16 @@ dark_color_XXXX       <- '#FA3C2E'
 #'
 #' @examples
 #' library(ggplot2)
-#' 
+#'
 #' ggplot(data = data.frame(x = rnorm(50, 0, 1), y = rnorm(50,0,1)), aes(x = x, y = y)) +
 #'   geom_smooth(method = 'lm') +
 #'   geom_point() +
-#'   labs(title = 'XXXX Scatter Plot') + 
-#'   theme_XXXX() 
-#' 
+#'   labs(title = 'XXXX Scatter Plot') +
+#'   theme_XXXX()
+#'
 #' ggplot(mpg, aes(cty)) +
-#' geom_density(aes(fill=factor(cyl)), alpha=0.8) + 
-#'   labs(title="Density plot", 
+#' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
+#'   labs(title="Density plot",
 #'        subtitle="City Mileage Grouped by Number of cylinders",
 #'        caption="Source: mpg",
 #'        x="City Mileage",
@@ -53,7 +49,7 @@ dark_color_XXXX       <- '#FA3C2E'
 #'   theme_XXXX() +
 #'   scale_fill_XXXX_d()
 #'
-#' 
+#'
 theme_XXXX <- function(XXXX_font = TRUE) {
   font_family <- ifelse(XXXX_font, 'XXXX', 'sans') # use this line if you have a custom font - change XXXX to match the font name used
   ggplot2::theme(
@@ -76,29 +72,29 @@ theme_XXXX <- function(XXXX_font = TRUE) {
 # COLOR SCALES: Make pretty color scales
 
 #' Finding XXXX Inspired Color Scales
-#' 
+#'
 #' @param ... Additional arguments to pass to `ggplot2::binned_scale` for `_b`,
 #' `ggplot2::scale_[fill/color]_gradient` for `_c`, or `ggplot2::discrete_scale`
-#' 
+#'
 #' @return description
-#' 
+#'
 #' @rdname scale_XXXX
 #' @export
-#' 
-#' @examples 
+#'
+#' @examples
 #' library(ggplot2)
-#' 
+#'
 #' ggplot(mpg, aes(cty)) +
-#' geom_density(aes(fill=factor(cyl)), alpha=0.8) + 
-#'   labs(title="Density plot", 
+#' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
+#'   labs(title="Density plot",
 #'        subtitle="City Mileage Grouped by Number of cylinders",
 #'        caption="Source: mpg",
 #'        x="City Mileage",
 #'        fill="# Cylinders") +
-#'   facet_wrap(~(hwy > 29)) + 
+#'   facet_wrap(~(hwy > 29)) +
 #'   theme_XXXX() +
 #'   scale_fill_XXXX_d()
-#'   
+#'
 scale_color_XXXX_c <- function(...) {
   ggplot2::scale_color_gradient(..., low = light_color_XXXX, high = dark_color_XXXX)
 }
@@ -130,7 +126,7 @@ scale_fill_XXXX_b <- function(...) {
 }
 
 XXXX_colors <- c(
-  '#E9F4FB', '#FE691D', '#015DC2', '#FCDD2E', '#7867A0', 
+  '#E9F4FB', '#FE691D', '#015DC2', '#FCDD2E', '#7867A0',
   '#BE1D57', '#798A5A', '#005478','#1B1A3D'
 )
 
@@ -159,15 +155,3 @@ scale_colour_XXXX_c <- scale_color_XXXX_c
 #' @rdname scale_XXXX
 #' @export
 scale_colour_XXXX_b <- scale_color_XXXX_b
-
-# utility fn that can be moved to a utils.R file if turned into a pkg
-rot_pal <- function(pal) {
-  pal <- unname(pal)
-  function(n) {
-    if (n <= length(pal)) {
-      pal[seq_len(n)]
-    } else {
-      rep(pal, ceiling(n / length(pal)))[seq_len(n)]
-    }
-  }
-}

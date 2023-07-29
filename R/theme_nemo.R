@@ -2,13 +2,13 @@
 ## theme_nemo
 ## 2023-07-27
 
-# SETUP: Needs ggplot2
-require('ggplot2')
+
+
 
 # CUSTOM FONT: add a custom font from google fonts
-require('showtext')
-font_add_google(name = "Bowlby One SC")
-showtext_auto()
+
+sysfonts::font_add_google(name = "Bowlby One SC")
+showtext::showtext_auto()
 
 # COLOR: add, remove, or edit the colors to fit your scheme. Names should be
 background_color_nemo <- '#0739B9'

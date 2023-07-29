@@ -2,11 +2,11 @@
 ## theme_gameofthrones
 ## 07/26/2023
 
-require('ggplot2')
-require('showtext')
 
-font_add_google(name="Cinzel",family="gameofthrones")
-showtext_auto()
+
+
+sysfonts::font_add_google(name="Cinzel",family="gameofthrones")
+showtext::showtext_auto()
 
 # COLOR: add, remove, or edit the colors to fit your scheme (hex code preferred, but you can use any type). Names should be
 background_color_gameofthrones    <- '#1f0700'

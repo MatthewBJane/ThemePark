@@ -3,8 +3,8 @@
 ## 25/07/2023
 
 # CUSTOM FONT: add a custom font from google fonts
-font_add_google(name = "Spectral SC", family = "zelda") 
-showtext_auto()
+sysfonts::font_add_google(name = "Spectral SC", family = "zelda") 
+showtext::showtext_auto()
 
 # COLOR: add, remove, or edit the colors to fit your scheme (hex code preferred, but you can use any type). Names should be
 text_color_zelda    <- '#1F4C73'

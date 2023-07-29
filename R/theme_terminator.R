@@ -2,12 +2,12 @@
 ## theme_terminator
 ## 26/07/2023
 
-require('ggplot2')
-require('showtext')
+
+
 
 # CUSTOM FONT: add a custom font from google fonts
-font_add_google(name = "Orbitron", family = "terminator") 
-showtext_auto()
+sysfonts::font_add_google(name = "Orbitron", family = "terminator") 
+showtext::showtext_auto()
 
 # COLOR: add, remove, or edit the colors to fit your scheme (hex code preferred, but you can use any type). Names should be
 panel_color_terminator     <- '#000000ff'

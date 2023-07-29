@@ -3,8 +3,8 @@
 ## 07/25/2023
 
 # CUSTOM FONT: add a custom font from google fonts
-font_add_google(name = "Bangers", family = "spiderman")
-showtext_auto()
+sysfonts::font_add_google(name = "Bangers", family = "spiderman")
+showtext::showtext_auto()
 
 # COLOR: add, remove, or edit the colors to fit your scheme (hex code preferred, but you can use any type). Names should be
 text_color_spiderman    <- '#101010'

@@ -1,8 +1,8 @@
-require('ggplot2')
-require('showtext')
 
-font_add_google(name = "IM Fell English", family = "Oppenheimer")
-showtext_auto()
+
+
+sysfonts::font_add_google(name = "IM Fell English", family = "Oppenheimer")
+showtext::showtext_auto()
 
 coolflame_color_oppenheimer <- '#fdc232ff'
 flame_color_oppenheimer     <- '#fd8532ff'

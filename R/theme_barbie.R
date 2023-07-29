@@ -2,13 +2,13 @@
 ## theme_barbie
 ## 06/24/2023
 
-# SETUP: Needs ggplot2
-require('ggplot2')
+
+
 
 # CUSTOM FONT: add a custom font from google fonts
-require('showtext')
-font_add_google(name = "Sansita Swashed", family = "barbie")
-showtext_auto()
+
+sysfonts::font_add_google(name = "Sansita Swashed", family = "barbie")
+showtext::showtext_auto()
 
 
 # COLOR: add, remove, or edit the colors to fit your scheme. Names should be

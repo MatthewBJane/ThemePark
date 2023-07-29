@@ -2,11 +2,11 @@
 ## theme_starwars
 ## 06/24/2023
 
-require('ggplot2')
-require('showtext')
 
-font_add_google(name = "Russo One", family = "starwars")
-showtext_auto()
+
+
+sysfonts::font_add_google(name = "Russo One", family = "starwars")
+showtext::showtext_auto()
 
 
 panel_color_starwars     <- '#000000ff'

@@ -3,8 +3,8 @@
 ## 07/26/2023
 
 # CUSTOM FONT: add a custom font from google fonts
-font_add_google(name = "IM Fell English", family = "avatar")
-showtext_auto()
+sysfonts::font_add_google(name = "IM Fell English", family = "avatar")
+showtext::showtext_auto()
 
 # COLOR: add, remove, or edit the colors to fit your scheme (hex code preferred, but you can use any type). Names should be
 border_color_avatar  <- '#0F2347'
