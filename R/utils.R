@@ -24,3 +24,28 @@ initialize_font <- function(name, family = name, ...) {
     invisible(curr_families)
   }
 }
+
+#' (Internal) Add a new theme to `theme_park`
+#'
+#' @param theme_name the theme name, the XXXX part of `theme_XXXX`
+#' @param inspiration_name the name of the inspiring movie, show, or other pop culture
+#' reference, such as "Barbie" or "Finding Nemo"
+#' @param your_name Your name as a string
+#' @param file_name the file name to use, default is `'theme_{theme_name}.R`
+#'
+#' @return path to new file, invisibly
+#' @noRd
+#'
+#' @examples
+#' new_theme_park_theme('thor', 'Thor', 'A. N. Author')
+new_theme_park_theme <- function(theme_name, inspiration_name, your_name,
+                                    file_name = paste0('theme_', theme_name, '.R')) {
+  txt <- readLines(con = system.file('theme_template.R', package = 'themepark'))
+  txt <- gsub(x = txt, pattern = 'XXXX Inspired', replacement = paste0(inspiration_name, ' Inspired'))
+  txt <- gsub(x = txt, pattern = 'XXXX', replacement = theme_name)
+  txt <- gsub(x = txt, pattern = 'YOUR NAME', replacement = your_name)
+  txt <- gsub(x = txt, pattern = 'Date Created', replacement = Sys.Date())
+  writeLines(txt, con = paste0('R/', file_name))
+  invisible(paste0('R/', file_name))
+
+}

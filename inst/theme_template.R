@@ -74,12 +74,13 @@ theme_XXXX <- function(XXXX_font = TRUE, ...) {
 
 # COLOR SCALES: Make pretty color scales
 
-#' Finding XXXX Inspired Color Scales
+#' XXXX Inspired Color Scales
 #'
 #' @param ... Additional arguments to pass to `ggplot2::binned_scale` for `_b`,
 #' `ggplot2::scale_[fill/color]_gradient` for `_c`, or `ggplot2::discrete_scale`
+#' for `_d`
 #'
-#' @return description
+#' @return a `ggplot` scale object
 #'
 #' @rdname scale_XXXX
 #' @export
@@ -128,6 +129,7 @@ scale_fill_XXXX_b <- function(...) {
   ggplot2::binned_scale('fill', 'XXXX', palette = ramp, ...)
 }
 
+# DISCRETE PALETTE COLORS: Please update to some colors that work with your theme
 XXXX_colors <- c(
   '#E9F4FB', '#FE691D', '#015DC2', '#FCDD2E', '#7867A0',
   '#BE1D57', '#798A5A', '#005478','#1B1A3D'

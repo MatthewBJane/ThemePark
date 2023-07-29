@@ -32,10 +32,11 @@ scale_colour_nemo_b(...)
 }
 \arguments{
 \item{...}{Additional arguments to pass to \code{ggplot2::binned_scale} for \verb{_b},
-\verb{ggplot2::scale_[fill/color]_gradient} for \verb{_c}, or \code{ggplot2::discrete_scale}}
+\verb{ggplot2::scale_[fill/color]_gradient} for \verb{_c}, or \code{ggplot2::discrete_scale}
+for \verb{_d}}
 }
 \value{
-description
+a \code{ggplot} scale object
 }
 \description{
 Finding Nemo Inspired Color Scales

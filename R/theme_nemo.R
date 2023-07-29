@@ -9,8 +9,8 @@ panel_fill_nemo   <- '#00B4EF'
 panel_color_nemo <- '#FDF122'
 strip_text_nemo <- '#010203'
 border_color_nemo  <- '#000000'
-lighter_color_nemo <- '#FDF122' #'#E2F2FD'
-light_color_nemo   <- 'white' #'#F6F1F2'
+lighter_color_nemo <- '#FDF122'
+light_color_nemo   <- 'white'
 medium_color_nemo  <- '#FE691D'
 dark_color_nemo    <- '#FA3C2E'
 
@@ -75,8 +75,9 @@ theme_nemo <- function(nemo_font = FALSE, ...) {
 #'
 #' @param ... Additional arguments to pass to `ggplot2::binned_scale` for `_b`,
 #' `ggplot2::scale_[fill/color]_gradient` for `_c`, or `ggplot2::discrete_scale`
+#' for `_d`
 #'
-#' @return description
+#' @return a `ggplot` scale object
 #'
 #' @rdname scale_nemo
 #' @export
@@ -125,6 +126,7 @@ scale_fill_nemo_b <- function(...) {
   ggplot2::binned_scale('fill', 'nemo', palette = ramp, ...)
 }
 
+# DISCRETE PALETTE COLORS: Please update to some colors that work with your theme
 nemo_colors <- c(
   '#E9F4FB', '#FE691D', '#015DC2', '#FCDD2E', '#7867A0',
   '#BE1D57', '#798A5A', '#005478','#1B1A3D'
