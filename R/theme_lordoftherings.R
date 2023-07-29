@@ -2,10 +2,6 @@
 ## theme_lordoftherings
 ## 24/07/2023
 
-# CUSTOM FONT: add a custom font from google fonts
-sysfonts::font_add_google(name = "Lugrasimo", family = "lordoftherings", db_cache = FALSE)
-showtext::showtext_auto()
-
 # COLOR: add, remove, or edit the colors to fit your scheme (hex code preferred, but you can use any type). Names should be
 text_color_lordoftherings    <- '#020203'
 panel_color_lordoftherings   <- '#e0dcce'
@@ -18,19 +14,26 @@ sauron_palette <- c('#fcd882', '#e8a578','#df7b75','#4e2828','#180109')
 
 # THEME: rename function and theme() arguments according to your theme design, feel free to edit this how you would like
 theme_lordoftherings <- function(lordoftherings_font = FALSE){
-    font_family = ifelse(lordoftherings_font,"lordoftherings","Arial") # use this line if you have a custom font
-    ggplot2::theme(
-        panel.grid.minor = element_blank(),
-        panel.grid.major = element_blank(),
-        text = element_text(color = text_color_lordoftherings, family = font_family),
-        title = element_text(size=20),
-        panel.background = element_rect(fill = panel_color_lordoftherings),
-        panel.border = element_rect(fill = NA, color = border_color_lordoftherings, size = 2),
-        axis.title = element_text(size=17),
-        axis.text = element_text(size=13),
-        axis.ticks = element_line(color = border_color_lordoftherings, size = 1.2),
-        legend.background = element_rect(fill = panel_color_lordoftherings, color = NA)
-    )
+
+  # CUSTOM FONT: add a custom font from google fonts
+  font_family = ifelse(lordoftherings_font,"lordoftherings","Arial") # use this line if you have a custom font
+  if (lordoftherings_font) {
+    initialize_font(name = "Lugrasimo", family = "lordoftherings")
+  }
+
+  # CUSTOM THEME:
+  ggplot2::theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_blank(),
+    text = element_text(color = text_color_lordoftherings, family = font_family),
+    title = element_text(size=20),
+    panel.background = element_rect(fill = panel_color_lordoftherings),
+    panel.border = element_rect(fill = NA, color = border_color_lordoftherings, size = 2),
+    axis.title = element_text(size=17),
+    axis.text = element_text(size=13),
+    axis.ticks = element_line(color = border_color_lordoftherings, size = 1.2),
+    legend.background = element_rect(fill = panel_color_lordoftherings, color = NA)
+  )
 }
 
 # COLOR SCALES: Make pretty color scales

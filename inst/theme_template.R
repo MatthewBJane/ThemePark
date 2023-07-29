@@ -1,13 +1,9 @@
 
-## Template v2 for themes in `theme_park` https://github.com/MatthewBJane/theme_park   <<<  Remove this line
+## Template v2.1 for themes in `theme_park` https://github.com/MatthewBJane/theme_park   <<<  Remove this line
 
 ## YOUR NAME
 ## theme_XXXX
 ## Date Created
-
-# CUSTOM FONT: add a custom font from google fonts
-sysfonts::font_add_google(name = "GOOGLE FONT NAME", family = "XXXX")
-showtext::showtext_auto()
 
 # COLOR: add, remove, or edit the colors to fit your scheme. Names should be
 background_color_XXXX <- '#0739B9'
@@ -50,8 +46,15 @@ dark_color_XXXX       <- '#FA3C2E'
 #'   scale_fill_XXXX_d()
 #'
 #'
-theme_XXXX <- function(XXXX_font = TRUE) {
+theme_XXXX <- function(XXXX_font = TRUE, ...) {
+
+  # CUSTOM FONT: add a custom font from google fonts
   font_family <- ifelse(XXXX_font, 'XXXX', 'sans') # use this line if you have a custom font - change XXXX to match the font name used
+  if (XXXX_font) {
+    initialize_font(name = "GOOGLE FONT NAME", family = "XXXX")
+  }
+
+  # CUSTOM THEME:
   ggplot2::theme(
     plot.background = element_rect(fill = background_color_XXXX),
     text = element_text(color = text_color_XXXX, family = font_family),

@@ -2,13 +2,6 @@
 ## theme_starwars
 ## 06/24/2023
 
-
-
-
-sysfonts::font_add_google(name = "Russo One", family = "starwars")
-showtext::showtext_auto()
-
-
 panel_color_starwars     <- '#000000ff'
 border_color_starwars    <- '#ffffffff'
 lightmain_color_starwars <- '#eeb4d7ff'
@@ -22,7 +15,14 @@ dark_color_starwars      <- '#989209ff'
 
 
 theme_starwars <- function(starwars_font=FALSE){
-  font_family <- ifelse(starwars_font,"starwars", "sans")
+
+  # CUSTOM FONT: add a custom font from google fonts
+  font_family <- ifelse(starwars_font,"starwars", "sans") # use this line if you have a custom font
+  if (starwars_font) {
+    initialize_font(name = "Russo One", family = "starwars")
+  }
+
+  # CUSTOM THEME:
   ggplot2::theme(
         panel.grid.minor = element_blank(),
         panel.grid.major = element_blank(),

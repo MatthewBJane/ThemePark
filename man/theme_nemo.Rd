@@ -4,7 +4,7 @@
 \alias{theme_nemo}
 \title{Finding Nemo Inspired Theme}
 \usage{
-theme_nemo(nemo_font = FALSE)
+theme_nemo(nemo_font = FALSE, ...)
 }
 \arguments{
 \item{nemo_font}{should \code{theme_nemo} use Google Font's Bowlby One SC? Default is \code{FALSE}.}
@@ -23,12 +23,12 @@ library(ggplot2)
 ggplot(data = data.frame(x = rnorm(50, 0, 1), y = rnorm(50,0,1)), aes(x = x, y = y)) +
   geom_smooth(method = 'lm') +
   geom_point() +
-  labs(title = 'Nemo Scatter Plot') + 
-  theme_nemo(nemo_font = TRUE) 
+  labs(title = 'Nemo Scatter Plot') +
+  theme_nemo(nemo_font = TRUE)
 
 ggplot(mpg, aes(cty)) +
-geom_density(aes(fill=factor(cyl)), alpha=0.8) + 
-  labs(title="Density plot", 
+geom_density(aes(fill=factor(cyl)), alpha=0.8) +
+  labs(title="Density plot",
        subtitle="City Mileage Grouped by Number of cylinders",
        caption="Source: mpg",
        x="City Mileage",

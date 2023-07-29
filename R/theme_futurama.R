@@ -2,15 +2,6 @@
 ## theme_futurama
 ## 06/25/2023
 
-
-
-
-# CUSTOM FONT: add a custom font from google fonts
-
-sysfonts::font_add_google(name = "Dongle", family = "futurama")
-showtext::showtext_auto()
-
-
 # COLOR: add, remove, or edit the colors to fit your scheme. Names should be
 text_color_futurama    <- '#e74c3cff'
 panel_color_futurama   <- '#abebc6ff'
@@ -23,8 +14,15 @@ dark_color_futurama    <- '#e74c3cff'
 
 # THEME: rename function and theme() arguments according to your theme design, feel free to edit this how you would like
 theme_futurama <- function(futurama_font = FALSE){
-  font_family = ifelse(futurama_font,"futurama","Arial") # use this line if you have a custom font 
+
+  # CUSTOM FONT: add a custom font from google fonts
+  font_family = ifelse(futurama_font,"futurama","Arial") # use this line if you have a custom font
+  if (futurama_font) {
+    initialize_font(name = "Dongle", family = "futurama")
+  }
   text_size_increase = ifelse(futurama_font,6,0) # add text size for custom text
+
+  # CUSTOM THEME:
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
@@ -41,6 +39,6 @@ theme_futurama <- function(futurama_font = FALSE){
   )
 }
 
-# COLOR SCALES: Make pretty color scales 
+# COLOR SCALES: Make pretty color scales
 scale_fill_futurama <- ggplot2::scale_fill_gradient(low = '#eeb4d7ff', high = '#bf2986ff')
 scale_color_futurama <- ggplot2::scale_color_gradient(low = '#eeb4d7ff', high = '#bf2986ff')

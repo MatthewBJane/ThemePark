@@ -44,14 +44,14 @@ Finding Nemo Inspired Color Scales
 library(ggplot2)
 
 ggplot(mpg, aes(cty)) +
-geom_density(aes(fill=factor(cyl)), alpha=0.8) + 
-  labs(title="Density plot", 
+geom_density(aes(fill=factor(cyl)), alpha=0.8) +
+  labs(title="Density plot",
        subtitle="City Mileage Grouped by Number of cylinders",
        caption="Source: mpg",
        x="City Mileage",
        fill="# Cylinders") +
-  facet_wrap(~(hwy > 29)) + 
+  facet_wrap(~(hwy > 29)) +
   theme_nemo(nemo_font = TRUE) +
   scale_fill_nemo_d()
-  
+
 }

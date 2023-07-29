@@ -2,12 +2,6 @@
 ## theme_godfather
 ## 07/27/2023
 
-
-
-
-sysfonts::font_add_google(name = "Philosopher", family = "godfather") 
-showtext::showtext_auto()
-
 text_color_godfather    <- '#d3cfc3'
 panel_color_godfather   <- '#030303'
 border_color_godfather  <- '#d3cfc3'
@@ -18,7 +12,14 @@ dark_color_godfather    <- '#912411'
 
 
 theme_godfather <- function(godfather_font = FALSE){
-  font_family = ifelse(godfather_font,"godfather","Arial") # use this line if you have a custom font 
+
+  # CUSTOM FONT: add a custom font from google fonts
+  font_family = ifelse(godfather_font,"godfather","Arial") # use this line if you have a custom font
+  if (godfather_font) {
+    initialize_font(name = "Philosopher", family = "godfather")
+  }
+
+  # CUSTOM THEME:
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),

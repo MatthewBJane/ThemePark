@@ -1,8 +1,6 @@
-
-
-
-sysfonts::font_add_google(name = "IM Fell English", family = "Oppenheimer")
-showtext::showtext_auto()
+## Matthew B Jané
+## theme_barbie
+## 07/24/2023
 
 coolflame_color_oppenheimer <- '#fdc232ff'
 flame_color_oppenheimer     <- '#fd8532ff'
@@ -17,8 +15,14 @@ dark_color_oppenheimer      <- '#000000ff'
 
 
 theme_oppenheimer <- function(oppenheimer_font=FALSE){
-  #font_family <- ifelse(oppenheimer_font,"oppenheimer", "sans")
-  font_family <- "sans"
+
+  # CUSTOM FONT: add a custom font from google fonts
+  font_family <- ifelse(oppenheimer_font,"Oppenheimer", "sans") # use this line if you have a custom font
+  if (oppenheimer_font) {
+    initialize_font(name = "IM Fell English", family = "Oppenheimer")
+  }
+
+  # CUSTOM THEME:
   ggplot2::theme(
         panel.grid.minor = element_blank(),
         panel.grid.major = element_blank(),

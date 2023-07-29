@@ -2,15 +2,6 @@
 ## theme_barbie
 ## 06/24/2023
 
-
-
-
-# CUSTOM FONT: add a custom font from google fonts
-
-sysfonts::font_add_google(name = "Sansita Swashed", family = "barbie")
-showtext::showtext_auto()
-
-
 # COLOR: add, remove, or edit the colors to fit your scheme. Names should be
 text_color_barbie    <- '#a62675ff'
 panel_color_barbie   <- '#fdf6faff'
@@ -23,7 +14,14 @@ dark_color_barbie    <- '#bf2986ff'
 
 # THEME: rename function and theme() arguments according to your theme design, feel free to edit this how you would like
 theme_barbie <- function(barbie_font = FALSE){
-  font_family = ifelse(barbie_font,"barbie","Arial") # use this line if you have a custom font 
+
+  # CUSTOM FONT: add a custom font from google fonts
+  font_family = ifelse(barbie_font,"barbie","Arial") # use this line if you have a custom font
+  if (barbie_font) {
+    initialize_font(name = "Sansita Swashed", family = "barbie")
+  }
+
+  # CUSTOM THEME:
   ggplot2::theme(
         panel.grid.minor = element_blank(),
         panel.grid.major = element_blank(),
@@ -40,7 +38,7 @@ theme_barbie <- function(barbie_font = FALSE){
        )
 }
 
-# COLOR SCALES: Make pretty color scales 
+# COLOR SCALES: Make pretty color scales
 scale_fill_barbie <- ggplot2::scale_fill_gradient(low = '#eeb4d7ff', high = '#bf2986ff')
 scale_color_barbie <- ggplot2::scale_color_gradient(low = '#eeb4d7ff', high = '#bf2986ff')
 

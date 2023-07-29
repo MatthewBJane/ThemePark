@@ -2,15 +2,6 @@
 ## theme_simpsons
 ## 06/25/2023
 
-
-
-
-# CUSTOM FONT: add a custom font from google fonts
-
-sysfonts::font_add_google(name = "Rock Salt", family = "simpsons")
-showtext::showtext_auto()
-
-
 # COLOR: add, remove, or edit the colors to fit your scheme. Names should be
 text_color_simpsons    <- '#3498dbff'
 panel_color_simpsons   <- '#f7dc6fff'
@@ -23,7 +14,14 @@ dark_color_simpsons    <- '#1c2833ff'
 
 # THEME: rename function and theme() arguments according to your theme design, feel free to edit this how you would like
 theme_simpsons <- function(simpsons_font = FALSE){
-  font_family = ifelse(simpsons_font,"simpsons","Arial") # use this line if you have a custom font 
+
+  # CUSTOM FONT: add a custom font from google fonts
+  font_family = ifelse(simpsons_font,"simpsons","Arial") # use this line if you have a custom font
+  if (simpsons_font) {
+    initialize_font(name = "Rock Salt", family = "simpsons")
+  }
+
+  # CUSTOM THEME:
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
@@ -40,6 +38,6 @@ theme_simpsons <- function(simpsons_font = FALSE){
   )
 }
 
-# COLOR SCALES: Make pretty color scales 
+# COLOR SCALES: Make pretty color scales
 scale_fill_simpsons <- ggplot2::scale_fill_gradient(low = '#eeb4d7ff', high = '#bf2986ff')
 scale_color_simpsons <- ggplot2::scale_color_gradient(low = '#eeb4d7ff', high = '#bf2986ff')

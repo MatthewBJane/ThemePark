@@ -2,10 +2,6 @@
 ## theme_avatar
 ## 07/26/2023
 
-# CUSTOM FONT: add a custom font from google fonts
-sysfonts::font_add_google(name = "IM Fell English", family = "avatar")
-showtext::showtext_auto()
-
 # COLOR: add, remove, or edit the colors to fit your scheme (hex code preferred, but you can use any type). Names should be
 border_color_avatar  <- '#0F2347'
 dark_color_avatar    <- '#1C3F6E'
@@ -16,7 +12,13 @@ point_color_avatar   <- '#EFFC93'
 
 # THEME: rename function and theme() arguments according to your theme design, feel free to edit this how you would like
 theme_avatar <- function(avatar_font = FALSE){
+  # CUSTOM FONT: add a custom font from google fonts
   font_family = ifelse(avatar_font,"avatar","Arial") # use this line if you have a custom font
+  if (avatar_font) {
+    initialize_font(name = "IM Fell English", family = "avatar")
+  }
+
+  # CUSTOM THEME:
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),

@@ -2,14 +2,6 @@
 ## theme_nemo
 ## 2023-07-27
 
-
-
-
-# CUSTOM FONT: add a custom font from google fonts
-
-sysfonts::font_add_google(name = "Bowlby One SC")
-showtext::showtext_auto()
-
 # COLOR: add, remove, or edit the colors to fit your scheme. Names should be
 background_color_nemo <- '#0739B9'
 text_color_nemo    <- '#FEFFFE'
@@ -33,16 +25,16 @@ dark_color_nemo    <- '#FA3C2E'
 #'
 #' @examples
 #' library(ggplot2)
-#' 
+#'
 #' ggplot(data = data.frame(x = rnorm(50, 0, 1), y = rnorm(50,0,1)), aes(x = x, y = y)) +
 #'   geom_smooth(method = 'lm') +
 #'   geom_point() +
-#'   labs(title = 'Nemo Scatter Plot') + 
-#'   theme_nemo(nemo_font = TRUE) 
-#' 
+#'   labs(title = 'Nemo Scatter Plot') +
+#'   theme_nemo(nemo_font = TRUE)
+#'
 #' ggplot(mpg, aes(cty)) +
-#' geom_density(aes(fill=factor(cyl)), alpha=0.8) + 
-#'   labs(title="Density plot", 
+#' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
+#'   labs(title="Density plot",
 #'        subtitle="City Mileage Grouped by Number of cylinders",
 #'        caption="Source: mpg",
 #'        x="City Mileage",
@@ -50,9 +42,16 @@ dark_color_nemo    <- '#FA3C2E'
 #'   theme_nemo(nemo_font = TRUE) +
 #'   scale_fill_nemo_d()
 #'
-#' 
-theme_nemo <- function(nemo_font = FALSE) {
+#'
+theme_nemo <- function(nemo_font = FALSE, ...) {
+
+  # CUSTOM FONT: add a custom font from google fonts
   font_family <- ifelse(nemo_font, 'Bowlby One SC', 'sans') # use this line if you have a custom font
+  if (nemo_font) {
+    initialize_font(name = "Bowlby One SC")
+  }
+
+  # CUSTOM THEME:
   ggplot2::theme(
     plot.background = element_rect(fill = background_color_nemo),
     text = element_text(color = text_color_nemo, family = font_family),
@@ -73,29 +72,29 @@ theme_nemo <- function(nemo_font = FALSE) {
 # COLOR SCALES: Make pretty color scales
 
 #' Finding Nemo Inspired Color Scales
-#' 
+#'
 #' @param ... Additional arguments to pass to `ggplot2::binned_scale` for `_b`,
 #' `ggplot2::scale_[fill/color]_gradient` for `_c`, or `ggplot2::discrete_scale`
-#' 
+#'
 #' @return description
-#' 
+#'
 #' @rdname scale_nemo
 #' @export
-#' 
-#' @examples 
+#'
+#' @examples
 #' library(ggplot2)
-#' 
+#'
 #' ggplot(mpg, aes(cty)) +
-#' geom_density(aes(fill=factor(cyl)), alpha=0.8) + 
-#'   labs(title="Density plot", 
+#' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
+#'   labs(title="Density plot",
 #'        subtitle="City Mileage Grouped by Number of cylinders",
 #'        caption="Source: mpg",
 #'        x="City Mileage",
 #'        fill="# Cylinders") +
-#'   facet_wrap(~(hwy > 29)) + 
+#'   facet_wrap(~(hwy > 29)) +
 #'   theme_nemo(nemo_font = TRUE) +
 #'   scale_fill_nemo_d()
-#'   
+#'
 scale_color_nemo_c <- function(...) {
   ggplot2::scale_color_gradient(..., low = light_color_nemo, high = dark_color_nemo)
 }
@@ -127,7 +126,7 @@ scale_fill_nemo_b <- function(...) {
 }
 
 nemo_colors <- c(
-  '#E9F4FB', '#FE691D', '#015DC2', '#FCDD2E', '#7867A0', 
+  '#E9F4FB', '#FE691D', '#015DC2', '#FCDD2E', '#7867A0',
   '#BE1D57', '#798A5A', '#005478','#1B1A3D'
 )
 
@@ -156,15 +155,3 @@ scale_colour_nemo_c <- scale_color_nemo_c
 #' @rdname scale_nemo
 #' @export
 scale_colour_nemo_b <- scale_color_nemo_b
-
-# utility fn that can be moved to a utils.R file if turned into a pkg
-rot_pal <- function(pal) {
-  pal <- unname(pal)
-  function(n) {
-    if (n <= length(pal)) {
-      pal[seq_len(n)]
-    } else {
-      rep(pal, ceiling(n / length(pal)))[seq_len(n)]
-    }
-  }
-}

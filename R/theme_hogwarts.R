@@ -2,13 +2,7 @@
 ## theme_slytherin, theme_ravenclaw, theme_hufflepuff, theme_gryffindor
 ## 25.07.2023
 
-
-
-
-sysfonts::font_add_google(name = "Henny Penny", family = "harrypotter") 
-showtext::showtext_auto()
-
-## gryffindor 
+## gryffindor
 text_color_gryffindor    <- '#000000'
 panel_color_gryffindor   <- '#ffb832'
 border_color_gryffindor  <- '#5c0000'
@@ -18,7 +12,13 @@ medium_color_gryffindor  <- '#c50000'
 dark_color_gryffindor    <- '#890000'
 
 theme_gryffindor <- function(gryffindor_font = TRUE){
-  font_family = ifelse(gryffindor_font,"harrypotter","Serif") # use this line if you have a custom font 
+  # CUSTOM FONT: add a custom font from google fonts
+  font_family = ifelse(gryffindor_font,"harrypotter","Serif") # use this line if you have a custom font
+  if (gryffindor_font) {
+    initialize_font(name = "Henny Penny", family = "harrypotter")
+  }
+
+  # CUSTOM THEME:
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
@@ -46,7 +46,14 @@ medium_color_ravenclaw  <- 'grey60'
 dark_color_ravenclaw    <- 'grey95'
 
 theme_ravenclaw <- function(ravenclaw_font = TRUE){
-  font_family = ifelse(ravenclaw_font,"harrypotter","Serif") # use this line if you have a custom font 
+
+  # CUSTOM FONT: add a custom font from google fonts
+  font_family = ifelse(ravenclaw_font,"harrypotter","Serif") # use this line if you have a custom font
+  if (ravenclaw_font) {
+    initialize_font(name = "Henny Penny", family = "harrypotter")
+  }
+
+  # CUSTOM THEME:
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
@@ -75,7 +82,13 @@ medium_color_hufflepuff  <- '#6d6158'
 dark_color_hufflepuff    <- '#38302c'
 
 theme_hufflepuff <- function(hufflepuff_font = TRUE){
-  font_family = ifelse(hufflepuff_font,"harrypotter","Serif") # use this line if you have a custom font 
+ # CUSTOM FONT: add a custom font from google fonts
+  font_family = ifelse(hufflepuff_font,"harrypotter","Serif") # use this line if you have a custom font
+  if (hufflepuff_font) {
+    initialize_font(name = "Henny Penny", family = "harrypotter")
+  }
+
+  # CUSTOM THEME:
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
@@ -104,7 +117,13 @@ medium_color_slytherin  <- '#2a623d'
 dark_color_slytherin    <- '#1a472a'
 
 theme_slytherin <- function(slytherin_font = TRUE){
-  font_family = ifelse(slytherin_font,"harrypotter","Serif") # use this line if you have a custom font 
+  # CUSTOM FONT: add a custom font from google fonts
+  font_family = ifelse(slytherin_font,"harrypotter","Serif") # use this line if you have a custom font
+  if (slytherin_font) {
+    initialize_font(name = "Henny Penny", family = "harrypotter")
+  }
+
+  # CUSTOM THEME:
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
@@ -115,7 +134,7 @@ theme_slytherin <- function(slytherin_font = TRUE){
     axis.title = element_text(size=17),
     axis.text = element_text(size=13,color = text_color_slytherin),
     axis.ticks = element_line(color = border_color_slytherin,linewidth=1),
-    legend.background = element_rect(fill = panel_color_slytherin, color = border_color_slytherin), 
+    legend.background = element_rect(fill = panel_color_slytherin, color = border_color_slytherin),
     legend.text=element_text(color=text_color_slytherin), legend.title = element_text(color=text_color_slytherin)
   )
 }
