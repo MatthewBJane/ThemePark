@@ -15,9 +15,8 @@ rot_pal <- function(pal) {
 #' @param ... additional arguments to pass to `sysfonts::font_add_google`
 #' we don't want an R documentation file in `man/` for this, as it's internal
 #' @noRd
-initialize_font <- function(name, family, ...) {
+initialize_font <- function(name, family = name, ...) {
   if (missing(name)) stop('`name` must be specified.')
-  if (missing(family)) family <- name
   curr_families <- sysfonts::font_families()
   if (!family %in% curr_families) {
     sysfonts::font_add_google(name = name, family = family, ...)
