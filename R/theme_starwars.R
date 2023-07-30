@@ -61,17 +61,17 @@ theme_starwars <- function(starwars_font=FALSE, ...){
   ggplot2::theme(
         panel.grid.minor = element_blank(),
         panel.grid.major = element_blank(),
-        text = element_text(color = starwars_theme_colors$goldtext, family = font_family),
+        text = element_text(color = starwars_theme_colors["goldtext"], family = font_family),
         title = element_text(size=20),
-        panel.background = element_rect(fill = starwars_theme_colors$panel),
-        panel.border = element_rect(fill = NA, color = starwars_theme_colors$border,linewidth=1.4),
+        panel.background = element_rect(fill = starwars_theme_colors["panel"]),
+        panel.border = element_rect(fill = NA, color = starwars_theme_colors["border"],linewidth=1.4),
         axis.title = element_text(size=17),
-        axis.text = element_text(size=15,color = starwars_theme_colors$goldtext),
-        axis.ticks = element_line(color = starwars_theme_colors$border,linewidth=1),
-        legend.background = element_rect(fill = starwars_theme_colors$panel, color = NA),
-         plot.background = element_rect(fill = starwars_theme_colors$panel),
-        strip.background = element_rect(fill = starwars_theme_colors$darktext, colour = starwars_theme_colors$border),
-        strip.text = element_text(colour = starwars_theme_colors$text),
+        axis.text = element_text(size=15,color = starwars_theme_colors["goldtext"]),
+        axis.ticks = element_line(color = starwars_theme_colors["border"],linewidth=1),
+        legend.background = element_rect(fill = starwars_theme_colors["panel"], color = NA),
+         plot.background = element_rect(fill = starwars_theme_colors["panel"]),
+        strip.background = element_rect(fill = starwars_theme_colors["darktext"], colour = starwars_theme_colors["border"]),
+        strip.text = element_text(colour = starwars_theme_colors["text"]),
         ...
        )
 }
@@ -98,11 +98,11 @@ theme_starwars <- function(starwars_font=FALSE, ...){
 #'   theme_starwars(starwars_font = TRUE)
 #'
 scale_fill_starwars <- function(...) {
-  ggplot2::scale_fill_gradient(low = starwars_theme_colors$light, high = starwars_theme_colors$dark, ...)
+  ggplot2::scale_fill_gradient(low = starwars_theme_colors["light"], high = starwars_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_starwars
 #' @export
 scale_color_starwars <- function(...) {
-  ggplot2::scale_color_gradient(low = starwars_theme_colors$light, high = starwars_theme_colors$dark, ...)
+  ggplot2::scale_color_gradient(low = starwars_theme_colors["light"], high = starwars_theme_colors["dark"], ...)
 }

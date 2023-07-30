@@ -58,17 +58,17 @@ theme_godfather <- function(godfather_font = FALSE, ...){
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
-    text = element_text(color = godfather_theme_colors$text, family = font_family),
+    text = element_text(color = godfather_theme_colors["text"], family = font_family),
     title = element_text(size=20),
-    panel.background = element_rect(fill = godfather_theme_colors$panel),
-    panel.border = element_rect(fill = NA, color = godfather_theme_colors$border,linewidth=1.2),
-    plot.background = element_rect(fill = godfather_theme_colors$panel),
+    panel.background = element_rect(fill = godfather_theme_colors["panel"]),
+    panel.border = element_rect(fill = NA, color = godfather_theme_colors["border"],linewidth=1.2),
+    plot.background = element_rect(fill = godfather_theme_colors["panel"]),
     axis.title = element_text(size=17),
-    axis.text = element_text(size=13,color = godfather_theme_colors$text),
-    axis.ticks = element_line(color = godfather_theme_colors$border,linewidth=1),
-    legend.background = element_rect(fill = godfather_theme_colors$panel, color = NA),
-    strip.background = element_rect(fill = godfather_theme_colors$lighter, colour = godfather_theme_colors$border),
-    strip.text = element_text(colour = godfather_theme_colors$text),
+    axis.text = element_text(size=13,color = godfather_theme_colors["text"]),
+    axis.ticks = element_line(color = godfather_theme_colors["border"],linewidth=1),
+    legend.background = element_rect(fill = godfather_theme_colors["panel"], color = NA),
+    strip.background = element_rect(fill = godfather_theme_colors["lighter"], colour = godfather_theme_colors["border"]),
+    strip.text = element_text(colour = godfather_theme_colors["text"]),
     ...
   )
 }
@@ -95,11 +95,11 @@ theme_godfather <- function(godfather_font = FALSE, ...){
 #'   theme_godfather(godfather_font = TRUE)
 #'
 scale_fill_godfather <- scale_fill_godfather <- function(...) {
-  ggplot2::scale_fill_gradient(low = godfather_theme_colors$lighter, high = godfather_theme_colors$dark, ...)
+  ggplot2::scale_fill_gradient(low = godfather_theme_colors["lighter"], high = godfather_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_godfather
 #' @export
 scale_color_godfather <- function(...) {
-  ggplot2::scale_color_gradient(low = godfather_theme_colors$lighter, high = godfather_theme_colors$dark, ...)
+  ggplot2::scale_color_gradient(low = godfather_theme_colors["lighter"], high = godfather_theme_colors["dark"], ...)
 }

@@ -62,16 +62,16 @@ theme_oppenheimer <- function(oppenheimer_font=FALSE, ...){
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
-    text = element_text(color = oppenheimer_theme_colors$text, family = font_family),
+    text = element_text(color = oppenheimer_theme_colors["text"], family = font_family),
     title = element_text(size=20),
-    panel.background = element_rect(fill = oppenheimer_theme_colors$panel),
-    panel.border = element_rect(fill = NA, color = oppenheimer_theme_colors$border,linewidth=1.4),
+    panel.background = element_rect(fill = oppenheimer_theme_colors["panel"]),
+    panel.border = element_rect(fill = NA, color = oppenheimer_theme_colors["border"],linewidth=1.4),
     axis.title = element_text(size=17),
-    axis.text = element_text(size=15,color = oppenheimer_theme_colors$text),
-    axis.ticks = element_line(color = oppenheimer_theme_colors$border,linewidth=1),
-    legend.background = element_rect(fill = oppenheimer_theme_colors$panel, color = NA),
-    strip.background = element_rect(fill = oppenheimer_theme_colors$light, colour = oppenheimer_theme_colors$light),
-    strip.text = element_text(colour = oppenheimer_theme_colors$text),
+    axis.text = element_text(size=15,color = oppenheimer_theme_colors["text"]),
+    axis.ticks = element_line(color = oppenheimer_theme_colors["border"],linewidth=1),
+    legend.background = element_rect(fill = oppenheimer_theme_colors["panel"], color = NA),
+    strip.background = element_rect(fill = oppenheimer_theme_colors["light"], colour = oppenheimer_theme_colors["light"]),
+    strip.text = element_text(colour = oppenheimer_theme_colors["text"]),
     ...
   )
 }
@@ -106,23 +106,23 @@ theme_oppenheimer <- function(oppenheimer_font=FALSE, ...){
 #'   scale_color_oppenheimer_flame()
 #'
 scale_fill_oppenheimer_smoke <- function(...) {
-  ggplot2::scale_fill_gradient(low = oppenheimer_theme_colors$coolflame, high = oppenheimer_theme_colors$hotflame, ...)
+  ggplot2::scale_fill_gradient(low = oppenheimer_theme_colors["coolflame"], high = oppenheimer_theme_colors["hotflame"], ...)
 }
 
 #' @rdname scale_oppenheimer
 #' @export
 scale_color_oppenheimer_smoke <- function(...) {
-  ggplot2::scale_color_gradient(low = oppenheimer_theme_colors$coolflame, high = oppenheimer_theme_colors$hotflame, ...)
+  ggplot2::scale_color_gradient(low = oppenheimer_theme_colors["coolflame"], high = oppenheimer_theme_colors["hotflame"], ...)
 }
 
 #' @rdname scale_oppenheimer
 #' @export
 scale_fill_oppenheimer_flame  <- function(...) {
-  ggplot2::scale_fill_gradient(low = oppenheimer_theme_colors$light, high = oppenheimer_theme_colors$dark, ...)
+  ggplot2::scale_fill_gradient(low = oppenheimer_theme_colors["light"], high = oppenheimer_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_oppenheimer
 #' @export
 scale_color_oppenheimer_flame <- function(...) {
-  ggplot2::scale_color_gradient(low = oppenheimer_theme_colors$light, high = oppenheimer_theme_colors$dark, ...)
+  ggplot2::scale_color_gradient(low = oppenheimer_theme_colors["light"], high = oppenheimer_theme_colors["dark"], ...)
 }

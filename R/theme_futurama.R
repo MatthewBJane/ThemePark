@@ -61,16 +61,16 @@ theme_futurama <- function(futurama_font = FALSE, ...){
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
-    text = element_text(color = futurama_theme_colors$text, family = font_family, size = 10),
+    text = element_text(color = futurama_theme_colors["text"], family = font_family, size = 10),
     title = element_text(size=20+text_size_increase),
-    panel.background = element_rect(fill = futurama_theme_colors$panel),
-    panel.border = element_rect(fill = NA, color = futurama_theme_colors$border,linewidth=2),
+    panel.background = element_rect(fill = futurama_theme_colors["panel"]),
+    panel.border = element_rect(fill = NA, color = futurama_theme_colors["border"],linewidth=2),
     axis.title = element_text(size=17+text_size_increase),
-    axis.text = element_text(size=13+text_size_increase,color = futurama_theme_colors$text),
-    axis.ticks = element_line(color = futurama_theme_colors$border,linewidth=1.7),
-    legend.background = element_rect(fill = futurama_theme_colors$panel, color = NA),
-    strip.background = element_rect(fill = futurama_theme_colors$lighter, colour = futurama_theme_colors$border),
-    strip.text = element_text(colour = futurama_theme_colors$text),
+    axis.text = element_text(size=13+text_size_increase,color = futurama_theme_colors["text"]),
+    axis.ticks = element_line(color = futurama_theme_colors["border"],linewidth=1.7),
+    legend.background = element_rect(fill = futurama_theme_colors["panel"], color = NA),
+    strip.background = element_rect(fill = futurama_theme_colors["lighter"], colour = futurama_theme_colors["border"]),
+    strip.text = element_text(colour = futurama_theme_colors["text"]),
     ...
   )
 }

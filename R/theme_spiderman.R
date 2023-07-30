@@ -63,16 +63,16 @@ theme_spiderman <- function(spiderman_font = FALSE, ...){
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_line(color = '#00000055'),
-    text = element_text(color = spiderman_theme_colors$text, family = font_family),
+    text = element_text(color = spiderman_theme_colors["text"], family = font_family),
     title = element_text(size=20),
-    panel.background = element_rect(fill = spiderman_theme_colors$panel),
-    panel.border = element_rect(fill = NA, color = spiderman_theme_colors$border,linewidth=1.2),
+    panel.background = element_rect(fill = spiderman_theme_colors["panel"]),
+    panel.border = element_rect(fill = NA, color = spiderman_theme_colors["border"],linewidth=1.2),
     axis.title = element_text(size=17),
-    axis.text = element_text(size=13,color = spiderman_theme_colors$text),
-    axis.ticks = element_line(color = spiderman_theme_colors$border,linewidth=1),
-    legend.background = element_rect(fill = spiderman_theme_colors$panel, color = NA),
-    strip.background = element_rect(fill = spiderman_theme_colors$medium, colour = spiderman_theme_colors$blue),
-    strip.text = element_text(colour = spiderman_theme_colors$text),
+    axis.text = element_text(size=13,color = spiderman_theme_colors["text"]),
+    axis.ticks = element_line(color = spiderman_theme_colors["border"],linewidth=1),
+    legend.background = element_rect(fill = spiderman_theme_colors["panel"], color = NA),
+    strip.background = element_rect(fill = spiderman_theme_colors["medium"], colour = spiderman_theme_colors["blue"]),
+    strip.text = element_text(colour = spiderman_theme_colors["text"]),
     ...
   )
 }
@@ -99,11 +99,11 @@ theme_spiderman <- function(spiderman_font = FALSE, ...){
 #'   scale_color_spiderman()
 #'
 scale_fill_spiderman <- function(...) {
-  ggplot2::scale_fill_gradient(low = spiderman_theme_colors$medium, high = spiderman_theme_colors$blue, ...)
+  ggplot2::scale_fill_gradient(low = spiderman_theme_colors["medium"], high = spiderman_theme_colors["blue"], ...)
 }
 
 #' @rdname scale_spiderman
 #' @export
 scale_color_spiderman <- function(...) {
-  ggplot2::scale_color_gradient(low = spiderman_theme_colors$medium, high = spiderman_theme_colors$blue, ...)
+  ggplot2::scale_color_gradient(low = spiderman_theme_colors["medium"], high = spiderman_theme_colors["blue"], ...)
 }

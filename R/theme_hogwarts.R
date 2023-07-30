@@ -60,14 +60,14 @@ theme_gryffindor <- function(gryffindor_font = TRUE, ...){
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
-    text = element_text(color = gryffindor_theme_colors$text, family = font_family),
+    text = element_text(color = gryffindor_theme_colors["text"], family = font_family),
     title = element_text(size=20),
-    panel.background = element_rect(fill = gryffindor_theme_colors$panel),
-    panel.border = element_rect(fill = NA, color = gryffindor_theme_colors$border,linewidth=1.2),
+    panel.background = element_rect(fill = gryffindor_theme_colors["panel"]),
+    panel.border = element_rect(fill = NA, color = gryffindor_theme_colors["border"],linewidth=1.2),
     axis.title = element_text(size=17),
-    axis.text = element_text(size=13,color = gryffindor_theme_colors$text),
-    axis.ticks = element_line(color = gryffindor_theme_colors$border,linewidth=1),
-    legend.background = element_rect(fill = gryffindor_theme_colors$panel, color = NA),
+    axis.text = element_text(size=13,color = gryffindor_theme_colors["text"]),
+    axis.ticks = element_line(color = gryffindor_theme_colors["border"],linewidth=1),
+    legend.background = element_rect(fill = gryffindor_theme_colors["panel"], color = NA),
     ...
   )
 }
@@ -97,13 +97,13 @@ NULL
 #' @rdname scale_hogwarts
 #' @export
 scale_fill_gryffindor <- function(...) {
-  ggplot2::scale_fill_gradient(low = gryffindor_theme_colors$light, high = gryffindor_theme_colors$dark, ...)
+  ggplot2::scale_fill_gradient(low = gryffindor_theme_colors["light"], high = gryffindor_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_hogwarts
 #' @export
 scale_color_gryffindor <- function(...) {
-  ggplot2::scale_color_gradient(low = gryffindor_theme_colors$light, high = gryffindor_theme_colors$dark, ...)
+  ggplot2::scale_color_gradient(low = gryffindor_theme_colors["light"], high = gryffindor_theme_colors["dark"], ...)
 }
 
 ## RAVENCLAW ######
@@ -140,15 +140,15 @@ theme_ravenclaw <- function(ravenclaw_font = TRUE, ...){
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
-    text = element_text(color = ravenclaw_theme_colors$text, family = font_family),
+    text = element_text(color = ravenclaw_theme_colors["text"], family = font_family),
     title = element_text(size=20),
-    panel.background = element_rect(fill = ravenclaw_theme_colors$panel),
-    panel.border = element_rect(fill = NA, color = ravenclaw_theme_colors$border,linewidth=1.2),
+    panel.background = element_rect(fill = ravenclaw_theme_colors["panel"]),
+    panel.border = element_rect(fill = NA, color = ravenclaw_theme_colors["border"],linewidth=1.2),
     axis.title = element_text(size=17),
-    axis.text = element_text(size=13,color = ravenclaw_theme_colors$text),
-    axis.ticks = element_line(color = ravenclaw_theme_colors$border,linewidth=1),
-    legend.background = element_rect(fill = ravenclaw_theme_colors$panel, color = NA),
-    legend.text=element_text(color=ravenclaw_theme_colors$dark), legend.title = element_text(color=ravenclaw_theme_colors$dark),
+    axis.text = element_text(size=13,color = ravenclaw_theme_colors["text"]),
+    axis.ticks = element_line(color = ravenclaw_theme_colors["border"],linewidth=1),
+    legend.background = element_rect(fill = ravenclaw_theme_colors["panel"], color = NA),
+    legend.text=element_text(color=ravenclaw_theme_colors["dark"]), legend.title = element_text(color=ravenclaw_theme_colors["dark"]),
     ...
   )
 }
@@ -156,13 +156,13 @@ theme_ravenclaw <- function(ravenclaw_font = TRUE, ...){
 #' @rdname scale_hogwarts
 #' @export
 scale_fill_ravenclaw <- function(...) {
-  ggplot2::scale_fill_gradient(low = ravenclaw_theme_colors$lighter, high = ravenclaw_theme_colors$dark, ...)
+  ggplot2::scale_fill_gradient(low = ravenclaw_theme_colors["lighter"], high = ravenclaw_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_hogwarts
 #' @export
 scale_color_ravenclaw <- function(...) {
-  ggplot2::scale_color_gradient(low = ravenclaw_theme_colors$lighter, high = ravenclaw_theme_colors$dark, ...)
+  ggplot2::scale_color_gradient(low = ravenclaw_theme_colors["lighter"], high = ravenclaw_theme_colors["dark"], ...)
 }
 
 ## hufflepuff #########
@@ -197,16 +197,16 @@ theme_hufflepuff <- function(hufflepuff_font = TRUE, ...){
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
-    text = element_text(color = hufflepuff_theme_colors$text, family = font_family),
+    text = element_text(color = hufflepuff_theme_colors["text"], family = font_family),
     title = element_text(size=20),
-    panel.background = element_rect(fill = hufflepuff_theme_colors$panel),
-    panel.border = element_rect(fill = NA, color = hufflepuff_theme_colors$border,linewidth=1.2),
+    panel.background = element_rect(fill = hufflepuff_theme_colors["panel"]),
+    panel.border = element_rect(fill = NA, color = hufflepuff_theme_colors["border"],linewidth=1.2),
     axis.title = element_text(size=17),
-    axis.text = element_text(size=13,color = hufflepuff_theme_colors$text),
-    axis.ticks = element_line(color = hufflepuff_theme_colors$border,linewidth=1),
-    legend.background = element_rect(fill = hufflepuff_theme_colors$panel, color = NA),
-    legend.text=element_text(color=hufflepuff_theme_colors$dark),
-    legend.title = element_text(color=hufflepuff_theme_colors$dark),
+    axis.text = element_text(size=13,color = hufflepuff_theme_colors["text"]),
+    axis.ticks = element_line(color = hufflepuff_theme_colors["border"],linewidth=1),
+    legend.background = element_rect(fill = hufflepuff_theme_colors["panel"], color = NA),
+    legend.text=element_text(color=hufflepuff_theme_colors["dark"]),
+    legend.title = element_text(color=hufflepuff_theme_colors["dark"]),
     ...
   )
 }
@@ -214,13 +214,13 @@ theme_hufflepuff <- function(hufflepuff_font = TRUE, ...){
 #' @rdname scale_hogwarts
 #' @export
 scale_fill_hufflepuff <- function(...) {
-  ggplot2::scale_fill_gradient(low = hufflepuff_theme_colors$light, high = hufflepuff_theme_colors$dark, ...)
+  ggplot2::scale_fill_gradient(low = hufflepuff_theme_colors["light"], high = hufflepuff_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_hogwarts
 #' @export
 scale_color_hufflepuff <- function(...) {
-  ggplot2::scale_color_gradient(low = hufflepuff_theme_colors$light, high = hufflepuff_theme_colors$dark, ...)
+  ggplot2::scale_color_gradient(low = hufflepuff_theme_colors["light"], high = hufflepuff_theme_colors["dark"], ...)
 }
 
 ### slytherin ######
@@ -255,15 +255,15 @@ theme_slytherin <- function(slytherin_font = TRUE, ...){
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
-    text = element_text(color = slytherin_theme_colors$text, family = font_family),
+    text = element_text(color = slytherin_theme_colors["text"], family = font_family),
     title = element_text(size=16),
-    panel.background = element_rect(fill = slytherin_theme_colors$panel),
-    panel.border = element_rect(fill = NA, color = slytherin_theme_colors$border,linewidth=1.2),
+    panel.background = element_rect(fill = slytherin_theme_colors["panel"]),
+    panel.border = element_rect(fill = NA, color = slytherin_theme_colors["border"],linewidth=1.2),
     axis.title = element_text(size=17),
-    axis.text = element_text(size=13,color = slytherin_theme_colors$text),
-    axis.ticks = element_line(color = slytherin_theme_colors$border,linewidth=1),
-    legend.background = element_rect(fill = slytherin_theme_colors$panel, color = slytherin_theme_colors$border),
-    legend.text=element_text(color=slytherin_theme_colors$text), legend.title = element_text(color=slytherin_theme_colors$text),
+    axis.text = element_text(size=13,color = slytherin_theme_colors["text"]),
+    axis.ticks = element_line(color = slytherin_theme_colors["border"],linewidth=1),
+    legend.background = element_rect(fill = slytherin_theme_colors["panel"], color = slytherin_theme_colors["border"]),
+    legend.text=element_text(color=slytherin_theme_colors["text"]), legend.title = element_text(color=slytherin_theme_colors["text"]),
     ...
   )
 }
@@ -271,11 +271,11 @@ theme_slytherin <- function(slytherin_font = TRUE, ...){
 #' @rdname scale_hogwarts
 #' @export
 scale_fill_slytherin<- function(...) {
-  ggplot2::scale_fill_gradient(low = slytherin_theme_colors$light, high = slytherin_theme_colors$dark, ...)
+  ggplot2::scale_fill_gradient(low = slytherin_theme_colors["light"], high = slytherin_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_hogwarts
 #' @export
 scale_color_slytherin <- function(...) {
-  ggplot2::scale_color_gradient(low = slytherin_theme_colors$light, high = slytherin_theme_colors$dark, ...)
+  ggplot2::scale_color_gradient(low = slytherin_theme_colors["light"], high = slytherin_theme_colors["dark"], ...)
 }

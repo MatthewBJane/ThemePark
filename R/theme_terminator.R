@@ -64,17 +64,17 @@ theme_terminator <- function(terminator_font = FALSE, ...){
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
-    text = element_text(color = terminator_theme_colors$text, family = font_family),
+    text = element_text(color = terminator_theme_colors["text"], family = font_family),
     title = element_text(size=20),
-    panel.background = element_rect(fill = terminator_theme_colors$panel),
-    panel.border = element_rect(fill = NA, color = terminator_theme_colors$border,linewidth=1.4),
+    panel.background = element_rect(fill = terminator_theme_colors["panel"]),
+    panel.border = element_rect(fill = NA, color = terminator_theme_colors["border"],linewidth=1.4),
     axis.title = element_text(size=17),
-    axis.text = element_text(size=15,color = terminator_theme_colors$text),
-    axis.ticks = element_line(color = terminator_theme_colors$border,linewidth=1),
-    legend.background = element_rect(fill = terminator_theme_colors$panel, color = NA),
-    plot.background = element_rect(fill = terminator_theme_colors$panel),
-    strip.background = element_rect(fill = terminator_theme_colors$strip, colour = terminator_theme_colors$border),
-    strip.text = element_text(colour = terminator_theme_colors$text),
+    axis.text = element_text(size=15,color = terminator_theme_colors["text"]),
+    axis.ticks = element_line(color = terminator_theme_colors["border"],linewidth=1),
+    legend.background = element_rect(fill = terminator_theme_colors["panel"], color = NA),
+    plot.background = element_rect(fill = terminator_theme_colors["panel"]),
+    strip.background = element_rect(fill = terminator_theme_colors["strip"], colour = terminator_theme_colors["border"]),
+    strip.text = element_text(colour = terminator_theme_colors["text"]),
     ...
   )
 }
@@ -103,11 +103,11 @@ theme_terminator <- function(terminator_font = FALSE, ...){
 #'   theme_terminator(terminator_font = TRUE)
 #'
 scale_fill_terminator <- function(...) {
-  ggplot2::scale_fill_gradient(low = terminator_theme_colors$lighter, high = terminator_theme_colors$dark, ...)
+  ggplot2::scale_fill_gradient(low = terminator_theme_colors["lighter"], high = terminator_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_terminator
 #' @export
 scale_color_terminator <- function(...) {
-  ggplot2::scale_color_gradient(low = terminator_theme_colors$lighter, high = terminator_theme_colors$dark, ...)
+  ggplot2::scale_color_gradient(low = terminator_theme_colors["lighter"], high = terminator_theme_colors["dark"], ...)
 }

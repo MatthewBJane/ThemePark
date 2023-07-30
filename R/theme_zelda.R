@@ -72,16 +72,16 @@ theme_zelda <- function(zelda_font = FALSE, ...){
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
-    text = element_text(color = zelda_theme_colors$text, family = font_family),
+    text = element_text(color = zelda_theme_colors["text"], family = font_family),
     title = element_text(size=20),
-    panel.background = element_rect(fill = zelda_theme_colors$panel),
-    panel.border = element_rect(fill = NA, color = zelda_theme_colors$border,linewidth=1.2),
+    panel.background = element_rect(fill = zelda_theme_colors["panel"]),
+    panel.border = element_rect(fill = NA, color = zelda_theme_colors["border"],linewidth=1.2),
     axis.title = element_text(size=17),
     axis.text = element_text(size=13),
-    axis.ticks = element_line(color = zelda_theme_colors$border,linewidth=1),
-    legend.background = element_rect(fill = zelda_theme_colors$panel, color = NA),
-    strip.background = element_rect(fill = zelda_theme_colors$lighter, colour = zelda_theme_colors$border),
-    strip.text = element_text(colour = zelda_theme_colors$text),
+    axis.ticks = element_line(color = zelda_theme_colors["border"],linewidth=1),
+    legend.background = element_rect(fill = zelda_theme_colors["panel"], color = NA),
+    strip.background = element_rect(fill = zelda_theme_colors["lighter"], colour = zelda_theme_colors["border"]),
+    strip.text = element_text(colour = zelda_theme_colors["text"]),
     ...
   )
 }
@@ -110,11 +110,11 @@ theme_zelda <- function(zelda_font = FALSE, ...){
 #'   theme_zelda(zelda_font = TRUE)
 #'
 scale_fill_zelda <- function(...) {
-  ggplot2::scale_fill_gradient(low = zelda_theme_colors$lighter, high = zelda_theme_colors$dark, ...)
+  ggplot2::scale_fill_gradient(low = zelda_theme_colors["lighter"], high = zelda_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_zelda
 #' @export
 scale_color_zelda <- function(...) {
-  ggplot2::scale_color_gradient(low = zelda_theme_colors$lighter, high = zelda_theme_colors$dark, ...)
+  ggplot2::scale_color_gradient(low = zelda_theme_colors["lighter"], high = zelda_theme_colors["dark"], ...)
 }

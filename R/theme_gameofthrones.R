@@ -57,19 +57,19 @@ theme_gameofthrones <- function(gameofthrones_font = TRUE, ...){
 
   # CUSTOM THEME:
   ggplot2::theme(
-    plot.background = element_rect(fill = gameofthrones_theme_colors$background),
+    plot.background = element_rect(fill = gameofthrones_theme_colors["background"]),
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
-    text = element_text(color = gameofthrones_theme_colors$text, family = font_family),
+    text = element_text(color = gameofthrones_theme_colors["text"], family = font_family),
     title = element_text(size=20),
-    panel.background = element_rect(fill = gameofthrones_theme_colors$panel),
-    panel.border = element_rect(fill = NA, color = gameofthrones_theme_colors$border,linewidth=1.2),
+    panel.background = element_rect(fill = gameofthrones_theme_colors["panel"]),
+    panel.border = element_rect(fill = NA, color = gameofthrones_theme_colors["border"],linewidth=1.2),
     axis.title = element_text(size=17),
-    axis.text = element_text(size=13,color = gameofthrones_theme_colors$text),
-    axis.ticks = element_line(color = gameofthrones_theme_colors$border,linewidth=1),
-    legend.background = element_rect(fill = gameofthrones_theme_colors$panel, color = NA),
-    strip.background = element_rect(fill = gameofthrones_theme_colors$lighter, colour = gameofthrones_theme_colors$border),
-    strip.text = element_text(colour = gameofthrones_theme_colors$text),
+    axis.text = element_text(size=13,color = gameofthrones_theme_colors["text"]),
+    axis.ticks = element_line(color = gameofthrones_theme_colors["border"],linewidth=1),
+    legend.background = element_rect(fill = gameofthrones_theme_colors["panel"], color = NA),
+    strip.background = element_rect(fill = gameofthrones_theme_colors["lighter"], colour = gameofthrones_theme_colors["border"]),
+    strip.text = element_text(colour = gameofthrones_theme_colors["text"]),
     ...
   )
 }
@@ -96,11 +96,11 @@ theme_gameofthrones <- function(gameofthrones_font = TRUE, ...){
 #'   scale_color_gameofthrones()
 #'
 scale_fill_gameofthrones <- function(...) {
-  ggplot2::scale_fill_gradient(low = gameofthrones_theme_colors$lighter, high = gameofthrones_theme_colors$dark, ...)
+  ggplot2::scale_fill_gradient(low = gameofthrones_theme_colors["lighter"], high = gameofthrones_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_gameofthrones
 #' @export
 scale_color_gameofthrones <- function(...) {
-  ggplot2::scale_color_gradient(low = gameofthrones_theme_colors$lighter, high = gameofthrones_theme_colors$dark, ...)
+  ggplot2::scale_color_gradient(low = gameofthrones_theme_colors["lighter"], high = gameofthrones_theme_colors["dark"], ...)
 }

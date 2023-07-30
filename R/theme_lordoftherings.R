@@ -71,14 +71,14 @@ theme_lordoftherings <- function(lordoftherings_font = FALSE, ...){
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
-    text = element_text(color = lordoftherings_theme_colors$text, family = font_family),
+    text = element_text(color = lordoftherings_theme_colors["text"], family = font_family),
     title = element_text(size=20),
-    panel.background = element_rect(fill = lordoftherings_theme_colors$panel),
-    panel.border = element_rect(fill = NA, color = lordoftherings_theme_colors$border, size = 2),
+    panel.background = element_rect(fill = lordoftherings_theme_colors["panel"]),
+    panel.border = element_rect(fill = NA, color = lordoftherings_theme_colors["border"], size = 2),
     axis.title = element_text(size=17),
     axis.text = element_text(size=13),
-    axis.ticks = element_line(color = lordoftherings_theme_colors$border, size = 1.2),
-    legend.background = element_rect(fill = lordoftherings_theme_colors$panel, color = NA),
+    axis.ticks = element_line(color = lordoftherings_theme_colors["border"], size = 1.2),
+    legend.background = element_rect(fill = lordoftherings_theme_colors["panel"], color = NA),
     ...
   )
 }
@@ -106,12 +106,12 @@ theme_lordoftherings <- function(lordoftherings_font = FALSE, ...){
 #'   scale_color_lordoftherings()
 #'
 scale_fill_lordoftherings <- function(...) {
-  ggplot2::scale_fill_gradient(low = lordoftherings_theme_colors$lighter, high = lordoftherings_theme_colors$dark, ...)
+  ggplot2::scale_fill_gradient(low = lordoftherings_theme_colors["lighter"], high = lordoftherings_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_lordoftherings
 #' @export
 scale_color_lordoftherings <- function(...) {
-  ggplot2::scale_color_gradient(low = lordoftherings_theme_colors$lighter, high = lordoftherings_theme_colors$dark, ...)
+  ggplot2::scale_color_gradient(low = lordoftherings_theme_colors["lighter"], high = lordoftherings_theme_colors["dark"], ...)
 }
 
