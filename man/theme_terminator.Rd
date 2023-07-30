@@ -4,7 +4,7 @@
 \alias{theme_terminator}
 \title{Terminator Inspired Theme}
 \usage{
-theme_terminator(terminator_font = FALSE)
+theme_terminator(terminator_font = FALSE, ...)
 }
 \arguments{
 \item{terminator_font}{should \code{theme_terminator} use Google Font's IM Fell English? Default is \code{FALSE}.}

@@ -3,14 +3,23 @@
 ## 06/25/2023
 
 # COLOR: add, remove, or edit the colors to fit your scheme. Names should be
-text_color_futurama    <- '#e74c3cff'
-panel_color_futurama   <- '#abebc6ff'
-border_color_futurama  <- '#abb2b9ff'
-lighter_color_futurama <- '#f4d03fff'
-light_color_futurama   <- '#1e8449ff'
-medium_color_futurama  <- '#ec7063ff'
-dark_color_futurama    <- '#e74c3cff'
-
+#' Futurama Theme Color Palette
+#'
+#' @format character vector of hex code strings
+#' @export
+#'
+#' @examples
+#' futurama_theme_colors
+#'
+futurama_theme_colors <- c(
+  text    = '#e74c3cff',
+  panel   = '#abebc6ff',
+  border  = '#abb2b9ff',
+  lighter = '#f4d03fff',
+  light   = '#1e8449ff',
+  medium  = '#ec7063ff',
+  dark    = '#e74c3cff'
+)
 
 # THEME: rename function and theme() arguments according to your theme design, feel free to edit this how you would like
 #' Futurama Inspired Theme
@@ -39,7 +48,7 @@ dark_color_futurama    <- '#e74c3cff'
 #'        fill="# Cylinders") +
 #'   theme_futurama(futurama_font = TRUE)
 #'
-theme_futurama <- function(futurama_font = FALSE){
+theme_futurama <- function(futurama_font = FALSE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
   font_family = ifelse(futurama_font,"futurama","Arial") # use this line if you have a custom font
@@ -52,16 +61,17 @@ theme_futurama <- function(futurama_font = FALSE){
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
-    text = element_text(color = text_color_futurama, family = font_family, size = 10),
+    text = element_text(color = futurama_theme_colors$text, family = font_family, size = 10),
     title = element_text(size=20+text_size_increase),
-    panel.background = element_rect(fill = panel_color_futurama),
-    panel.border = element_rect(fill = NA, color = border_color_futurama,linewidth=2),
+    panel.background = element_rect(fill = futurama_theme_colors$panel),
+    panel.border = element_rect(fill = NA, color = futurama_theme_colors$border,linewidth=2),
     axis.title = element_text(size=17+text_size_increase),
-    axis.text = element_text(size=13+text_size_increase,color = text_color_futurama),
-    axis.ticks = element_line(color = border_color_futurama,linewidth=1.7),
-    legend.background = element_rect(fill = panel_color_futurama, color = NA),
-    strip.background = element_rect(fill = lighter_color_futurama, colour = border_color_futurama),
-    strip.text = element_text(colour = text_color_futurama)
+    axis.text = element_text(size=13+text_size_increase,color = futurama_theme_colors$text),
+    axis.ticks = element_line(color = futurama_theme_colors$border,linewidth=1.7),
+    legend.background = element_rect(fill = futurama_theme_colors$panel, color = NA),
+    strip.background = element_rect(fill = futurama_theme_colors$lighter, colour = futurama_theme_colors$border),
+    strip.text = element_text(colour = futurama_theme_colors$text),
+    ...
   )
 }
 

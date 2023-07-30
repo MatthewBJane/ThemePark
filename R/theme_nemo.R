@@ -3,17 +3,40 @@
 ## 2023-07-27
 
 # COLOR: add, remove, or edit the colors to fit your scheme. Names should be
-background_color_nemo <- '#0739B9'
-text_color_nemo    <- '#FEFFFE'
-panel_fill_nemo   <- '#00B4EF'
-panel_color_nemo <- '#FDF122'
-strip_text_nemo <- '#010203'
-border_color_nemo  <- '#000000'
-lighter_color_nemo <- '#FDF122'
-light_color_nemo   <- 'white'
-medium_color_nemo  <- '#FE691D'
-dark_color_nemo    <- '#FA3C2E'
+#' Finding Nemo Theme Color Palette
+#'
+#' @format character vector of hex code strings
+#' @export
+#'
+#' @examples
+#' nemo_theme_colors
+#'
+nemo_theme_colors <- c(
+  background = '#0739B9',
+  text       = '#FEFFFE',
+  fill       = '#00B4EF',
+  panel      = '#FDF122',
+  strip_text = '#010203',
+  border     = '#000000',
+  lighter    = '#FDF122',
+  light      = 'white',
+  medium     = '#FE691D',
+  dark       = '#FA3C2E'
+)
 
+# DISCRETE PALETTE COLORS: Please update to some colors that work with your theme
+#' Finding Nemo Color Palette
+#'
+#' @format character vector of hex code strings
+#' @export
+#'
+#' @examples
+#' nemo_palette
+#'
+nemo_palette <- c(
+  '#E9F4FB', '#FE691D', '#015DC2', '#FCDD2E', '#7867A0',
+  '#BE1D57', '#798A5A', '#005478','#1B1A3D'
+)
 
 #' Finding Nemo Inspired Theme
 #'
@@ -53,19 +76,20 @@ theme_nemo <- function(nemo_font = FALSE, ...) {
 
   # CUSTOM THEME:
   ggplot2::theme(
-    plot.background = element_rect(fill = background_color_nemo),
-    text = element_text(color = text_color_nemo, family = font_family),
+    plot.background = element_rect(fill = nemo_theme_colors$background),
+    text = element_text(color = nemo_theme_colors$text, family = font_family),
     title = element_text(size = 20),
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
-    panel.background = element_rect(fill = panel_fill_nemo, color = panel_color_nemo),
-    panel.border = element_rect(fill = NA, color = border_color_nemo, linewidth = 1.2),
+    panel.background = element_rect(fill = nemo_theme_colors$fill, color = nemo_theme_colors$panel),
+    panel.border = element_rect(fill = NA, color = nemo_theme_colors$border, linewidth = 1.2),
     axis.title = element_text(size = 17),
-    axis.text = element_text(size = 13, color = text_color_nemo),
-    axis.ticks = element_line(color = border_color_nemo, linewidth = 1),
-    legend.background = element_rect(fill = panel_fill_nemo, color = NA),
-    strip.background = element_rect(fill = lighter_color_nemo, colour = border_color_nemo),
-    strip.text = element_text(colour = strip_text_nemo, size = 10)
+    axis.text = element_text(size = 13, color = nemo_theme_colors$text),
+    axis.ticks = element_line(color = nemo_theme_colors$border, linewidth = 1),
+    legend.background = element_rect(fill = nemo_theme_colors$fill, color = NA),
+    strip.background = element_rect(fill = nemo_theme_colors$lighter, colour = nemo_theme_colors$border),
+    strip.text = element_text(colour = nemo_theme_colors$strip_text, size = 10),
+    ...
   )
 }
 
@@ -97,13 +121,13 @@ theme_nemo <- function(nemo_font = FALSE, ...) {
 #'   scale_fill_nemo_d()
 #'
 scale_color_nemo_c <- function(...) {
-  ggplot2::scale_color_gradient(..., low = light_color_nemo, high = dark_color_nemo)
+  ggplot2::scale_color_gradient(..., low = nemo_theme_colors$light, high = nemo_theme_colors$dark)
 }
 
 #' @rdname scale_nemo
 #' @export
 scale_fill_nemo_c <- function(...) {
-  ggplot2::scale_fill_gradient(..., low = light_color_nemo, high = dark_color_nemo)
+  ggplot2::scale_fill_gradient(..., low = nemo_theme_colors$light, high = nemo_theme_colors$dark)
 }
 
 #' @rdname scale_nemo
@@ -112,7 +136,7 @@ scale_color_nemo_b <- function(...) {
   if (!requireNamespace('scales', quietly = TRUE)) {
     stop('This function requires the `scales` R package.')
   }
-  ramp <- scales::colour_ramp(c(light_color_nemo, dark_color_nemo))
+  ramp <- scales::colour_ramp(c(nemo_theme_colors$light, nemo_theme_colors$dark))
   ggplot2::binned_scale('color', 'nemo', palette = ramp, ...)
 }
 
@@ -122,28 +146,22 @@ scale_fill_nemo_b <- function(...) {
   if (!requireNamespace('scales', quietly = TRUE)) {
     stop('This function requires the `scales` R package.')
   }
-  ramp <- scales::colour_ramp(c(light_color_nemo, dark_color_nemo))
+  ramp <- scales::colour_ramp(c(nemo_theme_colors$light, nemo_theme_colors$dark))
   ggplot2::binned_scale('fill', 'nemo', palette = ramp, ...)
 }
-
-# DISCRETE PALETTE COLORS: Please update to some colors that work with your theme
-nemo_colors <- c(
-  '#E9F4FB', '#FE691D', '#015DC2', '#FCDD2E', '#7867A0',
-  '#BE1D57', '#798A5A', '#005478','#1B1A3D'
-)
 
 #' @rdname scale_nemo
 #' @export
 scale_color_nemo_d <- function(...) {
-  ggplot2::discrete_scale(aesthetics = 'color', scale_name = nemo_colors,
-                          palette = rot_pal(nemo_colors), ...)
+  ggplot2::discrete_scale(aesthetics = 'color', scale_name = nemo_palette,
+                          palette = rot_pal(nemo_palette), ...)
 }
 
 #' @rdname scale_nemo
 #' @export
 scale_fill_nemo_d <- function(...) {
-  ggplot2::discrete_scale(aesthetics = 'fill', scale_name = nemo_colors, ...,
-                          palette = rot_pal(nemo_colors))
+  ggplot2::discrete_scale(aesthetics = 'fill', scale_name = nemo_palette, ...,
+                          palette = rot_pal(nemo_palette))
 }
 
 #' @rdname scale_nemo

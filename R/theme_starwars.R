@@ -2,16 +2,26 @@
 ## theme_starwars
 ## 06/24/2023
 
-panel_color_starwars     <- '#000000ff'
-border_color_starwars    <- '#ffffffff'
-lightmain_color_starwars <- '#eeb4d7ff'
-text_color_starwars      <- '#f1e81fff'
-goldtext_color_starwars  <- '#f1e81fff'
-darktext_color_starwars  <- '#111111ff'
-star_color_starwars      <- '#ffffffff'
-light_color_starwars     <- '#faf7b5ff'
-medium_color_starwars    <- '#f1e81fff'
-dark_color_starwars      <- '#989209ff'
+#' Star Wars Theme Color Palette
+#'
+#' @format character vector of hex code strings
+#' @export
+#'
+#' @examples
+#' starwars_theme_colors
+#'
+starwars_theme_colors <- c(
+  panel     = '#000000ff',
+  border    = '#ffffffff',
+  lightmain = '#eeb4d7ff',
+  text      = '#f1e81fff',
+  goldtext  = '#f1e81fff',
+  darktext  = '#111111ff',
+  star      = '#ffffffff',
+  light     = '#faf7b5ff',
+  medium    = '#f1e81fff',
+  dark      = '#989209ff'
+)
 
 #' Star Wars Inspired Theme
 #'
@@ -39,7 +49,7 @@ dark_color_starwars      <- '#989209ff'
 #'        fill="# Cylinders") +
 #'   theme_starwars(starwars_font = TRUE)
 #'
-theme_starwars <- function(starwars_font=FALSE){
+theme_starwars <- function(starwars_font=FALSE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
   font_family <- ifelse(starwars_font,"starwars", "sans") # use this line if you have a custom font
@@ -51,17 +61,18 @@ theme_starwars <- function(starwars_font=FALSE){
   ggplot2::theme(
         panel.grid.minor = element_blank(),
         panel.grid.major = element_blank(),
-        text = element_text(color = goldtext_color_starwars, family = font_family),
+        text = element_text(color = starwars_theme_colors$goldtext, family = font_family),
         title = element_text(size=20),
-        panel.background = element_rect(fill = panel_color_starwars),
-        panel.border = element_rect(fill = NA, color = border_color_starwars,linewidth=1.4),
+        panel.background = element_rect(fill = starwars_theme_colors$panel),
+        panel.border = element_rect(fill = NA, color = starwars_theme_colors$border,linewidth=1.4),
         axis.title = element_text(size=17),
-        axis.text = element_text(size=15,color = goldtext_color_starwars),
-        axis.ticks = element_line(color = border_color_starwars,linewidth=1),
-        legend.background = element_rect(fill = panel_color_starwars, color = NA),
-         plot.background = element_rect(fill = panel_color_starwars),
-        strip.background = element_rect(fill = darktext_color_starwars, colour = border_color_starwars),
-        strip.text = element_text(colour = text_color_starwars)
+        axis.text = element_text(size=15,color = starwars_theme_colors$goldtext),
+        axis.ticks = element_line(color = starwars_theme_colors$border,linewidth=1),
+        legend.background = element_rect(fill = starwars_theme_colors$panel, color = NA),
+         plot.background = element_rect(fill = starwars_theme_colors$panel),
+        strip.background = element_rect(fill = starwars_theme_colors$darktext, colour = starwars_theme_colors$border),
+        strip.text = element_text(colour = starwars_theme_colors$text),
+        ...
        )
 }
 
@@ -87,11 +98,11 @@ theme_starwars <- function(starwars_font=FALSE){
 #'   theme_starwars(starwars_font = TRUE)
 #'
 scale_fill_starwars <- function(...) {
-  ggplot2::scale_fill_gradient(low = light_color_starwars, high = dark_color_starwars, ...)
+  ggplot2::scale_fill_gradient(low = starwars_theme_colors$light, high = starwars_theme_colors$dark, ...)
 }
 
 #' @rdname scale_starwars
 #' @export
 scale_color_starwars <- function(...) {
-  ggplot2::scale_color_gradient(low = light_color_starwars, high = dark_color_starwars, ...)
+  ggplot2::scale_color_gradient(low = starwars_theme_colors$light, high = starwars_theme_colors$dark, ...)
 }

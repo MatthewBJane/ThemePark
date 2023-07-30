@@ -6,7 +6,7 @@
 
 #' Avatar Theme Color Palette
 #'
-#' @format character vector
+#' @format character vector of hex code strings
 #' @export
 #'
 #' @examples
@@ -59,17 +59,18 @@ theme_avatar <- function(avatar_font = FALSE, ...){
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
-    text = element_text(color = avatar_theme_colors$border, family = font_family),
+    text = element_text(color = avatar_theme_colors["border"], family = font_family),
     title = element_text(size=20),
-    panel.background = element_rect(fill = avatar_theme_colors$dark),
-    panel.border = element_rect(fill = NA, color = avatar_theme_colors$border,linewidth=1.2),
+    panel.background = element_rect(fill = avatar_theme_colors["dark"]),
+    panel.border = element_rect(fill = NA, color = avatar_theme_colors["border"],linewidth=1.2),
     axis.title = element_text(size=17),
-    axis.text = element_text(size=13,color = avatar_theme_colors$border),
-    axis.ticks = element_line(color = avatar_theme_colors$border,linewidth=1),
-    legend.background = element_rect(fill = avatar_theme_colors$dark, color = NA),
-    strip.background = element_rect(fill = avatar_theme_colors$point,
-                                    colour = avatar_theme_colors$border),
-    strip.text = element_text(colour = avatar_theme_colors$border)
+    axis.text = element_text(size=13,color = avatar_theme_colors["border"]),
+    axis.ticks = element_line(color = avatar_theme_colors["border"],linewidth=1),
+    legend.background = element_rect(fill = avatar_theme_colors["dark"], color = NA),
+    strip.background = element_rect(fill = avatar_theme_colors["point"],
+                                    colour = avatar_theme_colors["border"]),
+    strip.text = element_text(colour = avatar_theme_colors["border"]),
+    ...
   )
 }
 
@@ -96,11 +97,11 @@ theme_avatar <- function(avatar_font = FALSE, ...){
 #'   scale_color_avatar()
 #'
 scale_fill_avatar <- function(...) {
-  ggplot2::scale_fill_gradient(low = avatar_theme_colors$medium, high = avatar_theme_colors$dark, ...)
+  ggplot2::scale_fill_gradient(low = avatar_theme_colors["medium"], high = avatar_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_avatar
 #' @export
 scale_color_avatar <- function(...) {
-  ggplot2::scale_color_gradient(low = avatar_theme_colors$medium, high = avatar_theme_colors$dark, ...)
+  ggplot2::scale_color_gradient(low = avatar_theme_colors["medium"], high = avatar_theme_colors["dark"], ...)
 }

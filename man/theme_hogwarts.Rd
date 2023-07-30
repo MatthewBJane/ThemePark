@@ -7,13 +7,13 @@
 \alias{theme_slytherin}
 \title{Harry Potter Inspired Themes}
 \usage{
-theme_gryffindor(gryffindor_font = TRUE)
+theme_gryffindor(gryffindor_font = TRUE, ...)
 
-theme_ravenclaw(ravenclaw_font = TRUE)
+theme_ravenclaw(ravenclaw_font = TRUE, ...)
 
-theme_hufflepuff(hufflepuff_font = TRUE)
+theme_hufflepuff(hufflepuff_font = TRUE, ...)
 
-theme_slytherin(slytherin_font = TRUE)
+theme_slytherin(slytherin_font = TRUE, ...)
 }
 \arguments{
 \item{gryffindor_font}{should \code{theme_gryffindor} use Google Font's Henny Penny? Default is \code{FALSE}.}

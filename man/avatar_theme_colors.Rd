@@ -5,7 +5,7 @@
 \alias{avatar_theme_colors}
 \title{Avatar Theme Color Palette}
 \format{
-character vector
+character vector of hex code strings
 }
 \usage{
 avatar_theme_colors
@@ -15,5 +15,6 @@ Avatar Theme Color Palette
 }
 \examples{
 avatar_theme_colors
+
 }
 \keyword{datasets}

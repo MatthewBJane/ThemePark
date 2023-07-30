@@ -3,15 +3,24 @@
 ## 07/26/2023
 
 # COLOR: add, remove, or edit the colors to fit your scheme (hex code preferred, but you can use any type). Names should be
-background_color_gameofthrones    <- '#1f0700'
-text_color_gameofthrones <- '#D7B257'
-panel_color_gameofthrones <- '#F2F3B8'
-border_color_gameofthrones  <- '#BD6D33'
-lighter_color_gameofthrones <- '#F2F3B8'
-light_color_gameofthrones   <- '#DFCB69'
-medium_color_gameofthrones  <- '#BD6D33'
-dark_color_gameofthrones <- '#8C4522'
-
+#' Game of Thrones Theme Color Palette
+#'
+#' @format character vector of hex code strings
+#' @export
+#'
+#' @examples
+#' gameofthrones_theme_colors
+#'
+gameofthrones_theme_colors <- c(
+  background    = '#1f0700',
+  text = '#D7B257',
+  panel = '#F2F3B8',
+  border  = '#BD6D33',
+  lighter = '#F2F3B8',
+  light   = '#DFCB69',
+  medium  = '#BD6D33',
+  dark = '#8C4522'
+)
 #' Game of Thrones Inspired Theme
 #'
 #' @param gameofthrones_font should `theme_gameofthrones` use Google Font's Cinzel? Default is `FALSE`.
@@ -38,7 +47,7 @@ dark_color_gameofthrones <- '#8C4522'
 #'        fill="# Cylinders") +
 #'   theme_gameofthrones(gameofthrones_font = TRUE)
 #'
-theme_gameofthrones <- function(gameofthrones_font = TRUE){
+theme_gameofthrones <- function(gameofthrones_font = TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
   font_family = ifelse(gameofthrones_font,"gameofthrones","Arial") # use this line if you have a custom font
@@ -48,19 +57,20 @@ theme_gameofthrones <- function(gameofthrones_font = TRUE){
 
   # CUSTOM THEME:
   ggplot2::theme(
-    plot.background = element_rect(fill = background_color_gameofthrones),
+    plot.background = element_rect(fill = gameofthrones_theme_colors$background),
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
-    text = element_text(color = text_color_gameofthrones, family = font_family),
+    text = element_text(color = gameofthrones_theme_colors$text, family = font_family),
     title = element_text(size=20),
-    panel.background = element_rect(fill = panel_color_gameofthrones),
-    panel.border = element_rect(fill = NA, color = border_color_gameofthrones,linewidth=1.2),
+    panel.background = element_rect(fill = gameofthrones_theme_colors$panel),
+    panel.border = element_rect(fill = NA, color = gameofthrones_theme_colors$border,linewidth=1.2),
     axis.title = element_text(size=17),
-    axis.text = element_text(size=13,color = text_color_gameofthrones),
-    axis.ticks = element_line(color = border_color_gameofthrones,linewidth=1),
-    legend.background = element_rect(fill = panel_color_gameofthrones, color = NA),
-    strip.background = element_rect(fill = lighter_color_gameofthrones, colour = border_color_gameofthrones),
-    strip.text = element_text(colour = text_color_gameofthrones)
+    axis.text = element_text(size=13,color = gameofthrones_theme_colors$text),
+    axis.ticks = element_line(color = gameofthrones_theme_colors$border,linewidth=1),
+    legend.background = element_rect(fill = gameofthrones_theme_colors$panel, color = NA),
+    strip.background = element_rect(fill = gameofthrones_theme_colors$lighter, colour = gameofthrones_theme_colors$border),
+    strip.text = element_text(colour = gameofthrones_theme_colors$text),
+    ...
   )
 }
 
@@ -86,11 +96,11 @@ theme_gameofthrones <- function(gameofthrones_font = TRUE){
 #'   scale_color_gameofthrones()
 #'
 scale_fill_gameofthrones <- function(...) {
-  ggplot2::scale_fill_gradient(low = lighter_color_gameofthrones, high = dark_color_gameofthrones, ...)
+  ggplot2::scale_fill_gradient(low = gameofthrones_theme_colors$lighter, high = gameofthrones_theme_colors$dark, ...)
 }
 
 #' @rdname scale_gameofthrones
 #' @export
 scale_color_gameofthrones <- function(...) {
-  ggplot2::scale_color_gradient(low = lighter_color_gameofthrones, high = dark_color_gameofthrones, ...)
+  ggplot2::scale_color_gradient(low = gameofthrones_theme_colors$lighter, high = gameofthrones_theme_colors$dark, ...)
 }
