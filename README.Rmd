@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 
 ![theme_park_banner](https://github.com/MatthewBJane/theme_park/assets/52077481/4c2e2885-d879-46e6-b61d-b253d8382597)
 
-# themepark
+# ThemePark
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -51,7 +51,7 @@ Name | Theme | Creator(s) | Source
 
 ## Installation
 
-You can install the development version of `themepark` from [GitHub](https://github.com/) with:
+You can install the development version of `ThemePark` from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("remotes")
@@ -65,15 +65,16 @@ There are many theme options, listed above.
 Below is an example of using the Game of Thrones theme.
 
 ```{r example}
-library(themepark)
+library(ThemePark)
+library(ggplot2)
 
 `X variable` <- rnorm(50, 0, 1)
 `Y variable` <- rnorm(50, 0, 1)
 
 ggplot(data = NULL, aes(x = `X variable`, y = `Y variable`)) +
   theme_gameofthrones(gameofthrones_font = TRUE) +
-  geom_smooth(method = "lm", color = dark_color_gameofthrones, fill = light_color_gameofthrones) +
-  geom_point(color = medium_color_gameofthrones) +
+  geom_smooth(method = "lm", color = "#8C4522", fill = "#DFCB69") +
+  geom_point(color = "#BD6D33") +
   ggtitle("Game of Thrones Scatter Plot")
 ```
 
@@ -90,22 +91,22 @@ g + geom_density(aes(fill = factor(cyl)), alpha = 0.8) +
     fill = "# Cylinders"
   ) +
   theme_gameofthrones() +
-  scale_color_barbie
+  scale_color_barbie()
 ```
 
 ```{r}
 ggplot(data = NULL, aes(x = `X variable`, y = `Y variable`)) +
   theme_avatar(avatar_font = TRUE) +
-  geom_smooth(method = "lm", color = dark_color_avatar, fill = light_color_avatar) +
-  geom_point(color = medium_color_avatar) +
+  geom_smooth(method = "lm", color = "#1C3F6E", fill = "#5AACCF") +
+  geom_point(color = "#2E67A0") +
   ggtitle("Game of Thrones Scatter Plot")
 ```
 
 
 ```{r}
-ggplot(tibble(x = rnorm(100), y = rnorm(100)), aes(x, y)) +
-  geom_smooth(method = "lm", color = dark_color_godfather, fill = light_color_godfather) +
-  geom_point(color = medium_color_godfather) +
+ggplot(data.frame(x = rnorm(100), y = rnorm(100)), aes(x, y)) +
+  geom_smooth(method = "lm", color = "#912411", fill = "#912411") +
+  geom_point(color = "#d3cfc3") +
   labs(title = "The Godfather theme", x = "Variable x", y = "Variable y") +
   theme_godfather(godfather_font = T)
 ```

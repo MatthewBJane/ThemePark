@@ -40,7 +40,7 @@ initialize_font <- function(name, family = name, ...) {
 #' new_theme_park_theme('thor', 'Thor', 'A. N. Author')
 new_theme_park_theme <- function(theme_name, inspiration_name, your_name,
                                     file_name = paste0('theme_', theme_name, '.R')) {
-  txt <- readLines(con = system.file('theme_template.R', package = 'themepark'))
+  txt <- readLines(con = system.file('theme_template.R', package = 'ThemePark'))
   txt <- gsub(x = txt, pattern = 'XXXX Inspired', replacement = paste0(inspiration_name, ' Inspired'))
   txt <- gsub(x = txt, pattern = 'XXXX', replacement = theme_name)
   txt <- gsub(x = txt, pattern = 'YOUR NAME', replacement = your_name)
