@@ -18,3 +18,5 @@ Imports:
     ggplot2,
     showtext,
     sysfonts
+Suggests: 
+    scales

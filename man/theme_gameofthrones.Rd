@@ -4,7 +4,7 @@
 \alias{theme_gameofthrones}
 \title{Game of Thrones Inspired Theme}
 \usage{
-theme_gameofthrones(gameofthrones_font = TRUE)
+theme_gameofthrones(gameofthrones_font = TRUE, ...)
 }
 \arguments{
 \item{gameofthrones_font}{should \code{theme_gameofthrones} use Google Font's Cinzel? Default is \code{FALSE}.}

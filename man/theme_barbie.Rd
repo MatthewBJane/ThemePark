@@ -4,7 +4,7 @@
 \alias{theme_barbie}
 \title{Barbie Inspired Theme}
 \usage{
-theme_barbie(barbie_font = FALSE)
+theme_barbie(barbie_font = FALSE, ...)
 }
 \arguments{
 \item{barbie_font}{should \code{theme_barbie} use Google Font's Sansita Swashed? Default is \code{FALSE}.}

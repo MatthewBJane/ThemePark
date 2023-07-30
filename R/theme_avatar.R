@@ -3,12 +3,22 @@
 ## 07/26/2023
 
 # COLOR: add, remove, or edit the colors to fit your scheme (hex code preferred, but you can use any type). Names should be
-border_color_avatar  <- '#0F2347'
-dark_color_avatar    <- '#1C3F6E'
-medium_color_avatar  <- '#2E67A0'
-light_color_avatar   <- '#5AACCF'
-point_color_avatar   <- '#EFFC93'
 
+#' Avatar Theme Color Palette
+#'
+#' @format character vector of hex code strings
+#' @export
+#'
+#' @examples
+#' avatar_theme_colors
+#'
+avatar_theme_colors <- c(
+  border = '#0F2347',
+  dark   = '#1C3F6E',
+  medium = '#2E67A0',
+  light  = '#5AACCF',
+  point  = '#EFFC93'
+)
 
 # THEME: rename function and theme() arguments according to your theme design, feel free to edit this how you would like
 
@@ -49,16 +59,18 @@ theme_avatar <- function(avatar_font = FALSE, ...){
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
-    text = element_text(color = border_color_avatar, family = font_family),
+    text = element_text(color = avatar_theme_colors["border"], family = font_family),
     title = element_text(size=20),
-    panel.background = element_rect(fill = dark_color_avatar),
-    panel.border = element_rect(fill = NA, color = border_color_avatar,linewidth=1.2),
+    panel.background = element_rect(fill = avatar_theme_colors["dark"]),
+    panel.border = element_rect(fill = NA, color = avatar_theme_colors["border"],linewidth=1.2),
     axis.title = element_text(size=17),
-    axis.text = element_text(size=13,color = border_color_avatar),
-    axis.ticks = element_line(color = border_color_avatar,linewidth=1),
-    legend.background = element_rect(fill = dark_color_avatar, color = NA),
-    strip.background = element_rect(fill = point_color_avatar, colour = border_color_avatar),
-    strip.text = element_text(colour = border_color_avatar)
+    axis.text = element_text(size=13,color = avatar_theme_colors["border"]),
+    axis.ticks = element_line(color = avatar_theme_colors["border"],linewidth=1),
+    legend.background = element_rect(fill = avatar_theme_colors["dark"], color = NA),
+    strip.background = element_rect(fill = avatar_theme_colors["point"],
+                                    colour = avatar_theme_colors["border"]),
+    strip.text = element_text(colour = avatar_theme_colors["border"]),
+    ...
   )
 }
 
@@ -85,11 +97,11 @@ theme_avatar <- function(avatar_font = FALSE, ...){
 #'   scale_color_avatar()
 #'
 scale_fill_avatar <- function(...) {
-  ggplot2::scale_fill_gradient(low = medium_color_avatar, high = dark_color_avatar, ...)
+  ggplot2::scale_fill_gradient(low = avatar_theme_colors["medium"], high = avatar_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_avatar
 #' @export
 scale_color_avatar <- function(...) {
-  ggplot2::scale_color_gradient(low = medium_color_avatar, high = dark_color_avatar, ...)
+  ggplot2::scale_color_gradient(low = avatar_theme_colors["medium"], high = avatar_theme_colors["dark"], ...)
 }

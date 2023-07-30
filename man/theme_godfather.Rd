@@ -4,7 +4,7 @@
 \alias{theme_godfather}
 \title{Godfather Inspired Theme}
 \usage{
-theme_godfather(godfather_font = FALSE)
+theme_godfather(godfather_font = FALSE, ...)
 }
 \arguments{
 \item{godfather_font}{should \code{theme_godfather} use Google Font's Philosopher? Default is \code{FALSE}.}

@@ -4,7 +4,7 @@
 \alias{theme_starwars}
 \title{Star Wars Inspired Theme}
 \usage{
-theme_starwars(starwars_font = FALSE)
+theme_starwars(starwars_font = FALSE, ...)
 }
 \arguments{
 \item{starwars_font}{should \code{theme_starwars} use Google Font's IM Fell English? Default is \code{FALSE}.}

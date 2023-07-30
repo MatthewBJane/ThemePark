@@ -4,7 +4,7 @@
 \alias{theme_futurama}
 \title{Futurama Inspired Theme}
 \usage{
-theme_futurama(futurama_font = FALSE)
+theme_futurama(futurama_font = FALSE, ...)
 }
 \arguments{
 \item{futurama_font}{should \code{theme_futurama} use Google Font's Dongle? Default is \code{FALSE}.}

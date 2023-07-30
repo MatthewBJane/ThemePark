@@ -3,13 +3,25 @@
 ## 06/24/2023
 
 # COLOR: add, remove, or edit the colors to fit your scheme. Names should be
-text_color_barbie    <- '#a62675ff'
-panel_color_barbie   <- '#fdf6faff'
-border_color_barbie  <- '#d74ea2ff'
-lighter_color_barbie <- '#f5d1e6ff'
-light_color_barbie   <- '#eeb4d7ff'
-medium_color_barbie  <- '#d74ea2ff'
-dark_color_barbie    <- '#bf2986ff'
+
+#' Barbie Theme Color Palette
+#'
+#' @format character vector of hex code strings
+#' @export
+#'
+#' @examples
+#' barbie_theme_colors
+#'
+barbie_theme_colors <- c(
+  text    = '#a62675ff',
+  panel   = '#fdf6faff',
+  border  = '#d74ea2ff',
+  lighter = '#f5d1e6ff',
+  light   = '#eeb4d7ff',
+  medium  = '#d74ea2ff',
+  dark    = '#bf2986ff'
+)
+
 
 
 # THEME: rename function and theme() arguments according to your theme design, feel free to edit this how you would like
@@ -31,7 +43,7 @@ dark_color_barbie    <- '#bf2986ff'
 #'   labs(title = 'Barbie Scatter Plot') +
 #'   theme_barbie(barbie_font = TRUE)
 #'
-theme_barbie <- function(barbie_font = FALSE){
+theme_barbie <- function(barbie_font = FALSE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
   font_family = ifelse(barbie_font,"barbie","Arial") # use this line if you have a custom font
@@ -43,16 +55,17 @@ theme_barbie <- function(barbie_font = FALSE){
   ggplot2::theme(
         panel.grid.minor = element_blank(),
         panel.grid.major = element_blank(),
-        text = element_text(color = text_color_barbie, family = font_family),
+        text = element_text(color = barbie_theme_colors["text"], family = font_family),
         title = element_text(size=20),
-        panel.background = element_rect(fill = panel_color_barbie),
-        panel.border = element_rect(fill = NA, color = border_color_barbie,linewidth=1.2),
+        panel.background = element_rect(fill = barbie_theme_colors["panel"]),
+        panel.border = element_rect(fill = NA, color = barbie_theme_colors["border"],linewidth=1.2),
         axis.title = element_text(size=17),
-        axis.text = element_text(size=13,color = text_color_barbie),
-        axis.ticks = element_line(color = border_color_barbie,linewidth=1),
-        legend.background = element_rect(fill = panel_color_barbie, color = NA),
-        strip.background = element_rect(fill = lighter_color_barbie, colour = border_color_barbie),
-        strip.text = element_text(colour = text_color_barbie)
+        axis.text = element_text(size=13,color = barbie_theme_colors["text"]),
+        axis.ticks = element_line(color = barbie_theme_colors["border"],linewidth=1),
+        legend.background = element_rect(fill = barbie_theme_colors["panel"], color = NA),
+        strip.background = element_rect(fill = barbie_theme_colors["lighter"], colour = barbie_theme_colors["border"]),
+        strip.text = element_text(colour = barbie_theme_colors["text"]),
+        ...
        )
 }
 
@@ -87,6 +100,3 @@ scale_fill_barbie <- function(...) {
 scale_color_barbie <- function(...) {
   ggplot2::scale_color_gradient(low = '#eeb4d7ff', high = '#bf2986ff', ...)
 }
-
-
-

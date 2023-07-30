@@ -3,13 +3,32 @@
 ## 25/07/2023
 
 # COLOR: add, remove, or edit the colors to fit your scheme (hex code preferred, but you can use any type). Names should be
-text_color_zelda    <- '#1F4C73'
-panel_color_zelda   <- '#F2EED8'
-border_color_zelda  <- '#FBF6E2'
-lighter_color_zelda <- '#C4F9F3'
-light_color_zelda   <- '#65D6B8'
-medium_color_zelda  <- '#3C92A6'
-dark_color_zelda    <- '#1F4C73'
+#' Legend of Zelda Theme Color Palette
+#'
+#' @format character vector of hex code strings
+#' @export
+#'
+#' @examples
+#' zelda_theme_colors
+#'
+zelda_theme_colors <- c(
+  text    = '#1F4C73',
+  panel   = '#F2EED8',
+  border  = '#FBF6E2',
+  lighter = '#C4F9F3',
+  light   = '#65D6B8',
+  medium  = '#3C92A6',
+  dark    = '#1F4C73'
+)
+
+#' Legend of Zelda Color Palette
+#'
+#' @format character vector of hex code strings
+#' @export
+#'
+#' @examples
+#' zelda_palette
+#'
 zelda_palette <- c('#494b4b', '#0e5135','#0d9263','#4aba91','#d4ce46')
 
 
@@ -41,7 +60,7 @@ zelda_palette <- c('#494b4b', '#0e5135','#0d9263','#4aba91','#d4ce46')
 #'        fill="# Cylinders") +
 #'   theme_zelda(zelda_font = TRUE)
 #'
-theme_zelda <- function(zelda_font = FALSE){
+theme_zelda <- function(zelda_font = FALSE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
   font_family = ifelse(zelda_font,"zelda","Arial") # use this line if you have a custom font
@@ -53,16 +72,17 @@ theme_zelda <- function(zelda_font = FALSE){
   ggplot2::theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
-    text = element_text(color = text_color_zelda, family = font_family),
+    text = element_text(color = zelda_theme_colors["text"], family = font_family),
     title = element_text(size=20),
-    panel.background = element_rect(fill = panel_color_zelda),
-    panel.border = element_rect(fill = NA, color = border_color_zelda,linewidth=1.2),
+    panel.background = element_rect(fill = zelda_theme_colors["panel"]),
+    panel.border = element_rect(fill = NA, color = zelda_theme_colors["border"],linewidth=1.2),
     axis.title = element_text(size=17),
     axis.text = element_text(size=13),
-    axis.ticks = element_line(color = border_color_zelda,linewidth=1),
-    legend.background = element_rect(fill = panel_color_zelda, color = NA),
-    strip.background = element_rect(fill = lighter_color_zelda, colour = border_color_zelda),
-    strip.text = element_text(colour = text_color_zelda)
+    axis.ticks = element_line(color = zelda_theme_colors["border"],linewidth=1),
+    legend.background = element_rect(fill = zelda_theme_colors["panel"], color = NA),
+    strip.background = element_rect(fill = zelda_theme_colors["lighter"], colour = zelda_theme_colors["border"]),
+    strip.text = element_text(colour = zelda_theme_colors["text"]),
+    ...
   )
 }
 
@@ -90,11 +110,11 @@ theme_zelda <- function(zelda_font = FALSE){
 #'   theme_zelda(zelda_font = TRUE)
 #'
 scale_fill_zelda <- function(...) {
-  ggplot2::scale_fill_gradient(low = lighter_color_zelda, high = dark_color_zelda, ...)
+  ggplot2::scale_fill_gradient(low = zelda_theme_colors["lighter"], high = zelda_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_zelda
 #' @export
 scale_color_zelda <- function(...) {
-  ggplot2::scale_color_gradient(low = lighter_color_zelda, high = dark_color_zelda, ...)
+  ggplot2::scale_color_gradient(low = zelda_theme_colors["lighter"], high = zelda_theme_colors["dark"], ...)
 }

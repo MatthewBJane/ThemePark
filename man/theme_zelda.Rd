@@ -4,7 +4,7 @@
 \alias{theme_zelda}
 \title{Legend of Zelda Inspired Theme}
 \usage{
-theme_zelda(zelda_font = FALSE)
+theme_zelda(zelda_font = FALSE, ...)
 }
 \arguments{
 \item{zelda_font}{should \code{theme_zelda} use Google Font's IM Fell English? Default is \code{FALSE}.}

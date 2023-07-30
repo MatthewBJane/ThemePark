@@ -4,7 +4,7 @@
 \alias{theme_lordoftherings}
 \title{Lord of the Rings Inspired Theme}
 \usage{
-theme_lordoftherings(lordoftherings_font = FALSE)
+theme_lordoftherings(lordoftherings_font = FALSE, ...)
 }
 \arguments{
 \item{lordoftherings_font}{should \code{theme_lordoftherings} use Google Font's Lugrasimo? Default is \code{FALSE}.}

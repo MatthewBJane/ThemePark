@@ -4,7 +4,7 @@
 \alias{theme_oppenheimer}
 \title{Oppenheimer Inspired Theme}
 \usage{
-theme_oppenheimer(oppenheimer_font = FALSE)
+theme_oppenheimer(oppenheimer_font = FALSE, ...)
 }
 \arguments{
 \item{oppenheimer_font}{should \code{theme_oppenheimer} use Google Font's IM Fell English? Default is \code{FALSE}.}

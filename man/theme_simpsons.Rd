@@ -4,7 +4,7 @@
 \alias{theme_simpsons}
 \title{Simpsons Inspired Theme}
 \usage{
-theme_simpsons(simpsons_font = FALSE)
+theme_simpsons(simpsons_font = FALSE, ...)
 }
 \arguments{
 \item{simpsons_font}{should \code{theme_simpsons} use Google Font's IM Fell English? Default is \code{FALSE}.}
