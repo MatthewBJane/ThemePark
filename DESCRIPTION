@@ -1,0 +1,22 @@
+Package: ThemePark
+Title: Themes for 'ggplot2' from Popular Culture
+Version: 0.0.0.9000
+Authors@R: 
+    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Provides 'ggplot2' themes that mirror works from popular culture, such 
+    as Barbie, Star Wars, Game of Thrones, and others. The package currently holds 
+    14 themes and a number of corresponding discrete color scales, palettes, and 
+    fonts. Each theme (e.g., 'theme_barbie') generates a unique color scheme and 
+    font for a 'ggplot2' object that matches the color scheme and font found in 
+    the movie, TV show, or video game.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    ggplot2,
+    showtext,
+    sysfonts
+Suggests: 
+    scales
