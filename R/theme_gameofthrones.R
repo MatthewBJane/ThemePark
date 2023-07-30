@@ -12,6 +12,32 @@ light_color_gameofthrones   <- '#DFCB69'
 medium_color_gameofthrones  <- '#BD6D33'
 dark_color_gameofthrones <- '#8C4522'
 
+#' Game of Thrones Inspired Theme
+#'
+#' @param gameofthrones_font should `theme_gameofthrones` use Google Font's Cinzel? Default is `FALSE`.
+#' @param ... additional parameters to pass to `ggplot2::theme()`
+#'
+#' @return a `ggplot2` `theme` element
+#' @export
+#'
+#' @examples
+#' library(ggplot2)
+#'
+#' ggplot(data = data.frame(x = rnorm(50, 0, 1), y = rnorm(50,0,1)), aes(x = x, y = y)) +
+#'   geom_smooth(method = 'lm') +
+#'   geom_point() +
+#'   labs(title = 'Game of Thrones Scatter Plot') +
+#'   theme_gameofthrones(gameofthrones_font = TRUE)
+#'
+#' ggplot(mpg, aes(cty)) +
+#' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
+#'   labs(title="Density plot",
+#'        subtitle="City Mileage Grouped by Number of cylinders",
+#'        caption="Source: mpg",
+#'        x="City Mileage",
+#'        fill="# Cylinders") +
+#'   theme_gameofthrones(gameofthrones_font = TRUE)
+#'
 theme_gameofthrones <- function(gameofthrones_font = TRUE){
 
   # CUSTOM FONT: add a custom font from google fonts
@@ -39,5 +65,32 @@ theme_gameofthrones <- function(gameofthrones_font = TRUE){
 }
 
 # COLOR SCALES: Make pretty color scales
-scale_fill_gameofthrones <- ggplot2::scale_fill_gradient(low = lighter_color_gameofthrones, high = dark_color_gameofthrones)
-scale_color_gameofthrones <- ggplot2::scale_color_gradient(low = lighter_color_gameofthrones, high = dark_color_gameofthrones)
+#' Game of Thrones Inspired Color Scales
+#'
+#' @param ... Additional arguments to pass to `ggplot2::scale_[fill/color]_gradient()`
+#'
+#' @return a `ggplot` scale object
+#'
+#' @rdname scale_gameofthrones
+#' @export
+#'
+#' @examples
+#' library(ggplot2)
+#'
+#' ggplot(mpg) +
+#'   geom_point(aes(y = class, x = hwy, color = cyl)) +
+#'   labs(title="MPG by Vehicle Type",
+#'        caption="Source: mpg",
+#'        x = "City Mileage",
+#'        color ="# Cylinders") +
+#'   scale_color_gameofthrones()
+#'
+scale_fill_gameofthrones <- function(...) {
+  ggplot2::scale_fill_gradient(low = lighter_color_gameofthrones, high = dark_color_gameofthrones, ...)
+}
+
+#' @rdname scale_gameofthrones
+#' @export
+scale_color_gameofthrones <- function(...) {
+  ggplot2::scale_color_gradient(low = lighter_color_gameofthrones, high = dark_color_gameofthrones, ...)
+}
