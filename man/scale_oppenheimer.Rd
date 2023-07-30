@@ -35,7 +35,7 @@ ggplot(mpg) +
        color ="# Cylinders") +
   scale_color_oppenheimer_flame()
 
-  #' ggplot(mpg) +
+ggplot(mpg) +
   geom_point(aes(y = class, x = hwy, color = cyl)) +
   labs(title="MPG by Vehicle Type",
        caption="Source: mpg",
