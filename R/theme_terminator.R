@@ -15,6 +15,33 @@ dark_color_terminator      <- '#800808'
 
 
 # THEME: rename function and theme() arguments according to your theme design, feel free to edit this how you would like
+
+#' Terminator Inspired Theme
+#'
+#' @param terminator_font should `theme_terminator` use Google Font's IM Fell English? Default is `FALSE`.
+#' @param ... additional parameters to pass to `ggplot2::theme()`
+#'
+#' @return a `ggplot2` `theme` element
+#' @export
+#'
+#' @examples
+#' library(ggplot2)
+#'
+#' ggplot(data = data.frame(x = rnorm(50, 0, 1), y = rnorm(50,0,1)), aes(x = x, y = y)) +
+#'   geom_smooth(method = 'lm') +
+#'   geom_point(color = 'white') +
+#'   labs(title = 'Terminator Scatter Plot') +
+#'   theme_terminator(terminator_font = TRUE)
+#'
+#' ggplot(mpg, aes(cty)) +
+#' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
+#'   labs(title="Density plot",
+#'        subtitle="City Mileage Grouped by Number of cylinders",
+#'        caption="Source: mpg",
+#'        x="City Mileage",
+#'        fill="# Cylinders") +
+#'   theme_terminator(terminator_font = TRUE)
+#'
 theme_terminator <- function(terminator_font = FALSE){
 
   # CUSTOM FONT: add a custom font from google fonts
@@ -42,5 +69,34 @@ theme_terminator <- function(terminator_font = FALSE){
 }
 
 # COLOR SCALES: Make pretty color scales
-scale_fill_terminator <- ggplot2::scale_fill_gradient(low = lighter_color_terminator, high = dark_color_terminator)
-scale_color_terminator <- ggplot2::scale_color_gradient(low = lighter_color_terminator, high = dark_color_terminator)
+
+#' Terminator Inspired Color Scales
+#'
+#' @param ... Additional arguments to pass to `ggplot2::scale_[fill/color]_gradient()`
+#'
+#' @return a `ggplot` scale object
+#'
+#' @rdname scale_terminator
+#' @export
+#'
+#' @examples
+#' library(ggplot2)
+#'
+#' ggplot(mpg) +
+#'   geom_point(aes(y = class, x = hwy, color = cyl)) +
+#'   labs(title="MPG by Vehicle Type",
+#'        caption="Source: mpg",
+#'        x = "City Mileage",
+#'        color ="# Cylinders") +
+#'   scale_color_terminator() +
+#'   theme_terminator(terminator_font = TRUE)
+#'
+scale_fill_terminator <- function(...) {
+  ggplot2::scale_fill_gradient(low = lighter_color_terminator, high = dark_color_terminator, ...)
+}
+
+#' @rdname scale_terminator
+#' @export
+scale_color_terminator <- function(...) {
+  ggplot2::scale_color_gradient(low = lighter_color_terminator, high = dark_color_terminator, ...)
+}

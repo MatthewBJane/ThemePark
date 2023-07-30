@@ -13,6 +13,33 @@ dark_color_simpsons    <- '#1c2833ff'
 
 
 # THEME: rename function and theme() arguments according to your theme design, feel free to edit this how you would like
+
+#' Simpsons Inspired Theme
+#'
+#' @param simpsons_font should `theme_simpsons` use Google Font's IM Fell English? Default is `FALSE`.
+#' @param ... additional parameters to pass to `ggplot2::theme()`
+#'
+#' @return a `ggplot2` `theme` element
+#' @export
+#'
+#' @examples
+#' library(ggplot2)
+#'
+#' ggplot(data = data.frame(x = rnorm(50, 0, 1), y = rnorm(50,0,1)), aes(x = x, y = y)) +
+#'   geom_smooth(method = 'lm') +
+#'   geom_point() +
+#'   labs(title = 'Simpsons Scatter Plot') +
+#'   theme_simpsons(simpsons_font = TRUE)
+#'
+#' ggplot(mpg, aes(cty)) +
+#' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
+#'   labs(title="Density plot",
+#'        subtitle="City Mileage Grouped by Number of cylinders",
+#'        caption="Source: mpg",
+#'        x="City Mileage",
+#'        fill="# Cylinders") +
+#'   theme_simpsons(simpsons_font = TRUE)
+#'
 theme_simpsons <- function(simpsons_font = FALSE){
 
   # CUSTOM FONT: add a custom font from google fonts
@@ -39,5 +66,34 @@ theme_simpsons <- function(simpsons_font = FALSE){
 }
 
 # COLOR SCALES: Make pretty color scales
-scale_fill_simpsons <- ggplot2::scale_fill_gradient(low = '#eeb4d7ff', high = '#bf2986ff')
-scale_color_simpsons <- ggplot2::scale_color_gradient(low = '#eeb4d7ff', high = '#bf2986ff')
+
+# CTK: these are identical to barbie's
+# #' Simpsons Inspired Color Scales
+# #'
+# #' @param ... Additional arguments to pass to `ggplot2::scale_[fill/color]_gradient()`
+# #'
+# #' @return a `ggplot` scale object
+# #'
+# #' @rdname scale_simpsons
+# #' @export
+# #'
+# #' @examples
+# #' library(ggplot2)
+# #'
+# #' ggplot(mpg) +
+# #'   geom_point(aes(y = class, x = hwy, color = cyl)) +
+# #'   labs(title="MPG by Vehicle Type",
+# #'        caption="Source: mpg",
+# #'        x = "City Mileage",
+# #'        color ="# Cylinders") +
+# #'   scale_color_simpsons()
+# #'
+# scale_fill_simpsons <- function(...) {
+#   ggplot2::scale_fill_gradient(low = '#eeb4d7ff', high = '#bf2986ff', ...)
+# }
+#
+# #' @rdname scale_simpsons
+# #' @export
+# scale_color_simpsons <- function(...) {
+#   ggplot2::scale_color_gradient(low = '#eeb4d7ff', high = '#bf2986ff', ...)
+# }

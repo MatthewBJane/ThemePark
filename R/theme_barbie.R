@@ -13,6 +13,24 @@ dark_color_barbie    <- '#bf2986ff'
 
 
 # THEME: rename function and theme() arguments according to your theme design, feel free to edit this how you would like
+
+#' Barbie Inspired Theme
+#'
+#' @param barbie_font should `theme_barbie` use Google Font's Sansita Swashed? Default is `FALSE`.
+#' @param ... additional parameters to pass to `ggplot2::theme()`
+#'
+#' @return a `ggplot2` `theme` element
+#' @export
+#'
+#' @examples
+#' library(ggplot2)
+#'
+#' ggplot(data = data.frame(x = rnorm(50, 0, 1), y = rnorm(50,0,1)), aes(x = x, y = y)) +
+#'   geom_smooth(method = 'lm') +
+#'   geom_point() +
+#'   labs(title = 'Barbie Scatter Plot') +
+#'   theme_barbie(barbie_font = TRUE)
+#'
 theme_barbie <- function(barbie_font = FALSE){
 
   # CUSTOM FONT: add a custom font from google fonts
@@ -39,8 +57,36 @@ theme_barbie <- function(barbie_font = FALSE){
 }
 
 # COLOR SCALES: Make pretty color scales
-scale_fill_barbie <- ggplot2::scale_fill_gradient(low = '#eeb4d7ff', high = '#bf2986ff')
-scale_color_barbie <- ggplot2::scale_color_gradient(low = '#eeb4d7ff', high = '#bf2986ff')
+
+#' Barbie Inspired Color Scales
+#'
+#' @param ... Additional arguments to pass to `ggplot2::scale_[fill/color]_gradient()`
+#'
+#' @return a `ggplot` scale object
+#'
+#' @rdname scale_barbie
+#' @export
+#'
+#' @examples
+#' library(ggplot2)
+#'
+#' ggplot(mpg) +
+#'   geom_point(aes(y = class, x = hwy, color = cyl)) +
+#'   labs(title="MPG by Vehicle Type",
+#'        caption="Source: mpg",
+#'        x = "City Mileage",
+#'        color ="# Cylinders") +
+#'   scale_color_barbie()
+#'
+scale_fill_barbie <- function(...) {
+  ggplot2::scale_fill_gradient(low = '#eeb4d7ff', high = '#bf2986ff', ...)
+}
+
+#' @rdname scale_barbie
+#' @export
+scale_color_barbie <- function(...) {
+  ggplot2::scale_color_gradient(low = '#eeb4d7ff', high = '#bf2986ff', ...)
+}
 
 
 

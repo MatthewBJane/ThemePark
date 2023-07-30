@@ -13,6 +13,32 @@ dark_color_futurama    <- '#e74c3cff'
 
 
 # THEME: rename function and theme() arguments according to your theme design, feel free to edit this how you would like
+#' Futurama Inspired Theme
+#'
+#' @param futurama_font should `theme_futurama` use Google Font's Dongle? Default is `FALSE`.
+#' @param ... additional parameters to pass to `ggplot2::theme()`
+#'
+#' @return a `ggplot2` `theme` element
+#' @export
+#'
+#' @examples
+#' library(ggplot2)
+#'
+#' ggplot(data = data.frame(x = rnorm(50, 0, 1), y = rnorm(50,0,1)), aes(x = x, y = y)) +
+#'   geom_smooth(method = 'lm') +
+#'   geom_point() +
+#'   labs(title = 'Futurama Scatter Plot') +
+#'   theme_futurama(futurama_font = TRUE)
+#'
+#' ggplot(mpg, aes(cty)) +
+#' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
+#'   labs(title="Density plot",
+#'        subtitle="City Mileage Grouped by Number of cylinders",
+#'        caption="Source: mpg",
+#'        x="City Mileage",
+#'        fill="# Cylinders") +
+#'   theme_futurama(futurama_font = TRUE)
+#'
 theme_futurama <- function(futurama_font = FALSE){
 
   # CUSTOM FONT: add a custom font from google fonts
@@ -40,5 +66,6 @@ theme_futurama <- function(futurama_font = FALSE){
 }
 
 # COLOR SCALES: Make pretty color scales
-scale_fill_futurama <- ggplot2::scale_fill_gradient(low = '#eeb4d7ff', high = '#bf2986ff')
-scale_color_futurama <- ggplot2::scale_color_gradient(low = '#eeb4d7ff', high = '#bf2986ff')
+# CTK: these are identical to barbie's
+#scale_fill_futurama <- ggplot2::scale_fill_gradient(low = '#eeb4d7ff', high = '#bf2986ff')
+#scale_color_futurama <- ggplot2::scale_color_gradient(low = '#eeb4d7ff', high = '#bf2986ff')
