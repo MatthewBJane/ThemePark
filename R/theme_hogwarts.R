@@ -24,6 +24,9 @@ gryffindor_theme_colors <- c(
 #' Harry Potter Inspired Themes
 #'
 #' @param gryffindor_font should `theme_gryffindor` use Google Font's Henny Penny? Default is `FALSE`.
+#' @param ravenclaw_font should `theme_gryffindor` use Google Font's Henny Penny? Default is `FALSE`.
+#' @param hufflepuff_font should `theme_gryffindor` use Google Font's Henny Penny? Default is `FALSE`.
+#' @param slytherin_font should `theme_gryffindor` use Google Font's Henny Penny? Default is `FALSE`.
 #' @param ... additional parameters to pass to `ggplot2::theme()`
 #'
 #' @return a `ggplot2` `theme` element
