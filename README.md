@@ -15,9 +15,9 @@ alt="theme_park_banner" />
 
 # Welcome to the Theme Park
 
-Theme Park is a package for fun ggplot themes related to
-popular culture (movies, TV shows, video-games, etc.). I don't have much
-time to expand this further so please consider submitting a theme!
+Theme Park is a package for fun ggplot themes related to popular culture
+(movies, TV shows, video-games, etc.). I don’t have much time to expand
+this further so please consider submitting a theme!
 
 ## Submit a Theme
 
@@ -49,6 +49,7 @@ it!
 | **Game of Thrones**   | `theme_gameofthrones`  | Brennan Antone              |
 | **Godfather**         | `theme_godfather`      | Francisco Garre-Frutos      |
 | **Finding Nemo**      | `theme_nemo`           | Christopher T. Kenny        |
+| **Friends**           | `theme_friends`        | Alexis van STRAATEN         |
 
 ## Installation
 
@@ -106,7 +107,7 @@ ggplot(data = NULL, aes(x = `X variable`, y = `Y variable`)) +
   theme_avatar(avatar_font = TRUE) +
   geom_smooth(method = "lm", color = "#1C3F6E", fill = "#5AACCF") +
   geom_point(color = "#2E67A0") +
-  ggtitle("Game of Thrones Scatter Plot")
+  ggtitle("Avatar Scatter Plot")
 #> `geom_smooth()` using formula = 'y ~ x'
 ```
 
