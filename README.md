@@ -74,10 +74,17 @@ library(ggplot2)
 `X variable` <- rnorm(50, 0, 1)
 `Y variable` <- rnorm(50, 0, 1)
 
+# see suggested colours in the palette
+gameofthrones_theme_colors
+#> background       text      panel     border    lighter      light     medium       dark 
+#>  "#1f0700"  "#D7B257"  "#F2F3B8"  "#BD6D33"  "#F2F3B8"  "#DFCB69"  "#BD6D33"  "#8C4522"
+
 ggplot(data = NULL, aes(x = `X variable`, y = `Y variable`)) +
   theme_gameofthrones() +
-  geom_smooth(method = "lm", color = "#8C4522", fill = "#DFCB69") +
-  geom_point(color = "#BD6D33") +
+  geom_smooth(method = "lm",
+              color = gameofthrones_theme_colors["dark"],
+              fill = gameofthrones_theme_colors["light"]) +
+  geom_point(color = gameofthrones_theme_colors["medium"]) +
   ggtitle("Game of Thrones Scatter Plot")
 #> `geom_smooth()` using formula = 'y ~ x'
 ```
@@ -105,8 +112,8 @@ g + geom_density(aes(fill = factor(cyl)), alpha = 0.8) +
 ``` r
 ggplot(data = NULL, aes(x = `X variable`, y = `Y variable`)) +
   theme_avatar() +
-  geom_smooth(method = "lm", color = "#1C3F6E", fill = "#5AACCF") +
-  geom_point(color = "#2E67A0") +
+  geom_smooth(method = "lm", color = avatar_theme_colors["dark"], fill = avatar_theme_colors["light"]) +
+  geom_point(color = avatar_theme_colors["medium"]) +
   ggtitle("Avatar Scatter Plot")
 #> `geom_smooth()` using formula = 'y ~ x'
 ```
@@ -115,8 +122,8 @@ ggplot(data = NULL, aes(x = `X variable`, y = `Y variable`)) +
 
 ``` r
 ggplot(data.frame(x = rnorm(100), y = rnorm(100)), aes(x, y)) +
-  geom_smooth(method = "lm", color = "#912411", fill = "#912411") +
-  geom_point(color = "#d3cfc3") +
+  geom_smooth(method = "lm", color = godfather_theme_colors["dark"], fill = godfather_theme_colors["light"]) +
+  geom_point(color = godfather_theme_colors["medium"]) +
   labs(title = "The Godfather theme", x = "Variable x", y = "Variable y") +
   theme_godfather()
 #> `geom_smooth()` using formula = 'y ~ x'
