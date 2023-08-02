@@ -22,7 +22,7 @@ godfather_theme_colors <- c(
 
 #' Godfather Inspired Theme
 #'
-#' @param godfather_font should `theme_godfather` use Google Font's Philosopher? Default is `FALSE`.
+#' @param godfather_font should `theme_godfather` use Google Font's Philosopher? Default is `TRUE`.
 #' @param ... additional parameters to pass to `ggplot2::theme()`
 #'
 #' @return a `ggplot2` `theme` element
@@ -35,7 +35,7 @@ godfather_theme_colors <- c(
 #'   geom_smooth(method = 'lm') +
 #'   geom_point(color = 'white') +
 #'   labs(title = 'Godfather Scatter Plot') +
-#'   theme_godfather(godfather_font = TRUE)
+#'   theme_godfather()
 #'
 #' ggplot(mpg, aes(cty)) +
 #' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
@@ -44,9 +44,9 @@ godfather_theme_colors <- c(
 #'        caption="Source: mpg",
 #'        x="City Mileage",
 #'        fill="# Cylinders") +
-#'   theme_godfather(godfather_font = TRUE)
+#'   theme_godfather()
 #'
-theme_godfather <- function(godfather_font = FALSE, ...){
+theme_godfather <- function(godfather_font = TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
   font_family = ifelse(godfather_font,"godfather","Arial") # use this line if you have a custom font

@@ -24,7 +24,7 @@ avatar_theme_colors <- c(
 
 #' Avatar Inspired Theme
 #'
-#' @param avatar_font should `theme_avatar` use Google Font's IM Fell English? Default is `FALSE`.
+#' @param avatar_font should `theme_avatar` use Google Font's IM Fell English? Default is `TRUE`.
 #' @param ... additional parameters to pass to `ggplot2::theme()`
 #'
 #' @return a `ggplot2` `theme` element
@@ -37,7 +37,7 @@ avatar_theme_colors <- c(
 #'   geom_smooth(method = 'lm') +
 #'   geom_point() +
 #'   labs(title = 'Avatar Scatter Plot') +
-#'   theme_avatar(avatar_font = TRUE)
+#'   theme_avatar()
 #'
 #' ggplot(mpg, aes(cty)) +
 #' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
@@ -46,9 +46,9 @@ avatar_theme_colors <- c(
 #'        caption="Source: mpg",
 #'        x="City Mileage",
 #'        fill="# Cylinders") +
-#'   theme_avatar(avatar_font = TRUE)
+#'   theme_avatar()
 #'
-theme_avatar <- function(avatar_font = FALSE, ...){
+theme_avatar <- function(avatar_font = TRUE, ...){
   # CUSTOM FONT: add a custom font from google fonts
   font_family = ifelse(avatar_font,"avatar","Arial") # use this line if you have a custom font
   if (avatar_font) {

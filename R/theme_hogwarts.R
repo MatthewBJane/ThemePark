@@ -23,10 +23,10 @@ gryffindor_theme_colors <- c(
 
 #' Harry Potter Inspired Themes
 #'
-#' @param gryffindor_font should `theme_gryffindor` use Google Font's Henny Penny? Default is `FALSE`.
-#' @param ravenclaw_font should `theme_gryffindor` use Google Font's Henny Penny? Default is `FALSE`.
-#' @param hufflepuff_font should `theme_gryffindor` use Google Font's Henny Penny? Default is `FALSE`.
-#' @param slytherin_font should `theme_gryffindor` use Google Font's Henny Penny? Default is `FALSE`.
+#' @param gryffindor_font should `theme_gryffindor` use Google Font's Henny Penny? Default is `TRUE`.
+#' @param ravenclaw_font should `theme_gryffindor` use Google Font's Henny Penny? Default is `TRUE`.
+#' @param hufflepuff_font should `theme_gryffindor` use Google Font's Henny Penny? Default is `TRUE`.
+#' @param slytherin_font should `theme_gryffindor` use Google Font's Henny Penny? Default is `TRUE`.
 #' @param ... additional parameters to pass to `ggplot2::theme()`
 #'
 #' @return a `ggplot2` `theme` element
@@ -41,7 +41,7 @@ gryffindor_theme_colors <- c(
 #'   geom_smooth(method = 'lm', color = '#890000') +
 #'   geom_point() +
 #'   labs(title = 'Gryffindor Scatter Plot') +
-#'   theme_gryffindor(gryffindor_font = TRUE)
+#'   theme_gryffindor()
 #'
 #' ggplot(mpg, aes(cty)) +
 #' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
@@ -50,7 +50,7 @@ gryffindor_theme_colors <- c(
 #'        caption="Source: mpg",
 #'        x="City Mileage",
 #'        fill="# Cylinders") +
-#'   theme_ravenclaw(ravenclaw_font = TRUE)
+#'   theme_ravenclaw()
 #'
 theme_gryffindor <- function(gryffindor_font = TRUE, ...){
   # CUSTOM FONT: add a custom font from google fonts

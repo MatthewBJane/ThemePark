@@ -7,7 +7,7 @@
 theme_gameofthrones(gameofthrones_font = TRUE, ...)
 }
 \arguments{
-\item{gameofthrones_font}{should \code{theme_gameofthrones} use Google Font's Cinzel? Default is \code{FALSE}.}
+\item{gameofthrones_font}{should \code{theme_gameofthrones} use Google Font's Cinzel? Default is \code{TRUE}.}
 
 \item{...}{additional parameters to pass to \code{ggplot2::theme()}}
 }
@@ -24,7 +24,7 @@ ggplot(data = data.frame(x = rnorm(50, 0, 1), y = rnorm(50,0,1)), aes(x = x, y =
   geom_smooth(method = 'lm') +
   geom_point() +
   labs(title = 'Game of Thrones Scatter Plot') +
-  theme_gameofthrones(gameofthrones_font = TRUE)
+  theme_gameofthrones()
 
 ggplot(mpg, aes(cty)) +
 geom_density(aes(fill=factor(cyl)), alpha=0.8) +
@@ -33,6 +33,6 @@ geom_density(aes(fill=factor(cyl)), alpha=0.8) +
        caption="Source: mpg",
        x="City Mileage",
        fill="# Cylinders") +
-  theme_gameofthrones(gameofthrones_font = TRUE)
+  theme_gameofthrones()
 
 }

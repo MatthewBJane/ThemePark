@@ -28,7 +28,7 @@ barbie_theme_colors <- c(
 
 #' Barbie Inspired Theme
 #'
-#' @param barbie_font should `theme_barbie` use Google Font's Sansita Swashed? Default is `FALSE`.
+#' @param barbie_font should `theme_barbie` use Google Font's Sansita Swashed? Default is `TRUE`.
 #' @param ... additional parameters to pass to `ggplot2::theme()`
 #'
 #' @return a `ggplot2` `theme` element
@@ -41,9 +41,9 @@ barbie_theme_colors <- c(
 #'   geom_smooth(method = 'lm') +
 #'   geom_point() +
 #'   labs(title = 'Barbie Scatter Plot') +
-#'   theme_barbie(barbie_font = TRUE)
+#'   theme_barbie()
 #'
-theme_barbie <- function(barbie_font = FALSE, ...){
+theme_barbie <- function(barbie_font = TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
   font_family = ifelse(barbie_font,"barbie","Arial") # use this line if you have a custom font

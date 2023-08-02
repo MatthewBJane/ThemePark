@@ -23,7 +23,7 @@ gameofthrones_theme_colors <- c(
 )
 #' Game of Thrones Inspired Theme
 #'
-#' @param gameofthrones_font should `theme_gameofthrones` use Google Font's Cinzel? Default is `FALSE`.
+#' @param gameofthrones_font should `theme_gameofthrones` use Google Font's Cinzel? Default is `TRUE`.
 #' @param ... additional parameters to pass to `ggplot2::theme()`
 #'
 #' @return a `ggplot2` `theme` element
@@ -36,7 +36,7 @@ gameofthrones_theme_colors <- c(
 #'   geom_smooth(method = 'lm') +
 #'   geom_point() +
 #'   labs(title = 'Game of Thrones Scatter Plot') +
-#'   theme_gameofthrones(gameofthrones_font = TRUE)
+#'   theme_gameofthrones()
 #'
 #' ggplot(mpg, aes(cty)) +
 #' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
@@ -45,7 +45,7 @@ gameofthrones_theme_colors <- c(
 #'        caption="Source: mpg",
 #'        x="City Mileage",
 #'        fill="# Cylinders") +
-#'   theme_gameofthrones(gameofthrones_font = TRUE)
+#'   theme_gameofthrones()
 #'
 theme_gameofthrones <- function(gameofthrones_font = TRUE, ...){
 
