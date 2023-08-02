@@ -4,10 +4,10 @@
 \alias{theme_barbie}
 \title{Barbie Inspired Theme}
 \usage{
-theme_barbie(barbie_font = FALSE, ...)
+theme_barbie(barbie_font = TRUE, ...)
 }
 \arguments{
-\item{barbie_font}{should \code{theme_barbie} use Google Font's Sansita Swashed? Default is \code{FALSE}.}
+\item{barbie_font}{should \code{theme_barbie} use Google Font's Sansita Swashed? Default is \code{TRUE}.}
 
 \item{...}{additional parameters to pass to \code{ggplot2::theme()}}
 }
@@ -24,6 +24,6 @@ ggplot(data = data.frame(x = rnorm(50, 0, 1), y = rnorm(50,0,1)), aes(x = x, y =
   geom_smooth(method = 'lm') +
   geom_point() +
   labs(title = 'Barbie Scatter Plot') +
-  theme_barbie(barbie_font = TRUE)
+  theme_barbie()
 
 }

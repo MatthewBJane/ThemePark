@@ -28,7 +28,7 @@ terminator_theme_colors <- c(
 
 #' Terminator Inspired Theme
 #'
-#' @param terminator_font should `theme_terminator` use Google Font's IM Fell English? Default is `FALSE`.
+#' @param terminator_font should `theme_terminator` use Google Font's IM Fell English? Default is `TRUE`.
 #' @param ... additional parameters to pass to `ggplot2::theme()`
 #'
 #' @return a `ggplot2` `theme` element
@@ -41,7 +41,7 @@ terminator_theme_colors <- c(
 #'   geom_smooth(method = 'lm') +
 #'   geom_point(color = 'white') +
 #'   labs(title = 'Terminator Scatter Plot') +
-#'   theme_terminator(terminator_font = TRUE)
+#'   theme_terminator()
 #'
 #' ggplot(mpg, aes(cty)) +
 #' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
@@ -50,9 +50,9 @@ terminator_theme_colors <- c(
 #'        caption="Source: mpg",
 #'        x="City Mileage",
 #'        fill="# Cylinders") +
-#'   theme_terminator(terminator_font = TRUE)
+#'   theme_terminator()
 #'
-theme_terminator <- function(terminator_font = FALSE, ...){
+theme_terminator <- function(terminator_font = TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
   font_family = ifelse(terminator_font,"terminator","Arial") # use this line if you have a custom font

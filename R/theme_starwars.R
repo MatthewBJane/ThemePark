@@ -25,7 +25,7 @@ starwars_theme_colors <- c(
 
 #' Star Wars Inspired Theme
 #'
-#' @param starwars_font should `theme_starwars` use Google Font's IM Fell English? Default is `FALSE`.
+#' @param starwars_font should `theme_starwars` use Google Font's IM Fell English? Default is `TRUE`.
 #' @param ... additional parameters to pass to `ggplot2::theme()`
 #'
 #' @return a `ggplot2` `theme` element
@@ -38,7 +38,7 @@ starwars_theme_colors <- c(
 #'   geom_smooth(method = 'lm') +
 #'   geom_point(color = 'white') +
 #'   labs(title = 'Star Wars Scatter Plot') +
-#'   theme_starwars(starwars_font = TRUE)
+#'   theme_starwars()
 #'
 #' ggplot(mpg, aes(cty)) +
 #' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
@@ -47,9 +47,9 @@ starwars_theme_colors <- c(
 #'        caption="Source: mpg",
 #'        x="City Mileage",
 #'        fill="# Cylinders") +
-#'   theme_starwars(starwars_font = TRUE)
+#'   theme_starwars()
 #'
-theme_starwars <- function(starwars_font=FALSE, ...){
+theme_starwars <- function(starwars_font=TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
   font_family <- ifelse(starwars_font,"starwars", "sans") # use this line if you have a custom font

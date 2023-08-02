@@ -4,10 +4,10 @@
 \alias{theme_futurama}
 \title{Futurama Inspired Theme}
 \usage{
-theme_futurama(futurama_font = FALSE, ...)
+theme_futurama(futurama_font = TRUE, ...)
 }
 \arguments{
-\item{futurama_font}{should \code{theme_futurama} use Google Font's Dongle? Default is \code{FALSE}.}
+\item{futurama_font}{should \code{theme_futurama} use Google Font's Dongle? Default is \code{TRUE}.}
 
 \item{...}{additional parameters to pass to \code{ggplot2::theme()}}
 }
@@ -24,7 +24,7 @@ ggplot(data = data.frame(x = rnorm(50, 0, 1), y = rnorm(50,0,1)), aes(x = x, y =
   geom_smooth(method = 'lm') +
   geom_point() +
   labs(title = 'Futurama Scatter Plot') +
-  theme_futurama(futurama_font = TRUE)
+  theme_futurama()
 
 ggplot(mpg, aes(cty)) +
 geom_density(aes(fill=factor(cyl)), alpha=0.8) +
@@ -33,6 +33,6 @@ geom_density(aes(fill=factor(cyl)), alpha=0.8) +
        caption="Source: mpg",
        x="City Mileage",
        fill="# Cylinders") +
-  theme_futurama(futurama_font = TRUE)
+  theme_futurama()
 
 }

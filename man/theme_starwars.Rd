@@ -4,10 +4,10 @@
 \alias{theme_starwars}
 \title{Star Wars Inspired Theme}
 \usage{
-theme_starwars(starwars_font = FALSE, ...)
+theme_starwars(starwars_font = TRUE, ...)
 }
 \arguments{
-\item{starwars_font}{should \code{theme_starwars} use Google Font's IM Fell English? Default is \code{FALSE}.}
+\item{starwars_font}{should \code{theme_starwars} use Google Font's IM Fell English? Default is \code{TRUE}.}
 
 \item{...}{additional parameters to pass to \code{ggplot2::theme()}}
 }
@@ -24,7 +24,7 @@ ggplot(data = data.frame(x = rnorm(50, 0, 1), y = rnorm(50,0,1)), aes(x = x, y =
   geom_smooth(method = 'lm') +
   geom_point(color = 'white') +
   labs(title = 'Star Wars Scatter Plot') +
-  theme_starwars(starwars_font = TRUE)
+  theme_starwars()
 
 ggplot(mpg, aes(cty)) +
 geom_density(aes(fill=factor(cyl)), alpha=0.8) +
@@ -33,6 +33,6 @@ geom_density(aes(fill=factor(cyl)), alpha=0.8) +
        caption="Source: mpg",
        x="City Mileage",
        fill="# Cylinders") +
-  theme_starwars(starwars_font = TRUE)
+  theme_starwars()
 
 }

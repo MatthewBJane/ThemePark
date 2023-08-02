@@ -16,15 +16,15 @@ theme_hufflepuff(hufflepuff_font = TRUE, ...)
 theme_slytherin(slytherin_font = TRUE, ...)
 }
 \arguments{
-\item{gryffindor_font}{should \code{theme_gryffindor} use Google Font's Henny Penny? Default is \code{FALSE}.}
+\item{gryffindor_font}{should \code{theme_gryffindor} use Google Font's Henny Penny? Default is \code{TRUE}.}
 
 \item{...}{additional parameters to pass to \code{ggplot2::theme()}}
 
-\item{ravenclaw_font}{should \code{theme_gryffindor} use Google Font's Henny Penny? Default is \code{FALSE}.}
+\item{ravenclaw_font}{should \code{theme_gryffindor} use Google Font's Henny Penny? Default is \code{TRUE}.}
 
-\item{hufflepuff_font}{should \code{theme_gryffindor} use Google Font's Henny Penny? Default is \code{FALSE}.}
+\item{hufflepuff_font}{should \code{theme_gryffindor} use Google Font's Henny Penny? Default is \code{TRUE}.}
 
-\item{slytherin_font}{should \code{theme_gryffindor} use Google Font's Henny Penny? Default is \code{FALSE}.}
+\item{slytherin_font}{should \code{theme_gryffindor} use Google Font's Henny Penny? Default is \code{TRUE}.}
 }
 \value{
 a \code{ggplot2} \code{theme} element
@@ -39,7 +39,7 @@ ggplot(data = data.frame(x = rnorm(50, 0, 1), y = rnorm(50,0,1)), aes(x = x, y =
   geom_smooth(method = 'lm', color = '#890000') +
   geom_point() +
   labs(title = 'Gryffindor Scatter Plot') +
-  theme_gryffindor(gryffindor_font = TRUE)
+  theme_gryffindor()
 
 ggplot(mpg, aes(cty)) +
 geom_density(aes(fill=factor(cyl)), alpha=0.8) +
@@ -48,6 +48,6 @@ geom_density(aes(fill=factor(cyl)), alpha=0.8) +
        caption="Source: mpg",
        x="City Mileage",
        fill="# Cylinders") +
-  theme_ravenclaw(ravenclaw_font = TRUE)
+  theme_ravenclaw()
 
 }
