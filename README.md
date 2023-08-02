@@ -75,7 +75,7 @@ library(ggplot2)
 `Y variable` <- rnorm(50, 0, 1)
 
 ggplot(data = NULL, aes(x = `X variable`, y = `Y variable`)) +
-  theme_gameofthrones(gameofthrones_font = TRUE) +
+  theme_gameofthrones() +
   geom_smooth(method = "lm", color = "#8C4522", fill = "#DFCB69") +
   geom_point(color = "#BD6D33") +
   ggtitle("Game of Thrones Scatter Plot")
@@ -104,7 +104,7 @@ g + geom_density(aes(fill = factor(cyl)), alpha = 0.8) +
 
 ``` r
 ggplot(data = NULL, aes(x = `X variable`, y = `Y variable`)) +
-  theme_avatar(avatar_font = TRUE) +
+  theme_avatar() +
   geom_smooth(method = "lm", color = "#1C3F6E", fill = "#5AACCF") +
   geom_point(color = "#2E67A0") +
   ggtitle("Avatar Scatter Plot")
@@ -118,7 +118,7 @@ ggplot(data.frame(x = rnorm(100), y = rnorm(100)), aes(x, y)) +
   geom_smooth(method = "lm", color = "#912411", fill = "#912411") +
   geom_point(color = "#d3cfc3") +
   labs(title = "The Godfather theme", x = "Variable x", y = "Variable y") +
-  theme_godfather(godfather_font = T)
+  theme_godfather()
 #> `geom_smooth()` using formula = 'y ~ x'
 ```
 
