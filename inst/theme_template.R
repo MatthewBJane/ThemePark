@@ -1,22 +1,43 @@
-
-## Template v2.1 for themes in `theme_park` https://github.com/MatthewBJane/theme_park   <<<  Remove this line
+## Template v2.2 for themes in `theme_park` https://github.com/MatthewBJane/theme_park   <<<  Remove this line
 
 ## YOUR NAME
 ## theme_XXXX
 ## Date Created
 
-# COLOR: add, remove, or edit the colors to fit your scheme. Names should be
-background_color_XXXX <- '#0739B9'
-text_color_XXXX       <- '#FEFFFE'
-panel_fill_XXXX       <- '#00B4EF'
-panel_color_XXXX      <- '#FDF122'
-strip_text_XXXX       <- '#010203'
-border_color_XXXX     <- '#000000'
-lighter_color_XXXX    <- '#FDF122' #'#E2F2FD'
-light_color_XXXX      <- 'white' #'#F6F1F2'
-medium_color_XXXX     <- '#FE691D'
-dark_color_XXXX       <- '#FA3C2E'
 
+# COLOR: add, remove, or edit the colors to fit your scheme (hex code preferred, but you can use any type). Names should be
+#' XXXX Inspired Theme Color Palette
+#'
+#' @format character vector of hex code strings
+#' @export
+#'
+#' @examples
+#' XXXX_theme_colors
+#'
+XXXX_theme_colors <- c(
+  background = '#000000',
+  text       = '#F0F0F0',
+  panel      = '#0B0C07',
+  border     = '#81CF47',
+  lighter    = '#CAF6A7',
+  light      = '#ACF570',
+  medium     = '#76D52F',
+  dark       = '#1D6001'
+)
+
+# DISCRETE PALETTE COLORS: Please update to some colors that work with your theme
+#' XXXX Inspired Color Palette
+#'
+#' @format character vector of hex code strings
+#' @export
+#'
+#' @examples
+#' XXXX_palette
+#'
+XXXX_palette <- c(
+  '#E9F4FB', '#FE691D', '#015DC2', '#FCDD2E', '#7867A0',
+  '#BE1D57', '#798A5A', '#005478','#1B1A3D'
+)
 
 #' XXXX Inspired Theme
 #'

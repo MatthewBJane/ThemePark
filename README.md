@@ -23,10 +23,10 @@ this further so please consider submitting a theme!
 
 Please help grow this package by submitting your own custom ggplot theme
 for a movie, show, or videogame. To submit, edit the
-[`R/theme_template.R`](R/theme_template.R) script file and send the
-edited script to <matthew.jane@uconn.edu> or submit a pull request. I
-will review it and add it or respond with suggested edits. Have fun with
-it!
+[`theme_template.R`](inst/theme_template.R) script file or run
+`ThemePark:::new_theme_park_theme()` and send the edited script to
+<matthew.jane@uconn.edu> or submit a pull request. I will review it and
+add it or respond with suggested edits. Have fun with it!
 
 ## Themes contributed
 
