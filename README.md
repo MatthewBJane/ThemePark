@@ -50,6 +50,7 @@ it!
 | **Godfather**         | `theme_godfather`      | Francisco Garre-Frutos      |
 | **Finding Nemo**      | `theme_nemo`           | Christopher T. Kenny        |
 | **Friends**           | `theme_friends`        | Alexis van STRAATEN         |
+| **Alien**             | `theme_alien`          | Luke Pilling                |
 
 ## Installation
 
