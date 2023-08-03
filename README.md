@@ -30,27 +30,26 @@ it!
 
 ## Themes contributed
 
-| Name                  | Theme                  | Creator(s)                  |
-|-----------------------|------------------------|-----------------------------|
-| **Barbie**            | `theme_barbie`         | Matthew B. Jané             |
-| **Oppenheimer**       | `theme_oppenheimer`    | Matthew B. Jané & Toki Liam |
-| **Star Wars**         | `theme_starwars`       | Matthew B. Jané             |
-| **Zelda**             | `theme_zelda`          | Alex Slavenko               |
-| **Terminator**        | `theme_terminator`     | Alex Slavenko               |
-| **Spiderman**         | `theme_spiderman`      | Velu P.K. Immonen           |
-| **Avatar**            | `theme_avatar`         | Velu P.K. Immonen           |
-| **Gryffindor**        | `theme_gryffindor`     | Begum Ozemek                |
-| **Hufflepuff**        | `theme_hufflepuff`     | Begum Ozemek                |
-| **Ravenclaw**         | `theme_ravenclaw`      | Begum Ozemek                |
-| **Slytherin**         | `theme_slytherin`      | Begum Ozemek                |
-| **Futurama**          | `theme_futurama`       | Tylor J. Harlow             |
-| **Simpsons**          | `theme_simpsons`       | Tylor J. Harlow             |
-| **Lord of the Rings** | `theme_lordoftherings` | Ethan Milne                 |
-| **Game of Thrones**   | `theme_gameofthrones`  | Brennan Antone              |
-| **Godfather**         | `theme_godfather`      | Francisco Garre-Frutos      |
-| **Finding Nemo**      | `theme_nemo`           | Christopher T. Kenny        |
-| **Friends**           | `theme_friends`        | Alexis van STRAATEN         |
-| **Alien**             | `theme_alien`          | Luke Pilling                |
+| Name                  | Theme                    | Creator(s)                  |
+|-----------------------|--------------------------|-----------------------------|
+| **Barbie**            | `theme_barbie()`         | Matthew B. Jané             |
+| **Oppenheimer**       | `theme_oppenheimer()`    | Matthew B. Jané & Toki Liam |
+| **Star Wars**         | `theme_starwars()`       | Matthew B. Jané             |
+| **Zelda**             | `theme_zelda()`          | Alex Slavenko               |
+| **Terminator**        | `theme_terminator()`     | Alex Slavenko               |
+| **Spiderman**         | `theme_spiderman()`      | Velu P.K. Immonen           |
+| **Avatar**            | `theme_avatar()`         | Velu P.K. Immonen           |
+| **Gryffindor**        | `theme_gryffindor()`     | Begum Ozemek                |
+| **Hufflepuff**        | `theme_hufflepuff()`     | Begum Ozemek                |
+| **Ravenclaw**         | `theme_ravenclaw()`      | Begum Ozemek                |
+| **Slytherin**         | `theme_slytherin()`      | Begum Ozemek                |
+| **Futurama**          | `theme_futurama()`       | Tylor J. Harlow             |
+| **Simpsons**          | `theme_simpsons()`       | Tylor J. Harlow             |
+| **Lord of the Rings** | `theme_lordoftherings()` | Ethan Milne                 |
+| **Game of Thrones**   | `theme_gameofthrones()`  | Brennan Antone              |
+| **Godfather**         | `theme_godfather()`      | Francisco Garre-Frutos      |
+| **Finding Nemo**      | `theme_nemo()`           | Christopher T. Kenny        |
+| **Friends**           | `theme_friends()`        | Alexis van STRAATEN         |
 
 ## Installation
 
@@ -64,21 +63,24 @@ remotes::install_github("MatthewBJane/theme_park")
 
 ## Example
 
-There are many theme options, listed above. You can see the list within your R session using:
+There are many theme options, listed above. You can see the list within
+your R session using:
 
 ``` r
 library(ThemePark)
-themepark_themes
-#>             theme                     creator
-#> 1          barbie             Matthew B. Jané
-#> 2     oppenheimer Matthew B. Jané & Toki Liam
-#> ...
+head(themepark_themes)
+#>         theme                     creator
+#> 1      barbie             Matthew B. Jané
+#> 2 oppenheimer Matthew B. Jané & Toki Liam
+#> 3    starwars             Matthew B. Jané
+#> 4       zelda               Alex Slavenko
+#> 5  terminator               Alex Slavenko
+#> 6   spiderman           Velu P.K. Immonen
 ```
 
 Below is an example of using the Game of Thrones theme.
 
 ``` r
-library(ThemePark)
 library(ggplot2)
 
 `X variable` <- rnorm(50, 0, 1)
@@ -86,11 +88,13 @@ library(ggplot2)
 
 # see suggested colours in the palette
 gameofthrones_theme_colors
-#> background       text      panel     border    lighter      light     medium       dark 
-#>  "#1f0700"  "#D7B257"  "#F2F3B8"  "#BD6D33"  "#F2F3B8"  "#DFCB69"  "#BD6D33"  "#8C4522"
+#> background       text      panel     border    lighter      light     medium 
+#>  "#1f0700"  "#D7B257"  "#F2F3B8"  "#BD6D33"  "#F2F3B8"  "#DFCB69"  "#BD6D33" 
+#>       dark 
+#>  "#8C4522"
 
 ggplot(data = NULL, aes(x = `X variable`, y = `Y variable`)) +
-  theme_gameofthrones() +
+  theme_gameofthrones(gameofthrones_font = TRUE) +
   geom_smooth(method = "lm",
               color = gameofthrones_theme_colors["dark"],
               fill = gameofthrones_theme_colors["light"]) +
@@ -121,25 +125,25 @@ g + geom_density(aes(fill = factor(cyl)), alpha = 0.8) +
 
 ``` r
 ggplot(data = NULL, aes(x = `X variable`, y = `Y variable`)) +
-  theme_avatar() +
+  theme_avatar(avatar_font = TRUE) +
   geom_smooth(method = "lm", color = avatar_theme_colors["dark"], fill = avatar_theme_colors["light"]) +
   geom_point(color = avatar_theme_colors["medium"]) +
   ggtitle("Avatar Scatter Plot")
 #> `geom_smooth()` using formula = 'y ~ x'
 ```
 
-<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
 
 ``` r
 ggplot(data.frame(x = rnorm(100), y = rnorm(100)), aes(x, y)) +
   geom_smooth(method = "lm", color = godfather_theme_colors["dark"], fill = godfather_theme_colors["light"]) +
   geom_point(color = godfather_theme_colors["medium"]) +
   labs(title = "The Godfather theme", x = "Variable x", y = "Variable y") +
-  theme_godfather()
+  theme_godfather(godfather_font = TRUE)
 #> `geom_smooth()` using formula = 'y ~ x'
 ```
 
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
 ## Citation
 
