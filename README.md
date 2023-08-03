@@ -63,7 +63,16 @@ remotes::install_github("MatthewBJane/theme_park")
 
 ## Example
 
-There are many theme options, listed above.
+There are many theme options, listed above. You can see the list within your R session using:
+
+``` r
+library(ThemePark)
+themepark_themes
+#>             theme                     creator
+#> 1          barbie             Matthew B. Jané
+#> 2     oppenheimer Matthew B. Jané & Toki Liam
+#> ...
+```
 
 Below is an example of using the Game of Thrones theme.
 
