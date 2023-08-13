@@ -53,7 +53,7 @@ simpsons_theme_colors <- c(
 theme_simpsons <- function(simpsons_font = TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
-  font_family = ifelse(simpsons_font,"simpsons","Arial") # use this line if you have a custom font
+  font_family = ifelse(simpsons_font,"simpsons","sans") # use this line if you have a custom font
   if (simpsons_font) {
     initialize_font(name = "Rock Salt", family = "simpsons")
   }
