@@ -49,7 +49,7 @@ godfather_theme_colors <- c(
 theme_godfather <- function(godfather_font = TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
-  font_family = ifelse(godfather_font,"godfather","Arial") # use this line if you have a custom font
+  font_family = ifelse(godfather_font,"godfather","sans") # use this line if you have a custom font
   if (godfather_font) {
     initialize_font(name = "Philosopher", family = "godfather")
   }
