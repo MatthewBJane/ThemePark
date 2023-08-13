@@ -46,7 +46,7 @@ barbie_theme_colors <- c(
 theme_barbie <- function(barbie_font = TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
-  font_family = ifelse(barbie_font,"barbie","Arial") # use this line if you have a custom font
+  font_family = ifelse(barbie_font,"barbie","sans") # use this line if you have a custom font
   if (barbie_font) {
     initialize_font(name = "Sansita Swashed", family = "barbie")
   }
