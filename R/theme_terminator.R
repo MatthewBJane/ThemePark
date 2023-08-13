@@ -55,7 +55,7 @@ terminator_theme_colors <- c(
 theme_terminator <- function(terminator_font = TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
-  font_family = ifelse(terminator_font,"terminator","Arial") # use this line if you have a custom font
+  font_family = ifelse(terminator_font,"terminator","sans") # use this line if you have a custom font
   if (terminator_font) {
     initialize_font(name = "Orbitron", family = "terminator")
   }
