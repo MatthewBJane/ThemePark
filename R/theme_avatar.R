@@ -50,7 +50,7 @@ avatar_theme_colors <- c(
 #'
 theme_avatar <- function(avatar_font = TRUE, ...){
   # CUSTOM FONT: add a custom font from google fonts
-  font_family = ifelse(avatar_font,"avatar","Arial") # use this line if you have a custom font
+  font_family = ifelse(avatar_font,"avatar","sans") # use this line if you have a custom font
   if (avatar_font) {
     initialize_font(name = "IM Fell English", family = "avatar")
   }
