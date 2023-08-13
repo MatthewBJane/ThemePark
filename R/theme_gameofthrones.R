@@ -50,7 +50,7 @@ gameofthrones_theme_colors <- c(
 theme_gameofthrones <- function(gameofthrones_font = TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
-  font_family = ifelse(gameofthrones_font,"gameofthrones","Arial") # use this line if you have a custom font
+  font_family = ifelse(gameofthrones_font,"gameofthrones","sans") # use this line if you have a custom font
   if (gameofthrones_font) {
     initialize_font(name="Cinzel", family="gameofthrones")
   }
