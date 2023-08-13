@@ -54,7 +54,7 @@ gryffindor_theme_colors <- c(
 #'
 theme_gryffindor <- function(gryffindor_font = TRUE, ...){
   # CUSTOM FONT: add a custom font from google fonts
-  font_family = ifelse(gryffindor_font,"harrypotter","Serif") # use this line if you have a custom font
+  font_family = ifelse(gryffindor_font,"harrypotter","sans") # use this line if you have a custom font
   if (gryffindor_font) {
     initialize_font(name = "Henny Penny", family = "harrypotter")
   }
@@ -134,7 +134,7 @@ ravenclaw_theme_colors <- c(
 theme_ravenclaw <- function(ravenclaw_font = TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
-  font_family = ifelse(ravenclaw_font,"harrypotter","Serif") # use this line if you have a custom font
+  font_family = ifelse(ravenclaw_font,"harrypotter","sans") # use this line if you have a custom font
   if (ravenclaw_font) {
     initialize_font(name = "Henny Penny", family = "harrypotter")
   }
@@ -191,7 +191,7 @@ hufflepuff_theme_colors <- c(
 #' @export
 theme_hufflepuff <- function(hufflepuff_font = TRUE, ...){
  # CUSTOM FONT: add a custom font from google fonts
-  font_family = ifelse(hufflepuff_font,"harrypotter","Serif") # use this line if you have a custom font
+  font_family = ifelse(hufflepuff_font,"harrypotter","sans") # use this line if you have a custom font
   if (hufflepuff_font) {
     initialize_font(name = "Henny Penny", family = "harrypotter")
   }
@@ -249,7 +249,7 @@ slytherin_theme_colors <- c(
 #' @export
 theme_slytherin <- function(slytherin_font = TRUE, ...){
   # CUSTOM FONT: add a custom font from google fonts
-  font_family = ifelse(slytherin_font,"harrypotter","Serif") # use this line if you have a custom font
+  font_family = ifelse(slytherin_font,"harrypotter","sans") # use this line if you have a custom font
   if (slytherin_font) {
     initialize_font(name = "Henny Penny", family = "harrypotter")
   }
