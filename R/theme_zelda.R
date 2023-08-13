@@ -63,7 +63,7 @@ zelda_palette <- c('#494b4b', '#0e5135','#0d9263','#4aba91','#d4ce46')
 theme_zelda <- function(zelda_font = TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
-  font_family = ifelse(zelda_font,"zelda","Arial") # use this line if you have a custom font
+  font_family = ifelse(zelda_font,"zelda","sans") # use this line if you have a custom font
   if (zelda_font) {
     initialize_font(name = "Spectral SC", family = "zelda")
   }
