@@ -155,11 +155,11 @@ ggplot(data.frame(x = rnorm(100), y = rnorm(100)), aes(x, y)) +
       month = {6},
       title = {theme_park: popular culture ggplot themes},
       url = {https://github.com/MatthewBJane/theme_park},
-      version = {1.0.0},
+      version = {0.0.1},
       year = {2023}
     }
 
 ### APA:
 
 Jané, M.B. (2023). theme_park: popular culture ggplot themes (Version
-0.0.1) \[Source Code\]. <https://github.com/MatthewBJane/theme_park>
+0.0.1) \[R Package\]. <https://github.com/MatthewBJane/theme_park>
