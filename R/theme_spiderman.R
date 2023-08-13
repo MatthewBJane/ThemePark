@@ -54,7 +54,7 @@ spiderman_theme_colors <- c(
 theme_spiderman <- function(spiderman_font = TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
-  font_family = ifelse(spiderman_font,"spiderman","Arial") # use this line if you have a custom font
+  font_family = ifelse(spiderman_font,"spiderman","sans") # use this line if you have a custom font
   if (spiderman_font) {
     initialize_font(name = "Bangers", family = "spiderman")
   }
