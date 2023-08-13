@@ -51,7 +51,7 @@ futurama_theme_colors <- c(
 theme_futurama <- function(futurama_font = TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
-  font_family = ifelse(futurama_font,"futurama","Arial") # use this line if you have a custom font
+  font_family = ifelse(futurama_font,"futurama","sans") # use this line if you have a custom font
   if (futurama_font) {
     initialize_font(name = "Dongle", family = "futurama")
   }
