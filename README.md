@@ -79,14 +79,27 @@ head(themepark_themes)
 #> 6   spiderman           Velu P.K. Immonen
 ```
 
-Below is an example of using the Game of Thrones theme.
+The Barbie theme (`theme_barbie()`) has been one of the most popular
+themes from `ThemePark`.
 
 ``` r
 library(ggplot2)
-
 `X variable` <- rnorm(50, 0, 1)
 `Y variable` <- rnorm(50, 0, 1)
 
+ggplot(data = data.frame(x = `X variable`, y = `Y variable`), aes(x = x, y = y)) +
+  geom_smooth(method = 'lm', color = barbie_theme_colors["medium"]) +
+  geom_point() +
+  labs(title = 'Barbie Scatter Plot') +
+  theme_barbie()
+#> `geom_smooth()` using formula = 'y ~ x'
+```
+
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+
+Below is an example of using the Game of Thrones theme.
+
+``` r
 # see suggested colours in the palette
 gameofthrones_theme_colors
 #> background       text      panel     border    lighter      light     medium 
@@ -133,7 +146,7 @@ ggplot(data = NULL, aes(x = `X variable`, y = `Y variable`)) +
 #> `geom_smooth()` using formula = 'y ~ x'
 ```
 
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
 ``` r
 ggplot(data.frame(x = rnorm(100), y = rnorm(100)), aes(x, y)) +
@@ -144,14 +157,14 @@ ggplot(data.frame(x = rnorm(100), y = rnorm(100)), aes(x, y)) +
 #> `geom_smooth()` using formula = 'y ~ x'
 ```
 
-<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
 
 ## Citation
 
 ### BibTeX:
 
     @software{JaneBarbie2023,
-      author = {Jané, Matthew B},
+      author = {Jané, Matthew B. and Pilling, Luke C. and Kenny, Christopher T.},
       month = {6},
       title = {theme_park: popular culture ggplot themes},
       url = {https://github.com/MatthewBJane/theme_park},
@@ -161,5 +174,6 @@ ggplot(data.frame(x = rnorm(100), y = rnorm(100)), aes(x, y)) +
 
 ### APA:
 
-Jané, M.B. (2023). theme_park: popular culture ggplot themes (Version
-0.0.1) \[R Package\]. <https://github.com/MatthewBJane/theme_park>
+Jané, M.B., Piling, Luke C., & Kenny, Christopher T. (2023). theme_park:
+popular culture ggplot themes (Version 0.0.1) \[Source Code\].
+<https://github.com/MatthewBJane/theme_park>
