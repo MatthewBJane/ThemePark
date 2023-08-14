@@ -1,9 +1,13 @@
 Package: ThemePark
 Title: Themes for 'ggplot2' from Popular Culture
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+Authors@R: c(
+    person("Matthew B.", "Jané", , "matthew.jane@uconn.edu", role = c("aut", "cre")),
+    person("Luke C.", "Pilling", email = "L.Pilling@exeter.ac.uk", role = c("aut"),
+        comment = c(ORCID = "0000-0002-3332-8454")),
+    person("Christopher T.", "Kenny", email = "christopherkenny@fas.harvard.edu", 
+        role = c("aut"), comment = c(ORCID = "0000-0002-9386-6860"))
+    )
 Description: Provides 'ggplot2' themes that mirror works from popular culture, such 
     as Barbie, Star Wars, Game of Thrones, and others. The package currently holds 
     14 themes and a number of corresponding discrete color scales, palettes, and 
