@@ -26,7 +26,7 @@ oppenheimer_theme_colors <- c(
 
 #' Oppenheimer Inspired Theme
 #'
-#' @param oppenheimer_font should `theme_oppenheimer` use Google Font's IM Fell English? Default is `FALSE`.
+#' @param oppenheimer_font should `theme_oppenheimer` use Google Font's IM Fell English? Default is `TRUE`.
 #' @param ... additional parameters to pass to `ggplot2::theme()`
 #'
 #' @return a `ggplot2` `theme` element
@@ -39,7 +39,7 @@ oppenheimer_theme_colors <- c(
 #'   geom_smooth(method = 'lm') +
 #'   geom_point() +
 #'   labs(title = 'Oppenheimer Scatter Plot') +
-#'   theme_oppenheimer(oppenheimer_font = TRUE)
+#'   theme_oppenheimer()
 #'
 #' ggplot(mpg, aes(cty)) +
 #' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
@@ -48,9 +48,9 @@ oppenheimer_theme_colors <- c(
 #'        caption="Source: mpg",
 #'        x="City Mileage",
 #'        fill="# Cylinders") +
-#'   theme_oppenheimer(oppenheimer_font = TRUE)
+#'   theme_oppenheimer()
 #'
-theme_oppenheimer <- function(oppenheimer_font=FALSE, ...){
+theme_oppenheimer <- function(oppenheimer_font=TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
   font_family <- ifelse(oppenheimer_font,"Oppenheimer", "sans") # use this line if you have a custom font

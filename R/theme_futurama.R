@@ -24,7 +24,7 @@ futurama_theme_colors <- c(
 # THEME: rename function and theme() arguments according to your theme design, feel free to edit this how you would like
 #' Futurama Inspired Theme
 #'
-#' @param futurama_font should `theme_futurama` use Google Font's Dongle? Default is `FALSE`.
+#' @param futurama_font should `theme_futurama` use Google Font's Dongle? Default is `TRUE`.
 #' @param ... additional parameters to pass to `ggplot2::theme()`
 #'
 #' @return a `ggplot2` `theme` element
@@ -37,7 +37,7 @@ futurama_theme_colors <- c(
 #'   geom_smooth(method = 'lm') +
 #'   geom_point() +
 #'   labs(title = 'Futurama Scatter Plot') +
-#'   theme_futurama(futurama_font = TRUE)
+#'   theme_futurama()
 #'
 #' ggplot(mpg, aes(cty)) +
 #' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
@@ -46,12 +46,12 @@ futurama_theme_colors <- c(
 #'        caption="Source: mpg",
 #'        x="City Mileage",
 #'        fill="# Cylinders") +
-#'   theme_futurama(futurama_font = TRUE)
+#'   theme_futurama()
 #'
-theme_futurama <- function(futurama_font = FALSE, ...){
+theme_futurama <- function(futurama_font = TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
-  font_family = ifelse(futurama_font,"futurama","Arial") # use this line if you have a custom font
+  font_family = ifelse(futurama_font,"futurama","sans") # use this line if you have a custom font
   if (futurama_font) {
     initialize_font(name = "Dongle", family = "futurama")
   }

@@ -49,3 +49,35 @@ new_theme_park_theme <- function(theme_name, inspiration_name, your_name,
   invisible(paste0('R/', file_name))
 
 }
+
+#' Index of themes in ThemePark
+#'
+#' @format data.frame of themes with creator
+#' @export
+#'
+#' @examples
+#' themepark_themes
+#'
+themepark_themes <- as.data.frame(t(data.frame(
+	c("barbie", "Matthew B. Jané"),
+	c("oppenheimer", "Matthew B. Jané & Toki Liam"),
+	c("starwars", "Matthew B. Jané"),
+	c("zelda", "Alex Slavenko"),
+	c("terminator", "Alex Slavenko"),
+	c("spiderman", "Velu P.K. Immonen"),
+	c("avatar", "Velu P.K. Immonen"),
+	c("gryffindor", "Begum Ozemek"),
+	c("hufflepuff", "Begum Ozemek"),
+	c("ravenclaw", "Begum Ozemek"),
+	c("slytherin", "Begum Ozemek"),
+	c("futurama", "Tylor J. Harlow"),
+	c("simpsons", "Tylor J. Harlow"),
+	c("lordoftherings", "Ethan Milne"),
+	c("gameofthrones", "Brennan Antone"),
+	c("godfather", "Francisco Garre-Frutos"),
+	c("nemo", "Christopher T. Kenny"),
+	c("friends", "Alexis van STRAATEN"),
+	c("alien", "Luke Pilling")
+)))
+colnames(themepark_themes) = c("theme","creator")
+rownames(themepark_themes) = 1:nrow(themepark_themes)

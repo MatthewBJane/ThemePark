@@ -27,7 +27,7 @@ spiderman_theme_colors <- c(
 
 #' Spiderman Inspired Theme
 #'
-#' @param spiderman_font should `theme_spiderman` use Google Font's IM Fell English? Default is `FALSE`.
+#' @param spiderman_font should `theme_spiderman` use Google Font's IM Fell English? Default is `TRUE`.
 #' @param ... additional parameters to pass to `ggplot2::theme()`
 #'
 #' @return a `ggplot2` `theme` element
@@ -40,7 +40,7 @@ spiderman_theme_colors <- c(
 #'   geom_smooth(method = 'lm') +
 #'   geom_point() +
 #'   labs(title = 'Spiderman Scatter Plot') +
-#'   theme_spiderman(spiderman_font = TRUE)
+#'   theme_spiderman()
 #'
 #' ggplot(mpg, aes(cty)) +
 #' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
@@ -49,12 +49,12 @@ spiderman_theme_colors <- c(
 #'        caption="Source: mpg",
 #'        x="City Mileage",
 #'        fill="# Cylinders") +
-#'   theme_spiderman(spiderman_font = TRUE)
+#'   theme_spiderman()
 #'
-theme_spiderman <- function(spiderman_font = FALSE, ...){
+theme_spiderman <- function(spiderman_font = TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
-  font_family = ifelse(spiderman_font,"spiderman","Arial") # use this line if you have a custom font
+  font_family = ifelse(spiderman_font,"spiderman","sans") # use this line if you have a custom font
   if (spiderman_font) {
     initialize_font(name = "Bangers", family = "spiderman")
   }

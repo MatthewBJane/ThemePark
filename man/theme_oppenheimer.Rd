@@ -4,10 +4,10 @@
 \alias{theme_oppenheimer}
 \title{Oppenheimer Inspired Theme}
 \usage{
-theme_oppenheimer(oppenheimer_font = FALSE, ...)
+theme_oppenheimer(oppenheimer_font = TRUE, ...)
 }
 \arguments{
-\item{oppenheimer_font}{should \code{theme_oppenheimer} use Google Font's IM Fell English? Default is \code{FALSE}.}
+\item{oppenheimer_font}{should \code{theme_oppenheimer} use Google Font's IM Fell English? Default is \code{TRUE}.}
 
 \item{...}{additional parameters to pass to \code{ggplot2::theme()}}
 }
@@ -24,7 +24,7 @@ ggplot(data = data.frame(x = rnorm(50, 0, 1), y = rnorm(50,0,1)), aes(x = x, y =
   geom_smooth(method = 'lm') +
   geom_point() +
   labs(title = 'Oppenheimer Scatter Plot') +
-  theme_oppenheimer(oppenheimer_font = TRUE)
+  theme_oppenheimer()
 
 ggplot(mpg, aes(cty)) +
 geom_density(aes(fill=factor(cyl)), alpha=0.8) +
@@ -33,6 +33,6 @@ geom_density(aes(fill=factor(cyl)), alpha=0.8) +
        caption="Source: mpg",
        x="City Mileage",
        fill="# Cylinders") +
-  theme_oppenheimer(oppenheimer_font = TRUE)
+  theme_oppenheimer()
 
 }

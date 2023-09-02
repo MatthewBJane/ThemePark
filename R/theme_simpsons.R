@@ -26,7 +26,7 @@ simpsons_theme_colors <- c(
 
 #' Simpsons Inspired Theme
 #'
-#' @param simpsons_font should `theme_simpsons` use Google Font's IM Fell English? Default is `FALSE`.
+#' @param simpsons_font should `theme_simpsons` use Google Font's IM Fell English? Default is `TRUE`.
 #' @param ... additional parameters to pass to `ggplot2::theme()`
 #'
 #' @return a `ggplot2` `theme` element
@@ -39,7 +39,7 @@ simpsons_theme_colors <- c(
 #'   geom_smooth(method = 'lm') +
 #'   geom_point() +
 #'   labs(title = 'Simpsons Scatter Plot') +
-#'   theme_simpsons(simpsons_font = TRUE)
+#'   theme_simpsons()
 #'
 #' ggplot(mpg, aes(cty)) +
 #' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
@@ -48,12 +48,12 @@ simpsons_theme_colors <- c(
 #'        caption="Source: mpg",
 #'        x="City Mileage",
 #'        fill="# Cylinders") +
-#'   theme_simpsons(simpsons_font = TRUE)
+#'   theme_simpsons()
 #'
-theme_simpsons <- function(simpsons_font = FALSE, ...){
+theme_simpsons <- function(simpsons_font = TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
-  font_family = ifelse(simpsons_font,"simpsons","Arial") # use this line if you have a custom font
+  font_family = ifelse(simpsons_font,"simpsons","sans") # use this line if you have a custom font
   if (simpsons_font) {
     initialize_font(name = "Rock Salt", family = "simpsons")
   }

@@ -35,7 +35,7 @@ sauron_palette <- c('#fcd882', '#e8a578','#df7b75','#4e2828','#180109')
 
 #' Lord of the Rings Inspired Theme
 #'
-#' @param lordoftherings_font should `theme_lordoftherings` use Google Font's Lugrasimo? Default is `FALSE`.
+#' @param lordoftherings_font should `theme_lordoftherings` use Google Font's Lugrasimo? Default is `TRUE`.
 #' @param ... additional parameters to pass to `ggplot2::theme()`
 #'
 #' @return a `ggplot2` `theme` element
@@ -48,7 +48,7 @@ sauron_palette <- c('#fcd882', '#e8a578','#df7b75','#4e2828','#180109')
 #'   geom_smooth(method = 'lm') +
 #'   geom_point() +
 #'   labs(title = 'Lord of the Rings Scatter Plot') +
-#'   theme_lordoftherings(lordoftherings_font = TRUE)
+#'   theme_lordoftherings()
 #'
 #' ggplot(mpg, aes(cty)) +
 #' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
@@ -57,12 +57,12 @@ sauron_palette <- c('#fcd882', '#e8a578','#df7b75','#4e2828','#180109')
 #'        caption="Source: mpg",
 #'        x="City Mileage",
 #'        fill="# Cylinders") +
-#'   theme_lordoftherings(lordoftherings_font = TRUE)
+#'   theme_lordoftherings()
 #'
-theme_lordoftherings <- function(lordoftherings_font = FALSE, ...){
+theme_lordoftherings <- function(lordoftherings_font = TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
-  font_family = ifelse(lordoftherings_font,"lordoftherings","Arial") # use this line if you have a custom font
+  font_family = ifelse(lordoftherings_font,"lordoftherings","sans") # use this line if you have a custom font
   if (lordoftherings_font) {
     initialize_font(name = "Lugrasimo", family = "lordoftherings")
   }

@@ -4,10 +4,10 @@
 \alias{theme_zelda}
 \title{Legend of Zelda Inspired Theme}
 \usage{
-theme_zelda(zelda_font = FALSE, ...)
+theme_zelda(zelda_font = TRUE, ...)
 }
 \arguments{
-\item{zelda_font}{should \code{theme_zelda} use Google Font's IM Fell English? Default is \code{FALSE}.}
+\item{zelda_font}{should \code{theme_zelda} use Google Font's IM Fell English? Default is \code{TRUE}.}
 
 \item{...}{additional parameters to pass to \code{ggplot2::theme()}}
 }
@@ -24,7 +24,7 @@ ggplot(data = data.frame(x = rnorm(50, 0, 1), y = rnorm(50,0,1)), aes(x = x, y =
   geom_smooth(method = 'lm') +
   geom_point() +
   labs(title = 'Zelda Scatter Plot') +
-  theme_zelda(zelda_font = TRUE)
+  theme_zelda()
 
 ggplot(mpg, aes(cty)) +
 geom_density(aes(fill=factor(cyl)), alpha=0.8) +
@@ -33,6 +33,6 @@ geom_density(aes(fill=factor(cyl)), alpha=0.8) +
        caption="Source: mpg",
        x="City Mileage",
        fill="# Cylinders") +
-  theme_zelda(zelda_font = TRUE)
+  theme_zelda()
 
 }

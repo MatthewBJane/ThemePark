@@ -40,7 +40,7 @@ nemo_palette <- c(
 
 #' Finding Nemo Inspired Theme
 #'
-#' @param nemo_font should `theme_nemo` use Google Font's Bowlby One SC? Default is `FALSE`.
+#' @param nemo_font should `theme_nemo` use Google Font's Bowlby One SC? Default is `TRUE`.
 #' @param ... additional parameters to pass to `ggplot2::theme()`
 #'
 #' @return a `ggplot2` `theme` element
@@ -53,7 +53,7 @@ nemo_palette <- c(
 #'   geom_smooth(method = 'lm') +
 #'   geom_point() +
 #'   labs(title = 'Nemo Scatter Plot') +
-#'   theme_nemo(nemo_font = TRUE)
+#'   theme_nemo()
 #'
 #' ggplot(mpg, aes(cty)) +
 #' geom_density(aes(fill=factor(cyl)), alpha=0.8) +
@@ -62,11 +62,11 @@ nemo_palette <- c(
 #'        caption="Source: mpg",
 #'        x="City Mileage",
 #'        fill="# Cylinders") +
-#'   theme_nemo(nemo_font = TRUE) +
+#'   theme_nemo() +
 #'   scale_fill_nemo_d()
 #'
 #'
-theme_nemo <- function(nemo_font = FALSE, ...) {
+theme_nemo <- function(nemo_font = TRUE, ...) {
 
   # CUSTOM FONT: add a custom font from google fonts
   font_family <- ifelse(nemo_font, 'Bowlby One SC', 'sans') # use this line if you have a custom font

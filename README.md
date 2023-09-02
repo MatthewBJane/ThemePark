@@ -15,40 +15,42 @@ alt="theme_park_banner" />
 
 # Welcome to the Theme Park
 
-Theme Park is a soon to be package for fun ggplot themes related to
-popular culture (movies, TV shows, video-games, etc.). I don”t have much
-time to expand this further so please consider submitting a theme!
+Theme Park is a package for fun ggplot themes related to popular culture
+(movies, TV shows, video-games, etc.). I don’t have much time to expand
+this further so please consider submitting a theme!
 
 ## Submit a Theme
 
 Please help grow this package by submitting your own custom ggplot theme
 for a movie, show, or videogame. To submit, edit the
-[`R/theme_template.R`](R/theme_template.R) script file and send the
-edited script to <matthew.jane@uconn.edu> or submit a pull request. I
-will review it and add it or respond with suggested edits. Have fun with
-it!
+[`theme_template.R`](inst/theme_template.R) script file or run
+`ThemePark:::new_theme_park_theme()` and send the edited script to
+<matthew.jane@uconn.edu> or submit a pull request. I will review it and
+add it or respond with suggested edits. Have fun with it!
 
 ## Themes contributed
 
-| Name                  | Theme                  | Creator(s)                  | Source                                                                                                          |
-|-----------------------|------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------|
-| **Barbie**            | `theme_barbie`         | Matthew B. Jané             | [theme_barbie.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_barbie.R)                 |
-| **Oppenheimer**       | `theme_oppenheimer`    | Matthew B. Jané & Toki Liam | [theme_oppenheimer.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_oppenheimer.R)       |
-| **Star Wars**         | `theme_starwars`       | Matthew B. Jané             | [theme_starwars.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_starwars.R)             |
-| **Zelda**             | `theme_zelda`          | Alex Slavenko               | [theme_zelda.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_zelda.R)                   |
-| **Terminator**        | `theme_terminator`     | Alex Slavenko               | [theme_terminator.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_terminator.R)         |
-| **Spiderman**         | `theme_spiderman`      | Velu P.K. Immonen           | [theme_spiderman.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_spiderman.R)           |
-| **Avatar**            | `theme_avatar`         | Velu P.K. Immonen           | [theme_avatar.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_avatar.R)                 |
-| **Gryffindor**        | `theme_gryffindor`     | Begum Ozemek                | [theme_hogwarts.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_hogwarts.R)             |
-| **Hufflepuff**        | `theme_hufflepuff`     | Begum Ozemek                | [theme_hogwarts.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_hogwarts.R)             |
-| **Ravenclaw**         | `theme_ravenclaw`      | Begum Ozemek                | [theme_hogwarts.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_hogwarts.R)             |
-| **Slytherin**         | `theme_slytherin`      | Begum Ozemek                | [theme_hogwarts.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_hogwarts.R)             |
-| **Futurama**          | `theme_futurama`       | Tylor J. Harlow             | [theme_futurama.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_futurama.R)             |
-| **Simpsons**          | `theme_simpsons`       | Tylor J. Harlow             | [theme_simpsons.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_simpsons.R)             |
-| **Lord of the Rings** | `theme_lordoftherings` | Ethan Milne                 | [theme_lordoftherings.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_lordoftherings.R) |
-| **Game of Thrones**   | `theme_gameofthrones`  | Brennan Antone              | [theme_gameofthrones.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_gameofthrones.R)   |
-| **Godfather**         | `theme_godfather`      | Francisco Garre-Frutos      | [theme_godfather.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_godfather.R)           |
-| **Finding Nemo**      | `theme_nemo`           | Christopher T. Kenny        | [theme_nemo.R](https://raw.githubusercontent.com/MatthewBJane/theme_park/main/theme_nemo.R)                     |
+| Name                  | Theme                    | Creator(s)                  |
+|-----------------------|--------------------------|-----------------------------|
+| **Barbie**            | `theme_barbie()`         | Matthew B. Jané             |
+| **Oppenheimer**       | `theme_oppenheimer()`    | Matthew B. Jané & Toki Liam |
+| **Star Wars**         | `theme_starwars()`       | Matthew B. Jané             |
+| **Zelda**             | `theme_zelda()`          | Alex Slavenko               |
+| **Terminator**        | `theme_terminator()`     | Alex Slavenko               |
+| **Spiderman**         | `theme_spiderman()`      | Velu P.K. Immonen           |
+| **Avatar**            | `theme_avatar()`         | Velu P.K. Immonen           |
+| **Gryffindor**        | `theme_gryffindor()`     | Begum Ozemek                |
+| **Hufflepuff**        | `theme_hufflepuff()`     | Begum Ozemek                |
+| **Ravenclaw**         | `theme_ravenclaw()`      | Begum Ozemek                |
+| **Slytherin**         | `theme_slytherin()`      | Begum Ozemek                |
+| **Futurama**          | `theme_futurama()`       | Tylor J. Harlow             |
+| **Simpsons**          | `theme_simpsons()`       | Tylor J. Harlow             |
+| **Lord of the Rings** | `theme_lordoftherings()` | Ethan Milne                 |
+| **Game of Thrones**   | `theme_gameofthrones()`  | Brennan Antone              |
+| **Godfather**         | `theme_godfather()`      | Francisco Garre-Frutos      |
+| **Finding Nemo**      | `theme_nemo()`           | Christopher T. Kenny        |
+| **Friends**           | `theme_friends()`        | Alexis van STRAATEN         |
+| **Alien**             | `theme_alien()`          | Luke Pilling                |
 
 ## Installation
 
@@ -62,21 +64,55 @@ remotes::install_github("MatthewBJane/theme_park")
 
 ## Example
 
-There are many theme options, listed above.
+There are many theme options, listed above. You can see the list within
+your R session using:
+
+``` r
+library(ThemePark)
+head(themepark_themes)
+#>         theme                     creator
+#> 1      barbie             Matthew B. Jané
+#> 2 oppenheimer Matthew B. Jané & Toki Liam
+#> 3    starwars             Matthew B. Jané
+#> 4       zelda               Alex Slavenko
+#> 5  terminator               Alex Slavenko
+#> 6   spiderman           Velu P.K. Immonen
+```
+
+The Barbie theme (`theme_barbie()`) has been one of the most popular
+themes from `ThemePark`.
+
+``` r
+library(ggplot2)
+`X variable` <- rnorm(50, 0, 1)
+`Y variable` <- rnorm(50, 0, 1)
+
+ggplot(data = data.frame(x = `X variable`, y = `Y variable`), aes(x = x, y = y)) +
+  geom_smooth(method = 'lm', color = barbie_theme_colors["medium"]) +
+  geom_point() +
+  labs(title = 'Barbie Scatter Plot') +
+  theme_barbie()
+#> `geom_smooth()` using formula = 'y ~ x'
+```
+
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
 
 Below is an example of using the Game of Thrones theme.
 
 ``` r
-library(ThemePark)
-library(ggplot2)
-
-`X variable` <- rnorm(50, 0, 1)
-`Y variable` <- rnorm(50, 0, 1)
+# see suggested colours in the palette
+gameofthrones_theme_colors
+#> background       text      panel     border    lighter      light     medium 
+#>  "#1f0700"  "#D7B257"  "#F2F3B8"  "#BD6D33"  "#F2F3B8"  "#DFCB69"  "#BD6D33" 
+#>       dark 
+#>  "#8C4522"
 
 ggplot(data = NULL, aes(x = `X variable`, y = `Y variable`)) +
   theme_gameofthrones(gameofthrones_font = TRUE) +
-  geom_smooth(method = "lm", color = "#8C4522", fill = "#DFCB69") +
-  geom_point(color = "#BD6D33") +
+  geom_smooth(method = "lm",
+              color = gameofthrones_theme_colors["dark"],
+              fill = gameofthrones_theme_colors["light"]) +
+  geom_point(color = gameofthrones_theme_colors["medium"]) +
   ggtitle("Game of Thrones Scatter Plot")
 #> `geom_smooth()` using formula = 'y ~ x'
 ```
@@ -104,39 +140,40 @@ g + geom_density(aes(fill = factor(cyl)), alpha = 0.8) +
 ``` r
 ggplot(data = NULL, aes(x = `X variable`, y = `Y variable`)) +
   theme_avatar(avatar_font = TRUE) +
-  geom_smooth(method = "lm", color = "#1C3F6E", fill = "#5AACCF") +
-  geom_point(color = "#2E67A0") +
-  ggtitle("Game of Thrones Scatter Plot")
+  geom_smooth(method = "lm", color = avatar_theme_colors["dark"], fill = avatar_theme_colors["light"]) +
+  geom_point(color = avatar_theme_colors["medium"]) +
+  ggtitle("Avatar Scatter Plot")
 #> `geom_smooth()` using formula = 'y ~ x'
 ```
 
-<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
 ``` r
 ggplot(data.frame(x = rnorm(100), y = rnorm(100)), aes(x, y)) +
-  geom_smooth(method = "lm", color = "#912411", fill = "#912411") +
-  geom_point(color = "#d3cfc3") +
+  geom_smooth(method = "lm", color = godfather_theme_colors["dark"], fill = godfather_theme_colors["light"]) +
+  geom_point(color = godfather_theme_colors["medium"]) +
   labs(title = "The Godfather theme", x = "Variable x", y = "Variable y") +
-  theme_godfather(godfather_font = T)
+  theme_godfather(godfather_font = TRUE)
 #> `geom_smooth()` using formula = 'y ~ x'
 ```
 
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
 
 ## Citation
 
 ### BibTeX:
 
     @software{JaneBarbie2023,
-      author = {Jané, Matthew B},
+      author = {Jané, Matthew B. and Pilling, Luke C. and Kenny, Christopher T.},
       month = {6},
       title = {theme_park: popular culture ggplot themes},
       url = {https://github.com/MatthewBJane/theme_park},
-      version = {1.0.0},
+      version = {0.0.1},
       year = {2023}
     }
 
 ### APA:
 
-Jané, M.B. (2023). theme_park: popular culture ggplot themes (Version
-0.0.1) \[Source Code\]. <https://github.com/MatthewBJane/theme_park>
+Jané, M.B., Piling, Luke C., & Kenny, Christopher T. (2023). theme_park:
+popular culture ggplot themes (Version 0.0.1) \[Source Code\].
+<https://github.com/MatthewBJane/theme_park>
