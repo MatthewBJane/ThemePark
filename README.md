@@ -178,6 +178,6 @@ ggplot(data.frame(x = rnorm(100), y = rnorm(100)), aes(x, y)) +
 
 ### APA:
 
-Jané, M.B., Piling, Luke C., & Kenny, Christopher T. (2023). theme_park:
+Jané, M.B., Pilling, Luke C., & Kenny, Christopher T. (2023). theme_park:
 popular culture ggplot themes (Version 0.0.1) \[Source Code\].
 <https://github.com/MatthewBJane/theme_park>
