@@ -51,7 +51,7 @@ add it or respond with suggested edits. Have fun with it!
 | **Finding Nemo**      | `theme_nemo()`           | Christopher T. Kenny        |
 | **Friends**           | `theme_friends()`        | Alexis van STRAATEN         |
 | **Alien**             | `theme_alien()`          | Luke Pilling                |
-|**Wes Anderson**       | `theme_grand_budapest`   | Katya Kustova               |
+|**Grand Budapest**     | `theme_grand_budapest`   | Katya Kustova               |
 |**Asteroid City**      | `theme_asteroid_city`    | Katya Kustova               |
 |**French Dispatch**    | `theme_french_dispatch`  | Katya Kustova               |
 |**Moonrise Kingdom**   | `theme_moonrise_kingdom` | Katya Kustova               |
