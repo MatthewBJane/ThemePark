@@ -100,9 +100,6 @@ NULL
 
 #' @rdname scale_wes_anderson
 #' @export
-
-#' @rdname scale_wes_anderson
-#' @export
 scale_fill_grand_budapest <- function(...) {
   ggplot2::scale_fill_gradient(low = grand_budapest_theme_colors["light"], high = grand_budapest_theme_colors["dark"], ...)
 }
