@@ -24,3 +24,6 @@ Imports:
     sysfonts
 Suggests: 
     scales
+Depends: 
+    R (>= 2.10)
+LazyData: true
