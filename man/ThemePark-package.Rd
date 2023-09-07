@@ -9,7 +9,13 @@
 Provides 'ggplot2' themes that mirror works from popular culture, such as Barbie, Star Wars, Game of Thrones, and others. The package currently holds 14 themes and a number of corresponding discrete color scales, palettes, and fonts. Each theme (e.g., 'theme_barbie') generates a unique color scheme and font for a 'ggplot2' object that matches the color scheme and font found in the movie, TV show, or video game.
 }
 \author{
-\strong{Maintainer}: First Last \email{first.last@example.com} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
+\strong{Maintainer}: Matthew B. Jané \email{matthew.jane@uconn.edu}
+
+Authors:
+\itemize{
+  \item Luke C. Pilling \email{L.Pilling@exeter.ac.uk} (\href{https://orcid.org/0000-0002-3332-8454}{ORCID})
+  \item Christopher T. Kenny \email{christopherkenny@fas.harvard.edu} (\href{https://orcid.org/0000-0002-9386-6860}{ORCID})
+}
 
 }
 \keyword{internal}
