@@ -35,16 +35,28 @@ gt_theme_nemo <- function(data, ...) {
       style = gt::cell_fill(color = nemo_theme_colors['fill']),
       locations = list(
         gt::cells_column_labels(), gt::cells_column_spanners(),
-        gt::cells_stub(), gt::cells_stub_grand_summary()
+        gt::cells_stub(), gt::cells_stub_grand_summary(),
+        gt::cells_grand_summary()
       )
     ) |>
     gt::tab_style(
-      style = gt::cell_text(color = '#71521C'),
-      locations = gt::cells_stubhead()
+      style = gt::cell_text(color = '#7C442B'),
+      locations = list(
+        gt::cells_stubhead(), gt::cells_source_notes(),
+        gt::cells_footnotes()
+      )
     ) |>
     gt::tab_style(
-      style = gt::cell_fill(color = '#A5D3D1'),
-      locations = gt::cells_stubhead()
+      style = gt::cell_fill(color = '#C2E5E7'),
+      locations = list(
+        gt::cells_stubhead(),
+        gt::cells_source_notes(),
+        gt::cells_footnotes()
+      )
+    ) |>
+    gt::tab_style(
+      style = gt::cell_borders(sides = 'right', color = 'black'),
+      locations = gt::cells_stub()
     ) |>
     # default border styling
     gt::tab_style(
