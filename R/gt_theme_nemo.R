@@ -17,11 +17,37 @@ gt_theme_nemo <- function(data, ...) {
     gt::opt_table_font(font = gt::google_font("Bowlby One SC")) |>
     # set background colors
     gt::opt_row_striping() |>
+    # title
+    gt::tab_style(
+      style = gt::cell_text(color = nemo_theme_colors['background']),
+      locations = gt::cells_title()
+    ) |>
+    gt::tab_style(
+      style = gt::cell_fill(color = nemo_theme_colors['panel']),
+      locations = gt::cells_title()
+    ) |>
+    # column names
+    # title
+    gt::tab_style(
+      style = gt::cell_text(color = nemo_theme_colors['text']),
+      locations = list(gt::cells_column_labels(), gt::cells_column_spanners())
+    ) |>
+    gt::tab_style(
+      style = gt::cell_fill(color = nemo_theme_colors['fill']),
+      locations = list(gt::cells_column_labels(), gt::cells_column_spanners())
+    ) |>
+    # default border styling
+    gt::tab_style(
+      style = gt::cell_borders(sides = c('top', 'bottom'), color = 'black'),
+      location = gt_cells_everywhere()
+    ) |>
     gt::opt_table_outline(color = 'black', width = gt::px(4)) |>
     # rest of borders
     gt::tab_options(
       # top colors, generally black
       table.border.top.color = 'black',
+      table.border.left.color = 'black',
+      table.border.right.color = 'black',
       column_labels.border.top.color = 'black',
       row_group.border.top.color = 'black',
       summary_row.border.color = 'black',
@@ -31,7 +57,6 @@ gt_theme_nemo <- function(data, ...) {
       column_labels.border.bottom.color = 'black',
       row_group.border.bottom.color = 'black',
       table_body.border.bottom.color = 'black',
-      # make this pink so that sourcenotes and footnotes blend
       # footnotes.border.bottom.color = unname(barbie_theme_colors['medium']),
       source_notes.border.bottom.color = 'black',
       # # backgrounds
