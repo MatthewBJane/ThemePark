@@ -81,3 +81,19 @@ themepark_themes <- as.data.frame(t(data.frame(
 )))
 colnames(themepark_themes) = c("theme","creator")
 rownames(themepark_themes) = 1:nrow(themepark_themes)
+
+# gt helpers ----
+
+#' Target all cells in a `gt`
+#' @noRd
+gt_cells_everywhere <- function() {
+  list(
+    gt::cells_body(),
+    gt::cells_column_labels(),
+    gt::cells_column_spanners(),
+    gt::cells_title(),
+    gt::cells_stubhead(),
+    gt::cells_stub()
+  )
+}
+

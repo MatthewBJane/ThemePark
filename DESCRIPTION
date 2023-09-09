@@ -23,4 +23,5 @@ Imports:
     showtext,
     sysfonts
 Suggests: 
-    scales
+    scales,
+    gt
