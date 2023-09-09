@@ -20,21 +20,31 @@ gt_theme_nemo <- function(data, ...) {
     # title
     gt::tab_style(
       style = gt::cell_text(color = nemo_theme_colors['background']),
-      locations = gt::cells_title()
+      locations = list(gt::cells_title())
     ) |>
     gt::tab_style(
       style = gt::cell_fill(color = nemo_theme_colors['panel']),
-      locations = gt::cells_title()
+      locations = list(gt::cells_title(), gt::cells_row_groups())
     ) |>
     # column names
-    # title
     gt::tab_style(
       style = gt::cell_text(color = nemo_theme_colors['text']),
       locations = list(gt::cells_column_labels(), gt::cells_column_spanners())
     ) |>
     gt::tab_style(
       style = gt::cell_fill(color = nemo_theme_colors['fill']),
-      locations = list(gt::cells_column_labels(), gt::cells_column_spanners())
+      locations = list(
+        gt::cells_column_labels(), gt::cells_column_spanners(),
+        gt::cells_stub(), gt::cells_stub_grand_summary()
+      )
+    ) |>
+    gt::tab_style(
+      style = gt::cell_text(color = '#71521C'),
+      locations = gt::cells_stubhead()
+    ) |>
+    gt::tab_style(
+      style = gt::cell_fill(color = '#A5D3D1'),
+      locations = gt::cells_stubhead()
     ) |>
     # default border styling
     gt::tab_style(
