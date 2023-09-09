@@ -63,6 +63,10 @@ gt_theme_nemo <- function(data, ...) {
       style = gt::cell_borders(sides = c('top', 'bottom'), color = 'black'),
       location = gt_cells_everywhere()
     ) |>
+    gt::tab_style(
+      style = gt::cell_borders(sides = c('top'), color = 'black'),
+      location = gt::cells_grand_summary()
+    ) |>
     gt::opt_table_outline(color = 'black', width = gt::px(4)) |>
     # rest of borders
     gt::tab_options(
