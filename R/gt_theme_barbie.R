@@ -35,6 +35,7 @@ gt_theme_barbie <- function(data, ...) {
       style = gt::cell_fill(color = barbie_theme_colors["lighter"]),
       locations = list(gt::cells_row_groups())
     ) |>
+    # title text
     gt::tab_style(
       style = gt::cell_text(color = '#FC419A'),
       locations = gt::cells_title()
