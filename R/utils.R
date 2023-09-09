@@ -91,9 +91,15 @@ gt_cells_everywhere <- function() {
     gt::cells_body(),
     gt::cells_column_labels(),
     gt::cells_column_spanners(),
-    gt::cells_title(),
+    gt::cells_footnotes(),
+    gt::cells_grand_summary(),
+    gt::cells_row_groups(),
+    gt::cells_source_notes(),
+    gt::cells_stub(),
+    gt::cells_stub_grand_summary(),
+    #gt::cells_summary(), # breaks if no summary
     gt::cells_stubhead(),
-    gt::cells_stub()
+    gt::cells_title()
   )
 }
 
