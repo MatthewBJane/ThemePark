@@ -3,5 +3,5 @@ template:
   bootstrap: 5
   bootswatch: quartz
   bslib:
-    pkgdown-nav-height: 50px
+    pkgdown-nav-height: 100px
 
