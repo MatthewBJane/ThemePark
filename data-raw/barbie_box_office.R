@@ -45,7 +45,7 @@ barbie_box_office <- box_office |>
     avg_per_theater = avg
   ) |>
   filter(
-    date <= ymd('2023-09-09') # 50 days
+    date <= ymd('2023-09-08') # 50 days
   )
 
 usethis::use_data(barbie_box_office, overwrite = TRUE, compress = 'xz')
