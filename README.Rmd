@@ -74,18 +74,27 @@ library(ThemePark)
 head(themepark_themes)
 ```
 
-The Barbie theme (`theme_barbie()`) has been one of the most popular themes from `ThemePark`.
+The Barbie theme (`theme_barbie()`) has been one of the most popular themes from `ThemePark`. Use it with the included dataset `barbie_box_office` like below:
 
 ```{r}
 library(ggplot2)
-`X variable` <- rnorm(50, 0, 1)
-`Y variable` <- rnorm(50, 0, 1)
 
-ggplot(data = data.frame(x = `X variable`, y = `Y variable`), aes(x = x, y = y)) +
-  geom_smooth(method = 'lm', color = barbie_theme_colors["medium"]) +
-  geom_point() +
-  labs(title = 'Barbie Scatter Plot') +
-  theme_barbie()
+# see suggested colours in the palette
+barbie_theme_colors
+
+# plot Box Office Takings (in million USD) over Days Since Release
+ggplot(barbie_box_office |> dplyr::mutate(daily=daily/1000000), 
+       aes(x = day, y = daily)) +
+	geom_smooth(method = 'loess', 
+	            color  = barbie_theme_colors["dark"],
+	            fill   = barbie_theme_colors["light"]) +
+	geom_point(color = barbie_theme_colors["medium"]) +
+	labs(title = "Barbie Scatter Plot",
+	     subtitle = "Daily box office takings",
+	     caption  = "Source: www.boxofficemojo.com",
+	     x = "Days since release",
+	     y = "Box office takings (million USD)") +
+	theme_barbie()
 ```
 
 
@@ -94,6 +103,9 @@ Below is an example of using the Game of Thrones theme.
 ```{r example}
 # see suggested colours in the palette
 gameofthrones_theme_colors
+
+`X variable` <- rnorm(50, 0, 1)
+`Y variable` <- rnorm(50, 0, 1)
 
 ggplot(data = NULL, aes(x = `X variable`, y = `Y variable`)) +
   theme_gameofthrones(gameofthrones_font = TRUE) +
