@@ -1,0 +1,9 @@
+pandoc: 2.19.2
+pkgdown: 2.0.7
+pkgdown_sha: ~
+articles: {}
+last_built: 2023-09-13T18:27Z
+urls:
+  reference: http://matthewbjane.com/theme_park/reference
+  article: http://matthewbjane.com/theme_park/articles
+
