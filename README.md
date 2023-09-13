@@ -1,11 +1,18 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-![theme_park_banner](https://github.com/MatthewBJane/theme_park/assets/52077481/4c2e2885-d879-46e6-b61d-b253d8382597)
+<figure>
+<img
+src="https://github.com/MatthewBJane/theme_park/assets/52077481/4c2e2885-d879-46e6-b61d-b253d8382597"
+alt="theme_park_banner" />
+<figcaption aria-hidden="true">theme_park_banner</figcaption>
+</figure>
 
 # ThemePark
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/MatthewBJane/theme_park/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/MatthewBJane/theme_park/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 # Welcome to the Theme Park
@@ -84,7 +91,6 @@ themes from `ThemePark`. Use it with the included dataset
 
 ``` r
 library(ggplot2)
-#> Warning: package 'ggplot2' was built under R version 4.2.3
 
 # see suggested colours in the palette
 barbie_theme_colors
