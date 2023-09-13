@@ -146,16 +146,14 @@ We can mix this with colors from the Barbie theme.
 
 ``` r
 g <- ggplot(mpg, aes(cty))
-g + geom_density(aes(fill = factor(cyl)), alpha = 0.8) +
-  labs(
-    title = "Density plot",
-    subtitle = "City Mileage Grouped by Number of cylinders",
-    caption = "Source: mpg",
-    x = "City Mileage",
-    fill = "# Cylinders"
-  ) +
-  theme_gameofthrones() +
-  scale_color_barbie()
+g + geom_density(fill = barbie_theme_colors["medium"]) +
+    labs(
+        title = "Density plot",
+        subtitle = "City Mileage",
+        caption = "Source: mpg",
+        x = "City Mileage"
+    ) +
+    theme_gameofthrones()
 ```
 
 <img src="man/figures/README-cars-1.png" width="100%" />

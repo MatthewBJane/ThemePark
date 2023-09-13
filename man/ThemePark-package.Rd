@@ -8,6 +8,13 @@
 \description{
 Provides 'ggplot2' themes that mirror works from popular culture, such as Barbie, Star Wars, Game of Thrones, and others. The package currently holds 14 themes and a number of corresponding discrete color scales, palettes, and fonts. Each theme (e.g., 'theme_barbie') generates a unique color scheme and font for a 'ggplot2' object that matches the color scheme and font found in the movie, TV show, or video game.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{http://matthewbjane.com/theme_park/}
+}
+
+}
 \author{
 \strong{Maintainer}: Matthew B. Jané \email{matthew.jane@uconn.edu}
 
