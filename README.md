@@ -3,7 +3,7 @@
 
 <figure>
 <img
-src="https://github.com/MatthewBJane/theme_park/assets/52077481/4c2e2885-d879-46e6-b61d-b253d8382597"
+src="https://github.com/MatthewBJane/theme_park/assets/52077481/91916a23-e466-4dcb-b5c2-cb2c4fe55f04"
 alt="theme_park_banner" />
 <figcaption aria-hidden="true">theme_park_banner</figcaption>
 </figure>
