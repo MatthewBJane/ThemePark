@@ -18,7 +18,7 @@ reference:
 - contents:
   - has_concept("barbie")
 - title: "Friends"
-  desc: "Themes inspired by the TV seriesFriends"
+  desc: "Themes inspired by the TV series Friends"
 - contents:
   - has_concept("friends")
 - title: "Futurama"
