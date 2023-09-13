@@ -57,7 +57,7 @@ theme_alien <- function(alien_font = TRUE, ...){
   # CUSTOM FONT: add a custom font from google fonts
   font_family = ifelse(alien_font,"alien","sans") # use this line if you have a custom font
   if (alien_font) {
-    ThemePark:::initialize_font(name="Archivo Black", family="alien")    # Alternatives: "Roboto Condensed" "Anton"
+    initialize_font(name="Archivo Black", family="alien")    # Alternatives: "Roboto Condensed" "Anton"
   }
 
   # CUSTOM THEME:
