@@ -23,7 +23,10 @@ Imports:
     showtext,
     sysfonts
 Suggests: 
-    scales
+    scales,
+    testthat (>= 3.0.0)
 Depends: 
     R (>= 2.10)
 LazyData: true
+URL: http://matthewbjane.com/theme_park/
+Config/testthat/edition: 3

@@ -20,6 +20,7 @@ set.seed(1234)
 # ThemePark
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/MatthewBJane/theme_park/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/MatthewBJane/theme_park/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 # Welcome to the Theme Park
