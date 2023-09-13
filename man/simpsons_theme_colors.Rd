@@ -17,4 +17,5 @@ Simpsons Theme Color Palette
 simpsons_theme_colors
 
 }
+\concept{simpsons}
 \keyword{datasets}

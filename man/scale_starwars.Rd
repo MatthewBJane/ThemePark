@@ -31,3 +31,4 @@ ggplot(mpg) +
   theme_starwars(starwars_font = TRUE)
 
 }
+\concept{starwars}

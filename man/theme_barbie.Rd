@@ -27,3 +27,4 @@ ggplot(data = data.frame(x = rnorm(50, 0, 1), y = rnorm(50,0,1)), aes(x = x, y =
   theme_barbie()
 
 }
+\concept{barbie}

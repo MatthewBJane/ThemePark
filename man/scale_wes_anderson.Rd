@@ -49,3 +49,4 @@ ggplot(mpg) +
   scale_color_grand_budapest()
 
 }
+\concept{wes_anderson}

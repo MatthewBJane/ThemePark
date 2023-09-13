@@ -31,3 +31,4 @@ ggplot(mpg) +
   theme_zelda(zelda_font = TRUE)
 
 }
+\concept{zelda}

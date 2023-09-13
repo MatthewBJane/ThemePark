@@ -17,4 +17,5 @@ Barbie Theme Color Palette
 barbie_theme_colors
 
 }
+\concept{barbie}
 \keyword{datasets}

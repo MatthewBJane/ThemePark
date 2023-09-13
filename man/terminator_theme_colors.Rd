@@ -17,4 +17,5 @@ Terminator Theme Color Palette
 terminator_theme_colors
 
 }
+\concept{terminator}
 \keyword{datasets}

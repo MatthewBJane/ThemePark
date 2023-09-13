@@ -17,4 +17,5 @@ ALIEN Theme Color Palette
 alien_theme_colors
 
 }
+\concept{alien}
 \keyword{datasets}

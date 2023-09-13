@@ -17,4 +17,5 @@ Legend of Zelda Color Palette
 zelda_palette
 
 }
+\concept{zelda}
 \keyword{datasets}

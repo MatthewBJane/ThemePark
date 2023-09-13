@@ -17,4 +17,5 @@ Hufflepuff Theme Color Palette
 hufflepuff_theme_colors
 
 }
+\concept{hogwarts}
 \keyword{datasets}

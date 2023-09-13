@@ -17,4 +17,5 @@ Friends Color Palette
 friends_palette
 
 }
+\concept{friends}
 \keyword{datasets}

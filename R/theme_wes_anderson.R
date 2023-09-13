@@ -7,6 +7,7 @@
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept wes_anderson
 #'
 #' @examples
 #' grand_budapest_theme_colors
@@ -33,6 +34,7 @@ grand_budapest_theme_colors <- c(
 #'
 #' @rdname theme_wes_anderson
 #' @export
+#' @concept wes_anderson
 #'
 #' @examples
 #' library(ggplot2)
@@ -100,12 +102,14 @@ NULL
 
 #' @rdname scale_wes_anderson
 #' @export
+#' @concept wes_anderson
 scale_fill_grand_budapest <- function(...) {
   ggplot2::scale_fill_gradient(low = grand_budapest_theme_colors["light"], high = grand_budapest_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_wes_anderson
 #' @export
+#' @concept wes_anderson
 scale_color_grand_budapest <- function(...) {
   ggplot2::scale_color_gradient(low = grand_budapest_theme_colors["light"], high = grand_budapest_theme_colors["dark"], ...)
 }
@@ -116,6 +120,7 @@ scale_color_grand_budapest <- function(...) {
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept wes_anderson
 #'
 #' @examples
 #' asteroid_city_theme_colors
@@ -132,6 +137,7 @@ asteroid_city_theme_colors <- c(
 
 #' @rdname theme_wes_anderson
 #' @export
+#' @concept wes_anderson
 theme_asteroid_city <- function(asteroid_city_font = TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
@@ -160,12 +166,14 @@ theme_asteroid_city <- function(asteroid_city_font = TRUE, ...){
 
 #' @rdname scale_wes_anderson
 #' @export
+#' @concept wes_anderson
 scale_fill_asteroid_city <- function(...) {
   ggplot2::scale_fill_gradient(low = asteroid_city_theme_colors["lighter"], high = asteroid_city_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_wes_anderson
 #' @export
+#' @concept wes_anderson
 scale_color_asteroid_city <- function(...) {
   ggplot2::scale_color_gradient(low = asteroid_city_theme_colors["lighter"], high = asteroid_city_theme_colors["dark"], ...)
 }
@@ -175,6 +183,7 @@ scale_color_asteroid_city <- function(...) {
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept wes_anderson
 #'
 #' @examples
 #' french_dispatch_theme_colors
@@ -191,6 +200,7 @@ french_dispatch_theme_colors <- c(
 
 #' @rdname theme_wes_anderson
 #' @export
+#' @concept wes_anderson
 theme_french_dispatch <- function(french_dispatch_font = TRUE, ...){
  # CUSTOM FONT: add a custom font from google fonts
   font_family = ifelse(french_dispatch_font,"french_dispatch","sans") # use this line if you have a custom font
@@ -218,12 +228,14 @@ theme_french_dispatch <- function(french_dispatch_font = TRUE, ...){
 
 #' @rdname scale_wes_anderson
 #' @export
+#' @concept wes_anderson
 scale_fill_french_dispatch <- function(...) {
   ggplot2::scale_fill_gradient(low = french_dispatch_theme_colors["light"], high = french_dispatch_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_wes_anderson
 #' @export
+#' @concept wes_anderson
 scale_color_french_dispatch <- function(...) {
   ggplot2::scale_color_gradient(low = french_dispatch_theme_colors["light"], high = french_dispatch_theme_colors["dark"], ...)
 }
@@ -233,6 +245,7 @@ scale_color_french_dispatch <- function(...) {
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept wes_anderson
 #'
 #' @examples
 #' moonrise_kingdom_theme_colors
@@ -249,6 +262,7 @@ moonrise_kingdom_theme_colors <- c(
 
 #' @rdname theme_wes_anderson
 #' @export
+#' @concept wes_anderson
 theme_moonrise_kingdom <- function(moonrise_kingdom_font = TRUE, ...){
   # CUSTOM FONT: add a custom font from google fonts
   font_family = ifelse(moonrise_kingdom_font,"moonrise_kingdom","sans") # use this line if you have a custom font
@@ -275,12 +289,14 @@ theme_moonrise_kingdom <- function(moonrise_kingdom_font = TRUE, ...){
 
 #' @rdname scale_wes_anderson
 #' @export
+#' @concept wes_anderson
 scale_fill_moonrise_kingdom<- function(...) {
   ggplot2::scale_fill_gradient(low = moonrise_kingdom_theme_colors["light"], high = moonrise_kingdom_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_wes_anderson
 #' @export
+#' @concept wes_anderson
 scale_color_moonrise_kingdom <- function(...) {
   ggplot2::scale_color_gradient(low = moonrise_kingdom_theme_colors["light"], high = moonrise_kingdom_theme_colors["dark"], ...)
 }

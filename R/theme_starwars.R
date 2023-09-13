@@ -6,6 +6,7 @@
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept starwars
 #'
 #' @examples
 #' starwars_theme_colors
@@ -30,6 +31,7 @@ starwars_theme_colors <- c(
 #'
 #' @return a `ggplot2` `theme` element
 #' @export
+#' @concept starwars
 #'
 #' @examples
 #' library(ggplot2)
@@ -84,6 +86,7 @@ theme_starwars <- function(starwars_font=TRUE, ...){
 #'
 #' @rdname scale_starwars
 #' @export
+#' @concept starwars
 #'
 #' @examples
 #' library(ggplot2)
@@ -103,6 +106,7 @@ scale_fill_starwars <- function(...) {
 
 #' @rdname scale_starwars
 #' @export
+#' @concept starwars
 scale_color_starwars <- function(...) {
   ggplot2::scale_color_gradient(low = starwars_theme_colors["light"], high = starwars_theme_colors["dark"], ...)
 }

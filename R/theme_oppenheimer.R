@@ -6,6 +6,7 @@
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept oppenheimer
 #'
 #' @examples
 #' oppenheimer_theme_colors
@@ -31,6 +32,7 @@ oppenheimer_theme_colors <- c(
 #'
 #' @return a `ggplot2` `theme` element
 #' @export
+#' @concept oppenheimer
 #'
 #' @examples
 #' library(ggplot2)
@@ -85,6 +87,7 @@ theme_oppenheimer <- function(oppenheimer_font=TRUE, ...){
 #'
 #' @rdname scale_oppenheimer
 #' @export
+#' @concept oppenheimer
 #'
 #' @examples
 #' library(ggplot2)
@@ -111,18 +114,21 @@ scale_fill_oppenheimer_smoke <- function(...) {
 
 #' @rdname scale_oppenheimer
 #' @export
+#' @concept oppenheimer
 scale_color_oppenheimer_smoke <- function(...) {
   ggplot2::scale_color_gradient(low = oppenheimer_theme_colors["coolflame"], high = oppenheimer_theme_colors["hotflame"], ...)
 }
 
 #' @rdname scale_oppenheimer
 #' @export
+#' @concept oppenheimer
 scale_fill_oppenheimer_flame  <- function(...) {
   ggplot2::scale_fill_gradient(low = oppenheimer_theme_colors["light"], high = oppenheimer_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_oppenheimer
 #' @export
+#' @concept oppenheimer
 scale_color_oppenheimer_flame <- function(...) {
   ggplot2::scale_color_gradient(low = oppenheimer_theme_colors["light"], high = oppenheimer_theme_colors["dark"], ...)
 }

@@ -7,6 +7,7 @@
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept lordoftherings
 #'
 #' @examples
 #' lordoftherings_theme_colors
@@ -25,6 +26,7 @@ lordoftherings_theme_colors <- c(
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept lordoftherings
 #'
 #' @examples
 #' sauron_palette
@@ -40,6 +42,7 @@ sauron_palette <- c('#fcd882', '#e8a578','#df7b75','#4e2828','#180109')
 #'
 #' @return a `ggplot2` `theme` element
 #' @export
+#' @concept lordoftherings
 #'
 #' @examples
 #' library(ggplot2)
@@ -93,6 +96,7 @@ theme_lordoftherings <- function(lordoftherings_font = TRUE, ...){
 #'
 #' @rdname scale_lordoftherings
 #' @export
+#' @concept lordoftherings
 #'
 #' @examples
 #' library(ggplot2)
@@ -111,6 +115,7 @@ scale_fill_lordoftherings <- function(...) {
 
 #' @rdname scale_lordoftherings
 #' @export
+#' @concept lordoftherings
 scale_color_lordoftherings <- function(...) {
   ggplot2::scale_color_gradient(low = lordoftherings_theme_colors["lighter"], high = lordoftherings_theme_colors["dark"], ...)
 }

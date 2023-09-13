@@ -7,6 +7,7 @@
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept friends
 #'
 #' @examples
 #' friends_theme_colors
@@ -30,6 +31,7 @@ friends_theme_colors <- list(
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept friends
 #'
 #' @examples
 #' friends_palette
@@ -48,6 +50,7 @@ friends_palette <- c("#29afc8", "#e05e2d", "#304f23",
 #'
 #' @return a `ggplot2` `theme` element
 #' @export
+#' @concept friends
 #'
 #' @examples
 #' library(ggplot2)
@@ -114,6 +117,7 @@ theme_friends <- function(friends_font = TRUE, ...) {
 #'
 #' @rdname scale_friends
 #' @export
+#' @concept friends
 #'
 #' @examples
 #' library(ggplot2)
@@ -135,12 +139,14 @@ scale_color_friends_c <- function(...) {
 
 #' @rdname scale_friends
 #' @export
+#' @concept friends
 scale_fill_friends_c <- function(...) {
   ggplot2::scale_fill_gradient(..., low = friends_theme_colors$light, high = friends_theme_colors$dark)
 }
 
 #' @rdname scale_friends
 #' @export
+#' @concept friends
 scale_color_friends_b <- function(...) {
   if (!requireNamespace('scales', quietly = TRUE)) {
     stop('This function requires the `scales` R package.')
@@ -151,6 +157,7 @@ scale_color_friends_b <- function(...) {
 
 #' @rdname scale_friends
 #' @export
+#' @concept friends
 scale_fill_friends_b <- function(...) {
   if (!requireNamespace('scales', quietly = TRUE)) {
     stop('This function requires the `scales` R package.')
@@ -161,6 +168,7 @@ scale_fill_friends_b <- function(...) {
 
 #' @rdname scale_friends
 #' @export
+#' @concept friends
 scale_color_friends_d <- function(...) {
   ggplot2::discrete_scale(aesthetics = 'color', scale_name = friends_palette,
                           palette = rot_pal(friends_palette), ...)
@@ -168,6 +176,7 @@ scale_color_friends_d <- function(...) {
 
 #' @rdname scale_friends
 #' @export
+#' @concept friends
 scale_fill_friends_d <- function(...) {
   ggplot2::discrete_scale(aesthetics = 'fill', scale_name = friends_palette, ...,
                           palette = rot_pal(friends_palette))
@@ -175,12 +184,15 @@ scale_fill_friends_d <- function(...) {
 
 #' @rdname scale_friends
 #' @export
+#' @concept friends
 scale_colour_friends_d <- scale_color_friends_d
 
 #' @rdname scale_friends
 #' @export
+#' @concept friends
 scale_colour_friends_c <- scale_color_friends_c
 
 #' @rdname scale_friends
 #' @export
+#' @concept friends
 scale_colour_friends_b <- scale_color_friends_b

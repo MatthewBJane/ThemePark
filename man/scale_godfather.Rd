@@ -31,3 +31,4 @@ ggplot(mpg) +
   theme_godfather(godfather_font = TRUE)
 
 }
+\concept{godfather}

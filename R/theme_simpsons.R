@@ -7,6 +7,7 @@
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept simpsons
 #'
 #' @examples
 #' simpsons_theme_colors
@@ -31,6 +32,7 @@ simpsons_theme_colors <- c(
 #'
 #' @return a `ggplot2` `theme` element
 #' @export
+#' @concept simpsons
 #'
 #' @examples
 #' library(ggplot2)
@@ -87,6 +89,7 @@ theme_simpsons <- function(simpsons_font = TRUE, ...){
 # #'
 # #' @rdname scale_simpsons
 # #' @export
+#' @concept simpsons
 # #'
 # #' @examples
 # #' library(ggplot2)
@@ -105,6 +108,7 @@ theme_simpsons <- function(simpsons_font = TRUE, ...){
 #
 # #' @rdname scale_simpsons
 # #' @export
+#' @concept simpsons
 # scale_color_simpsons <- function(...) {
 #   ggplot2::scale_color_gradient(low = '#eeb4d7ff', high = '#bf2986ff', ...)
 # }

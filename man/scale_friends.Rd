@@ -55,3 +55,4 @@ geom_density(aes(fill=factor(cyl)), alpha=0.8) +
   scale_fill_friends_d()
 
 }
+\concept{friends}

@@ -17,4 +17,5 @@ Star Wars Theme Color Palette
 starwars_theme_colors
 
 }
+\concept{starwars}
 \keyword{datasets}

@@ -17,4 +17,5 @@ Spiderman Theme Color Palette
 spiderman_theme_colors
 
 }
+\concept{spiderman}
 \keyword{datasets}

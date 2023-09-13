@@ -17,4 +17,5 @@ Oppenheimer Theme Color Palette
 oppenheimer_theme_colors
 
 }
+\concept{oppenheimer}
 \keyword{datasets}

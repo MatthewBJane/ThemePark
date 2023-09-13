@@ -17,4 +17,5 @@ French Dispatch Inspired Theme Color Palette
 french_dispatch_theme_colors
 
 }
+\concept{wes_anderson}
 \keyword{datasets}

@@ -17,4 +17,5 @@ Slytherin Theme Color Palette
 slytherin_theme_colors
 
 }
+\concept{hogwarts}
 \keyword{datasets}

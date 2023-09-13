@@ -7,6 +7,7 @@
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept spiderman
 #'
 #' @examples
 #' spiderman_theme_colors
@@ -32,6 +33,7 @@ spiderman_theme_colors <- c(
 #'
 #' @return a `ggplot2` `theme` element
 #' @export
+#' @concept spiderman
 #'
 #' @examples
 #' library(ggplot2)
@@ -86,6 +88,7 @@ theme_spiderman <- function(spiderman_font = TRUE, ...){
 #'
 #' @rdname scale_spiderman
 #' @export
+#' @concept spiderman
 #'
 #' @examples
 #' library(ggplot2)
@@ -104,6 +107,7 @@ scale_fill_spiderman <- function(...) {
 
 #' @rdname scale_spiderman
 #' @export
+#' @concept spiderman
 scale_color_spiderman <- function(...) {
   ggplot2::scale_color_gradient(low = spiderman_theme_colors["medium"], high = spiderman_theme_colors["blue"], ...)
 }

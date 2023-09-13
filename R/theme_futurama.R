@@ -7,6 +7,7 @@
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept futurama
 #'
 #' @examples
 #' futurama_theme_colors
@@ -29,6 +30,7 @@ futurama_theme_colors <- c(
 #'
 #' @return a `ggplot2` `theme` element
 #' @export
+#' @concept futurama
 #'
 #' @examples
 #' library(ggplot2)

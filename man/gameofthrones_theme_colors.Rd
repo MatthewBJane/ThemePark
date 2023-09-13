@@ -17,4 +17,5 @@ Game of Thrones Theme Color Palette
 gameofthrones_theme_colors
 
 }
+\concept{gameofthrones}
 \keyword{datasets}

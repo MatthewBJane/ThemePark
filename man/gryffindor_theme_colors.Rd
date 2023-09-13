@@ -17,4 +17,5 @@ Gryffindor Theme Color Palette
 gryffindor_theme_colors
 
 }
+\concept{hogwarts}
 \keyword{datasets}

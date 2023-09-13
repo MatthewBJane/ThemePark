@@ -31,3 +31,4 @@ ggplot(mpg) +
   theme_terminator(terminator_font = TRUE)
 
 }
+\concept{terminator}

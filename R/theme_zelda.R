@@ -7,6 +7,7 @@
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept zelda
 #'
 #' @examples
 #' zelda_theme_colors
@@ -25,6 +26,7 @@ zelda_theme_colors <- c(
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept zelda
 #'
 #' @examples
 #' zelda_palette
@@ -41,6 +43,7 @@ zelda_palette <- c('#494b4b', '#0e5135','#0d9263','#4aba91','#d4ce46')
 #'
 #' @return a `ggplot2` `theme` element
 #' @export
+#' @concept zelda
 #'
 #' @examples
 #' library(ggplot2)
@@ -96,6 +99,7 @@ theme_zelda <- function(zelda_font = TRUE, ...){
 #'
 #' @rdname scale_zelda
 #' @export
+#' @concept zelda
 #'
 #' @examples
 #' library(ggplot2)
@@ -115,6 +119,7 @@ scale_fill_zelda <- function(...) {
 
 #' @rdname scale_zelda
 #' @export
+#' @concept zelda
 scale_color_zelda <- function(...) {
   ggplot2::scale_color_gradient(low = zelda_theme_colors["lighter"], high = zelda_theme_colors["dark"], ...)
 }

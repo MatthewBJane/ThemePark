@@ -17,4 +17,5 @@ Grand Budapest Inspired Theme Color Palette
 grand_budapest_theme_colors
 
 }
+\concept{wes_anderson}
 \keyword{datasets}

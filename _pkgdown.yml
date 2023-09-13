@@ -4,4 +4,72 @@ template:
   bootswatch: quartz
   bslib:
     pkgdown-nav-height: 100px
-
+reference:
+- title: "Alien"
+  desc: "Themes inspired by the movie Alien"
+- contents:
+  - has_concept("alien")
+- title: "Avatar"
+  desc: "Themes inspired by the movie Avatar"
+- contents:
+  - has_concept("avatar")
+- title: "Barbie"
+  desc: "Themes inspired by the movie Barbie"
+- contents:
+  - has_concept("barbie")
+- title: "Friends"
+  desc: "Themes inspired by the TV seriesFriends"
+- contents:
+  - has_concept("friends")
+- title: "Futurama"
+  desc: "Themes inspired by the TV series Futurama"
+- contents:
+  - has_concept("futurama")
+- title: "Gameofthrones"
+  desc: "Themes inspired by the TV series Game of Thrones"
+- contents:
+  - has_concept("gameofthrones")
+- title: "Godfather"
+  desc: "Themes inspired by the Godfather movie"
+- contents:
+  - has_concept("godfather")
+- title: "Harry Potter (Hogwarts)"
+  desc: "Themes inspired by the Harry Potter movies"
+- contents:
+  - has_concept("hogwarts")
+- title: "Lordoftherings"
+  desc: "Themes inspired by the Lord of the Rings movies"
+- contents:
+  - has_concept("lordoftherings")
+- title: "Nemo"
+  desc: "Themes inspired by the movie Finding Nemo"
+- contents:
+  - has_concept("nemo")
+- title: "Oppenheimer"
+  desc: "Themes inspired by the movie Oppenheimer"
+- contents:
+  - has_concept("oppenheimer")
+- title: "Simpsons"
+  desc: "Themes inspired by the TV series The Simpsons"
+- contents:
+  - has_concept("simpsons")
+- title: "Spider-Man"
+  desc: "Themes inspired by the Spider-Man movies"
+- contents:
+  - has_concept("spiderman")
+- title: "Starwars"
+  desc: "Themes inspired by the Star Wars movies"
+- contents:
+  - has_concept("starwars")
+- title: "Terminator"
+  desc: "Themes inspired by the Terminator movies"
+- contents:
+  - has_concept("terminator")
+- title: "Wes Anderson"
+  desc: "Themes inspired by the Wes Anderson"
+- contents:
+  - has_concept("wes_anderson")
+- title: "Zelda"
+  desc: "Themes inspired by the Legend of Zelda games"
+- contents:
+  - has_concept("zelda")

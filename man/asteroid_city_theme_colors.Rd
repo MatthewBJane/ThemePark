@@ -17,4 +17,5 @@ Asteroid City Inspired Theme Color Palette
 asteroid_city_theme_colors
 
 }
+\concept{wes_anderson}
 \keyword{datasets}

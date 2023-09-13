@@ -6,6 +6,7 @@
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept godfather
 #'
 #' @examples
 #' godfather_theme_colors
@@ -27,6 +28,7 @@ godfather_theme_colors <- c(
 #'
 #' @return a `ggplot2` `theme` element
 #' @export
+#' @concept godfather
 #'
 #' @examples
 #' library(ggplot2)
@@ -81,6 +83,7 @@ theme_godfather <- function(godfather_font = TRUE, ...){
 #'
 #' @rdname scale_godfather
 #' @export
+#' @concept godfather
 #'
 #' @examples
 #' library(ggplot2)
@@ -100,6 +103,7 @@ scale_fill_godfather <- scale_fill_godfather <- function(...) {
 
 #' @rdname scale_godfather
 #' @export
+#' @concept godfather
 scale_color_godfather <- function(...) {
   ggplot2::scale_color_gradient(low = godfather_theme_colors["lighter"], high = godfather_theme_colors["dark"], ...)
 }

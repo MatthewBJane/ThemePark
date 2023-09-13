@@ -31,3 +31,4 @@ ggplot(mpg) +
   scale_color_alien() +facet_grid(.~class)
 
 }
+\concept{alien}

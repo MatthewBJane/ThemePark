@@ -51,3 +51,4 @@ geom_density(aes(fill=factor(cyl)), alpha=0.8) +
   theme_asteroid_city()
 
 }
+\concept{wes_anderson}

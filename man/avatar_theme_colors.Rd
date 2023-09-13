@@ -17,4 +17,5 @@ Avatar Theme Color Palette
 avatar_theme_colors
 
 }
+\concept{avatar}
 \keyword{datasets}

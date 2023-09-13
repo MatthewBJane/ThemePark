@@ -17,4 +17,5 @@ Sauron Color Palette
 sauron_palette
 
 }
+\concept{lordoftherings}
 \keyword{datasets}

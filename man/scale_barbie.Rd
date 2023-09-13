@@ -30,3 +30,4 @@ ggplot(mpg) +
   scale_color_barbie()
 
 }
+\concept{barbie}

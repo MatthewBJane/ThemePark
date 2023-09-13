@@ -8,6 +8,7 @@
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept avatar
 #'
 #' @examples
 #' avatar_theme_colors
@@ -29,6 +30,7 @@ avatar_theme_colors <- c(
 #'
 #' @return a `ggplot2` `theme` element
 #' @export
+#' @concept avatar
 #'
 #' @examples
 #' library(ggplot2)
@@ -84,6 +86,7 @@ theme_avatar <- function(avatar_font = TRUE, ...){
 #'
 #' @rdname scale_avatar
 #' @export
+#' @concept avatar
 #'
 #' @examples
 #' library(ggplot2)
@@ -102,6 +105,7 @@ scale_fill_avatar <- function(...) {
 
 #' @rdname scale_avatar
 #' @export
+#' @concept avatar
 scale_color_avatar <- function(...) {
   ggplot2::scale_color_gradient(low = avatar_theme_colors["medium"], high = avatar_theme_colors["dark"], ...)
 }

@@ -7,6 +7,7 @@
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept hogwarts
 #'
 #' @examples
 #' gryffindor_theme_colors
@@ -33,6 +34,7 @@ gryffindor_theme_colors <- c(
 #'
 #' @rdname theme_hogwarts
 #' @export
+#' @concept hogwarts
 #'
 #' @examples
 #' library(ggplot2)
@@ -99,12 +101,14 @@ NULL
 
 #' @rdname scale_hogwarts
 #' @export
+#' @concept hogwarts
 scale_fill_gryffindor <- function(...) {
   ggplot2::scale_fill_gradient(low = gryffindor_theme_colors["light"], high = gryffindor_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_hogwarts
 #' @export
+#' @concept hogwarts
 scale_color_gryffindor <- function(...) {
   ggplot2::scale_color_gradient(low = gryffindor_theme_colors["light"], high = gryffindor_theme_colors["dark"], ...)
 }
@@ -115,6 +119,7 @@ scale_color_gryffindor <- function(...) {
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept hogwarts
 #'
 #' @examples
 #' ravenclaw_theme_colors
@@ -131,6 +136,7 @@ ravenclaw_theme_colors <- c(
 
 #' @rdname theme_hogwarts
 #' @export
+#' @concept hogwarts
 theme_ravenclaw <- function(ravenclaw_font = TRUE, ...){
 
   # CUSTOM FONT: add a custom font from google fonts
@@ -158,12 +164,14 @@ theme_ravenclaw <- function(ravenclaw_font = TRUE, ...){
 
 #' @rdname scale_hogwarts
 #' @export
+#' @concept hogwarts
 scale_fill_ravenclaw <- function(...) {
   ggplot2::scale_fill_gradient(low = ravenclaw_theme_colors["lighter"], high = ravenclaw_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_hogwarts
 #' @export
+#' @concept hogwarts
 scale_color_ravenclaw <- function(...) {
   ggplot2::scale_color_gradient(low = ravenclaw_theme_colors["lighter"], high = ravenclaw_theme_colors["dark"], ...)
 }
@@ -173,6 +181,7 @@ scale_color_ravenclaw <- function(...) {
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept hogwarts
 #'
 #' @examples
 #' hufflepuff_theme_colors
@@ -189,6 +198,7 @@ hufflepuff_theme_colors <- c(
 
 #' @rdname theme_hogwarts
 #' @export
+#' @concept hogwarts
 theme_hufflepuff <- function(hufflepuff_font = TRUE, ...){
  # CUSTOM FONT: add a custom font from google fonts
   font_family = ifelse(hufflepuff_font,"harrypotter","sans") # use this line if you have a custom font
@@ -216,12 +226,14 @@ theme_hufflepuff <- function(hufflepuff_font = TRUE, ...){
 
 #' @rdname scale_hogwarts
 #' @export
+#' @concept hogwarts
 scale_fill_hufflepuff <- function(...) {
   ggplot2::scale_fill_gradient(low = hufflepuff_theme_colors["light"], high = hufflepuff_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_hogwarts
 #' @export
+#' @concept hogwarts
 scale_color_hufflepuff <- function(...) {
   ggplot2::scale_color_gradient(low = hufflepuff_theme_colors["light"], high = hufflepuff_theme_colors["dark"], ...)
 }
@@ -231,6 +243,7 @@ scale_color_hufflepuff <- function(...) {
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept hogwarts
 #'
 #' @examples
 #' slytherin_theme_colors
@@ -247,6 +260,7 @@ slytherin_theme_colors <- c(
 
 #' @rdname theme_hogwarts
 #' @export
+#' @concept hogwarts
 theme_slytherin <- function(slytherin_font = TRUE, ...){
   # CUSTOM FONT: add a custom font from google fonts
   font_family = ifelse(slytherin_font,"harrypotter","sans") # use this line if you have a custom font
@@ -273,12 +287,14 @@ theme_slytherin <- function(slytherin_font = TRUE, ...){
 
 #' @rdname scale_hogwarts
 #' @export
+#' @concept hogwarts
 scale_fill_slytherin<- function(...) {
   ggplot2::scale_fill_gradient(low = slytherin_theme_colors["light"], high = slytherin_theme_colors["dark"], ...)
 }
 
 #' @rdname scale_hogwarts
 #' @export
+#' @concept hogwarts
 scale_color_slytherin <- function(...) {
   ggplot2::scale_color_gradient(low = slytherin_theme_colors["light"], high = slytherin_theme_colors["dark"], ...)
 }

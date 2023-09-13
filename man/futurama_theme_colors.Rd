@@ -17,4 +17,5 @@ Futurama Theme Color Palette
 futurama_theme_colors
 
 }
+\concept{futurama}
 \keyword{datasets}

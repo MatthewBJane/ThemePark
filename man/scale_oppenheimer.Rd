@@ -44,3 +44,4 @@ ggplot(mpg) +
   scale_color_oppenheimer_flame()
 
 }
+\concept{oppenheimer}

@@ -8,6 +8,7 @@
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept barbie
 #'
 #' @examples
 #' barbie_theme_colors
@@ -33,6 +34,7 @@ barbie_theme_colors <- c(
 #'
 #' @return a `ggplot2` `theme` element
 #' @export
+#' @concept barbie
 #'
 #' @examples
 #' library(ggplot2)
@@ -79,6 +81,7 @@ theme_barbie <- function(barbie_font = TRUE, ...){
 #'
 #' @rdname scale_barbie
 #' @export
+#' @concept barbie
 #'
 #' @examples
 #' library(ggplot2)
@@ -97,6 +100,7 @@ scale_fill_barbie <- function(...) {
 
 #' @rdname scale_barbie
 #' @export
+#' @concept barbie
 scale_color_barbie <- function(...) {
   ggplot2::scale_color_gradient(low = '#eeb4d7ff', high = '#bf2986ff', ...)
 }

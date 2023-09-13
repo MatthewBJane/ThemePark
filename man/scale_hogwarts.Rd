@@ -49,3 +49,4 @@ ggplot(mpg) +
   scale_color_gryffindor()
 
 }
+\concept{hogwarts}

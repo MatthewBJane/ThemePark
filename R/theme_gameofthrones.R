@@ -7,6 +7,7 @@
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept gameofthrones
 #'
 #' @examples
 #' gameofthrones_theme_colors
@@ -28,6 +29,7 @@ gameofthrones_theme_colors <- c(
 #'
 #' @return a `ggplot2` `theme` element
 #' @export
+#' @concept gameofthrones
 #'
 #' @examples
 #' library(ggplot2)
@@ -83,6 +85,7 @@ theme_gameofthrones <- function(gameofthrones_font = TRUE, ...){
 #'
 #' @rdname scale_gameofthrones
 #' @export
+#' @concept gameofthrones
 #'
 #' @examples
 #' library(ggplot2)
@@ -101,6 +104,7 @@ scale_fill_gameofthrones <- function(...) {
 
 #' @rdname scale_gameofthrones
 #' @export
+#' @concept gameofthrones
 scale_color_gameofthrones <- function(...) {
   ggplot2::scale_color_gradient(low = gameofthrones_theme_colors["lighter"], high = gameofthrones_theme_colors["dark"], ...)
 }

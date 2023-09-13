@@ -7,6 +7,7 @@
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept terminator
 #'
 #' @examples
 #' terminator_theme_colors
@@ -33,6 +34,7 @@ terminator_theme_colors <- c(
 #'
 #' @return a `ggplot2` `theme` element
 #' @export
+#' @concept terminator
 #'
 #' @examples
 #' library(ggplot2)
@@ -89,6 +91,7 @@ theme_terminator <- function(terminator_font = TRUE, ...){
 #'
 #' @rdname scale_terminator
 #' @export
+#' @concept terminator
 #'
 #' @examples
 #' library(ggplot2)
@@ -108,6 +111,7 @@ scale_fill_terminator <- function(...) {
 
 #' @rdname scale_terminator
 #' @export
+#' @concept terminator
 scale_color_terminator <- function(...) {
   ggplot2::scale_color_gradient(low = terminator_theme_colors["lighter"], high = terminator_theme_colors["dark"], ...)
 }

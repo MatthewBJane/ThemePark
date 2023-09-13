@@ -17,4 +17,5 @@ Lord of the Rings Theme Color Palette
 lordoftherings_theme_colors
 
 }
+\concept{lordoftherings}
 \keyword{datasets}

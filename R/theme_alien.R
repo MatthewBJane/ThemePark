@@ -7,6 +7,7 @@
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept alien
 #'
 #' @examples
 #' alien_theme_colors
@@ -29,6 +30,7 @@ alien_theme_colors <- c(
 #'
 #' @return a `ggplot2` `theme` element
 #' @export
+#' @concept alien
 #'
 #' @examples
 #' library(ggplot2)
@@ -86,6 +88,7 @@ theme_alien <- function(alien_font = TRUE, ...){
 #'
 #' @rdname scale_alien
 #' @export
+#' @concept alien
 #'
 #' @examples
 #' library(ggplot2)
@@ -105,6 +108,7 @@ scale_fill_alien <- function(...) {
 
 #' @rdname scale_alien
 #' @export
+#' @concept alien
 scale_color_alien <- function(...) {
   ggplot2::scale_color_gradient(low = alien_theme_colors["dark"], high = alien_theme_colors["lighter"], ...)
 }

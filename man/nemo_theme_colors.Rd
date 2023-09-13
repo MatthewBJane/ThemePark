@@ -17,4 +17,5 @@ Finding Nemo Theme Color Palette
 nemo_theme_colors
 
 }
+\concept{nemo}
 \keyword{datasets}

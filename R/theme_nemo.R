@@ -7,6 +7,7 @@
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept nemo
 #'
 #' @examples
 #' nemo_theme_colors
@@ -29,6 +30,7 @@ nemo_theme_colors <- c(
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept nemo
 #'
 #' @examples
 #' nemo_palette
@@ -45,6 +47,7 @@ nemo_palette <- c(
 #'
 #' @return a `ggplot2` `theme` element
 #' @export
+#' @concept nemo
 #'
 #' @examples
 #' library(ggplot2)
@@ -105,6 +108,7 @@ theme_nemo <- function(nemo_font = TRUE, ...) {
 #'
 #' @rdname scale_nemo
 #' @export
+#' @concept nemo
 #'
 #' @examples
 #' library(ggplot2)
@@ -126,12 +130,14 @@ scale_color_nemo_c <- function(...) {
 
 #' @rdname scale_nemo
 #' @export
+#' @concept nemo
 scale_fill_nemo_c <- function(...) {
   ggplot2::scale_fill_gradient(..., low = nemo_theme_colors["light"], high = nemo_theme_colors["dark"])
 }
 
 #' @rdname scale_nemo
 #' @export
+#' @concept nemo
 scale_color_nemo_b <- function(...) {
   if (!requireNamespace('scales', quietly = TRUE)) {
     stop('This function requires the `scales` R package.')
@@ -142,6 +148,7 @@ scale_color_nemo_b <- function(...) {
 
 #' @rdname scale_nemo
 #' @export
+#' @concept nemo
 scale_fill_nemo_b <- function(...) {
   if (!requireNamespace('scales', quietly = TRUE)) {
     stop('This function requires the `scales` R package.')
@@ -152,6 +159,7 @@ scale_fill_nemo_b <- function(...) {
 
 #' @rdname scale_nemo
 #' @export
+#' @concept nemo
 scale_color_nemo_d <- function(...) {
   ggplot2::discrete_scale(aesthetics = 'color', scale_name = nemo_palette,
                           palette = rot_pal(nemo_palette), ...)
@@ -159,6 +167,7 @@ scale_color_nemo_d <- function(...) {
 
 #' @rdname scale_nemo
 #' @export
+#' @concept nemo
 scale_fill_nemo_d <- function(...) {
   ggplot2::discrete_scale(aesthetics = 'fill', scale_name = nemo_palette, ...,
                           palette = rot_pal(nemo_palette))
@@ -166,12 +175,15 @@ scale_fill_nemo_d <- function(...) {
 
 #' @rdname scale_nemo
 #' @export
+#' @concept nemo
 scale_colour_nemo_d <- scale_color_nemo_d
 
 #' @rdname scale_nemo
 #' @export
+#' @concept nemo
 scale_colour_nemo_c <- scale_color_nemo_c
 
 #' @rdname scale_nemo
 #' @export
+#' @concept nemo
 scale_colour_nemo_b <- scale_color_nemo_b
