@@ -1,7 +1,7 @@
 #' Barbie Box Office Data
 #'
 #' This data contains box office data for the Barbie movie, from its first 50
-#' days (July 21, 2023 to September 9, 2023).
+#' days (July 21, 2023 to September 8, 2023).
 #'
 #' @name barbie_box_office
 #' @usage data("barbie_box_office")
