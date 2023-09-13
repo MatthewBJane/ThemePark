@@ -73,3 +73,9 @@ reference:
   desc: "Themes inspired by the Legend of Zelda games"
 - contents:
   - has_concept("zelda")
+- title: "Utility Functions"
+  desc: "Other exported functions to support themes"
+- contents:
+  - lacks_concepts(c("alien", "avatar", "barbie", "friends", "futurama", "gameofthrones",
+  "godfather", "hogwarts", "lordoftherings", "nemo", "oppenheimer", "simpsons", "spiderman",
+  "starwars", "terminator", "wes_anderson", "zelda"))
