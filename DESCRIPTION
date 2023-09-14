@@ -23,6 +23,7 @@ Imports:
     showtext,
     sysfonts
 Suggests: 
+    curl,
     scales,
     testthat (>= 3.0.0)
 Depends: 

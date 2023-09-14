@@ -59,9 +59,9 @@ new_theme_park_theme <- function(theme_name, inspiration_name, your_name,
 #' themepark_themes
 #'
 themepark_themes <- as.data.frame(t(data.frame(
-	c("barbie", "Matthew B. Jané"),
-	c("oppenheimer", "Matthew B. Jané & Toki Liam"),
-	c("starwars", "Matthew B. Jané"),
+	c("barbie", "Matthew B. Jan\u00E9"),
+	c("oppenheimer", "Matthew B. Jan\u00E9 & Toki Liam"),
+	c("starwars", "Matthew B. Jan\u00E9"),
 	c("zelda", "Alex Slavenko"),
 	c("terminator", "Alex Slavenko"),
 	c("spiderman", "Velu P.K. Immonen"),
