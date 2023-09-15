@@ -67,7 +67,7 @@ theme_lordoftherings <- function(lordoftherings_font = TRUE, ...){
   # CUSTOM FONT: add a custom font from google fonts
   font_family = ifelse(lordoftherings_font,"lordoftherings","sans") # use this line if you have a custom font
   if (lordoftherings_font) {
-    initialize_font(name = "Lugrasimo", family = "lordoftherings")
+    initialize_font(name = "MedievalSharp", family = "lordoftherings")
   }
 
   # CUSTOM THEME:
