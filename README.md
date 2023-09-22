@@ -3,7 +3,7 @@
 
 <figure>
 <img
-src="https://github.com/MatthewBJane/theme_park/assets/52077481/91916a23-e466-4dcb-b5c2-cb2c4fe55f04"
+src="https://github.com/MatthewBJane/ThemePark/assets/52077481/91916a23-e466-4dcb-b5c2-cb2c4fe55f04"
 alt="theme_park_banner" />
 <figcaption aria-hidden="true">theme_park_banner</figcaption>
 </figure>
@@ -12,7 +12,7 @@ alt="theme_park_banner" />
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/MatthewBJane/theme_park/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/MatthewBJane/theme_park/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/MatthewBJane/theme_park/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/MatthewBJane/ThemePark/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 # Welcome to the Theme Park
@@ -53,7 +53,7 @@ add it or respond with suggested edits. Have fun with it!
 | **Finding Nemo**         | `theme_nemo()`             | Christopher T. Kenny        |
 | **Friends**              | `theme_friends()`          | Alexis van STRAATEN         |
 | **Alien**                | `theme_alien()`            | Luke Pilling                |
-| **Grand Budapest Hotel** | `theme_grand_budapest`     | Katya Kustova               |
+| **Grand Budapest Hotel** | `theme_grand_budapest()`   | Katya Kustova               |
 | **Asteroid City**        | `theme_asteroid_city()`    | Katya Kustova               |
 | **French Dispatch**      | `theme_french_dispatch()`  | Katya Kustova               |
 | **Moonrise Kingdom**     | `theme_moonrise_kingdom()` | Katya Kustova               |
@@ -65,7 +65,7 @@ You can install the development version of `ThemePark` from
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("MatthewBJane/theme_park")
+remotes::install_github("MatthewBJane/ThemePark")
 ```
 
 ## Example
