@@ -77,7 +77,11 @@ themepark_themes <- as.data.frame(t(data.frame(
 	c("godfather", "Francisco Garre-Frutos"),
 	c("nemo", "Christopher T. Kenny"),
 	c("friends", "Alexis van STRAATEN"),
-	c("alien", "Luke Pilling")
+	c("alien", "Luke Pilling"),
+	c("grand_budapest","Katya Kustova"),
+	c("asteroid_city","Katya Kustova"),
+	c("french_dispatch","Katya Kustova"),
+	c("moonrise_kingdom","Katya Kustova")
 )))
 colnames(themepark_themes) = c("theme","creator")
 rownames(themepark_themes) = 1:nrow(themepark_themes)
