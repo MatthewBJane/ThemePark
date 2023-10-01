@@ -77,10 +77,10 @@ theme_lordoftherings <- function(lordoftherings_font = TRUE, ...){
     text = element_text(color = lordoftherings_theme_colors["text"], family = font_family),
     title = element_text(size=20),
     panel.background = element_rect(fill = lordoftherings_theme_colors["panel"]),
-    panel.border = element_rect(fill = NA, color = lordoftherings_theme_colors["border"], size = 2),
+    panel.border = element_rect(fill = NA, color = lordoftherings_theme_colors["border"], linewidth = 2),
     axis.title = element_text(size=17),
     axis.text = element_text(size=13),
-    axis.ticks = element_line(color = lordoftherings_theme_colors["border"], size = 1.2),
+    axis.ticks = element_line(color = lordoftherings_theme_colors["border"], linewidth = 1.2),
     legend.background = element_rect(fill = lordoftherings_theme_colors["panel"], color = NA),
     ...
   )
