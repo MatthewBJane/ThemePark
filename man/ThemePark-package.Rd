@@ -18,7 +18,7 @@ Useful links:
 \author{
 \strong{Maintainer}: Matthew B. Jané \email{matthew.jane@uconn.edu}
 
-Authors
+Authors:
 \itemize{
   \item Luke C. Pilling \email{L.Pilling@exeter.ac.uk} (\href{https://orcid.org/0000-0002-3332-8454}{ORCID})
   \item Christopher T. Kenny \email{christopherkenny@fas.harvard.edu} (\href{https://orcid.org/0000-0002-9386-6860}{ORCID})
