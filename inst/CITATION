@@ -11,5 +11,5 @@ bibentry(
   year = "2023",
   note = "R package",
   key = "ThemePark",
-  url = "https://github.com/MatthewBJane/theme_park"
+  url = "https://github.com/MatthewBJane/ThemePark"
 )

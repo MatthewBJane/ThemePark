@@ -11,7 +11,7 @@ Provides 'ggplot2' themes that mirror works from popular culture, such as Barbie
 \seealso{
 Useful links:
 \itemize{
-  \item \url{http://matthewbjane.com/theme_park/}
+  \item \url{https://matthewbjane.com/ThemePark/}
 }
 
 }
