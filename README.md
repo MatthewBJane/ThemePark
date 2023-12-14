@@ -57,6 +57,7 @@ add it or respond with suggested edits. Have fun with it!
 | **Asteroid City**        | `theme_asteroid_city()`    | Katya Kustova               |
 | **French Dispatch**      | `theme_french_dispatch()`  | Katya Kustova               |
 | **Moonrise Kingdom**     | `theme_moonrise_kingdom()` | Katya Kustova               |
+| **Elf**                  | `theme_elf()`              | Christopher T. Kenny        |
 
 ## Installation
 
