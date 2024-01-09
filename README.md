@@ -188,7 +188,7 @@ ggplot(data.frame(x = rnorm(100), y = rnorm(100)), aes(x, y)) +
     @software{JaneBarbie2023,
       author = {Jané, Matthew B. and Pilling, Luke C. and Kenny, Christopher T.},
       month = {6},
-      title = {theme_park: popular culture ggplot themes},
+      title = {ThemePark: popular culture ggplot themes},
       url = {https://github.com/MatthewBJane/ThemePark},
       version = {0.0.9},
       year = {2023}
@@ -197,5 +197,5 @@ ggplot(data.frame(x = rnorm(100), y = rnorm(100)), aes(x, y)) +
 ### APA:
 
 Jané, M.B., Pilling, Luke C., & Kenny, Christopher T. (2023).
-theme_park: popular culture ggplot themes (Version 0.0.9) \[Source
+ThemePark: popular culture ggplot themes (Version 0.0.9) \[Source
 Code\]. <https://github.com/MatthewBJane/ThemePark>
