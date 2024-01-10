@@ -8,7 +8,7 @@ alt="theme_park_banner" />
 <figcaption aria-hidden="true">theme_park_banner</figcaption>
 </figure>
 
-# ThemePark
+# ThemePark: popular culture ggplot themes
 
 <!-- badges: start -->
 
