@@ -154,7 +154,7 @@ ggplot(data.frame(x = rnorm(100), y = rnorm(100)), aes(x, y)) +
 
 ### BibTeX:
 ```
-@software{JaneBarbie2023,
+@software{Jane2023,
   author = {Jané, Matthew B. and Pilling, Luke C. and Kenny, Christopher T.},
   month = {6},
   title = {ThemePark: popular culture ggplot themes},
