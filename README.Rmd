@@ -159,7 +159,7 @@ ggplot(data.frame(x = rnorm(100), y = rnorm(100)), aes(x, y)) +
   month = {6},
   title = {ThemePark: popular culture ggplot themes},
   url = {https://github.com/MatthewBJane/ThemePark},
-  version = {0.0.9},
+  version = {0.0.1},
   year = {2023}
 }
 ```
