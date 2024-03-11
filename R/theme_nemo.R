@@ -161,7 +161,7 @@ scale_fill_nemo_b <- function(...) {
 #' @export
 #' @concept nemo
 scale_color_nemo_d <- function(...) {
-  ggplot2::discrete_scale(aesthetics = 'color', scale_name = nemo_palette,
+  ggplot2::discrete_scale(aesthetics = 'color',
                           palette = rot_pal(nemo_palette), ...)
 }
 
@@ -169,7 +169,7 @@ scale_color_nemo_d <- function(...) {
 #' @export
 #' @concept nemo
 scale_fill_nemo_d <- function(...) {
-  ggplot2::discrete_scale(aesthetics = 'fill', scale_name = nemo_palette, ...,
+  ggplot2::discrete_scale(aesthetics = 'fill', ...,
                           palette = rot_pal(nemo_palette))
 }
 

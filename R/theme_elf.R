@@ -157,14 +157,14 @@ scale_fill_elf_b <- function(...) {
 #' @rdname scale_elf
 #' @export
 scale_color_elf_d <- function(...) {
-  ggplot2::discrete_scale(aesthetics = 'color', scale_name = elf_palette,
+  ggplot2::discrete_scale(aesthetics = 'color',
                           palette = rot_pal(elf_palette), ...)
 }
 
 #' @rdname scale_elf
 #' @export
 scale_fill_elf_d <- function(...) {
-  ggplot2::discrete_scale(aesthetics = 'fill', scale_name = elf_palette, ...,
+  ggplot2::discrete_scale(aesthetics = 'fill', ...,
                           palette = rot_pal(elf_palette))
 }
 

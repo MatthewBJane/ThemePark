@@ -170,7 +170,7 @@ scale_fill_friends_b <- function(...) {
 #' @export
 #' @concept friends
 scale_color_friends_d <- function(...) {
-  ggplot2::discrete_scale(aesthetics = 'color', scale_name = friends_palette,
+  ggplot2::discrete_scale(aesthetics = 'color',
                           palette = rot_pal(friends_palette), ...)
 }
 
@@ -178,7 +178,7 @@ scale_color_friends_d <- function(...) {
 #' @export
 #' @concept friends
 scale_fill_friends_d <- function(...) {
-  ggplot2::discrete_scale(aesthetics = 'fill', scale_name = friends_palette, ...,
+  ggplot2::discrete_scale(aesthetics = 'fill', ...,
                           palette = rot_pal(friends_palette))
 }
 

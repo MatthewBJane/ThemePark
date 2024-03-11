@@ -159,14 +159,14 @@ XXXX_colors <- c(
 #' @rdname scale_XXXX
 #' @export
 scale_color_XXXX_d <- function(...) {
-  ggplot2::discrete_scale(aesthetics = 'color', scale_name = XXXX_colors,
+  ggplot2::discrete_scale(aesthetics = 'color',
                           palette = rot_pal(XXXX_colors), ...)
 }
 
 #' @rdname scale_XXXX
 #' @export
 scale_fill_XXXX_d <- function(...) {
-  ggplot2::discrete_scale(aesthetics = 'fill', scale_name = XXXX_colors, ...,
+  ggplot2::discrete_scale(aesthetics = 'fill', ...,
                           palette = rot_pal(XXXX_colors))
 }
 
