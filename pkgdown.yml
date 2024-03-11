@@ -1,8 +1,8 @@
-pandoc: 2.19.2
+pandoc: 3.1.11
 pkgdown: 2.0.7
 pkgdown_sha: ~
 articles: {}
-last_built: 2024-01-10T14:40Z
+last_built: 2024-03-11T16:48Z
 urls:
   reference: http://matthewbjane.com/ThemePark/reference
   article: http://matthewbjane.com/ThemePark/articles
