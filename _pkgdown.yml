@@ -17,6 +17,10 @@ reference:
   desc: "Themes inspired by the movie Barbie"
 - contents:
   - has_concept("barbie")
+- title: "Elf"
+  desc: "Themes inspired by the movie Elf"
+- contents:
+  - has_concept("elf")
 - title: "Friends"
   desc: "Themes inspired by the TV series Friends"
 - contents:

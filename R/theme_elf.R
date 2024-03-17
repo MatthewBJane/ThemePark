@@ -7,6 +7,7 @@
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept elf
 #'
 #' @examples
 #' elf_theme_colors
@@ -29,6 +30,7 @@ elf_theme_colors <- c(
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept elf
 #'
 #' @examples
 #' elf_palette
@@ -45,6 +47,7 @@ elf_palette <- c(
 #'
 #' @return a `ggplot2` `theme` element
 #' @export
+#' @concept elf
 #'
 #' @examples
 #' library(ggplot2)
@@ -108,6 +111,7 @@ theme_elf <- function(elf_font = TRUE, ...) {
 #'
 #' @rdname scale_elf
 #' @export
+#' @concept elf
 #'
 #' @examples
 #' library(ggplot2)

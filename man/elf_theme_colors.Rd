@@ -17,4 +17,5 @@ Elf Inspired Theme Color Palette
 elf_theme_colors
 
 }
+\concept{elf}
 \keyword{datasets}
