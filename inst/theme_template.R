@@ -1,4 +1,4 @@
-## Template v2.2 for themes in `theme_park` https://github.com/MatthewBJane/theme_park   <<<  Remove this line
+## Template v2.3 for themes in `theme_park` https://github.com/MatthewBJane/theme_park   <<<  Remove this line
 
 ## YOUR NAME
 ## theme_XXXX
@@ -10,6 +10,7 @@
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept XXXX
 #'
 #' @examples
 #' XXXX_theme_colors
@@ -30,6 +31,7 @@ XXXX_theme_colors <- c(
 #'
 #' @format character vector of hex code strings
 #' @export
+#' @concept XXXX
 #'
 #' @examples
 #' XXXX_palette
@@ -46,6 +48,7 @@ XXXX_palette <- c(
 #'
 #' @return a `ggplot2` `theme` element
 #' @export
+#' @concept XXXX
 #'
 #' @examples
 #' library(ggplot2)
