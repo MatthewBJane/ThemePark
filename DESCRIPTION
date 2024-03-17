@@ -30,5 +30,6 @@ Suggests:
 Depends: 
     R (>= 2.10)
 LazyData: true
-URL: https://matthewbjane.com/ThemePark/
+URL: https://matthewbjane.com/ThemePark/, https://github.com/MatthewBJane/ThemePark
+BugReports: https://github.com/MatthewBJane/ThemePark/issues
 Config/testthat/edition: 3
