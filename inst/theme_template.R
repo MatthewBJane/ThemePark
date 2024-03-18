@@ -124,13 +124,13 @@ theme_XXXX <- function(XXXX_font = TRUE, ...) {
 #'   scale_fill_XXXX_d()
 #'
 scale_color_XXXX_c <- function(...) {
-  ggplot2::scale_color_gradient(..., low = light_color_XXXX, high = dark_color_XXXX)
+  ggplot2::scale_color_gradient(..., low = XXXX_theme_colors["light"], high = XXXX_theme_colors["dark"])
 }
 
 #' @rdname scale_XXXX
 #' @export
 scale_fill_XXXX_c <- function(...) {
-  ggplot2::scale_fill_gradient(..., low = light_color_XXXX, high = dark_color_XXXX)
+  ggplot2::scale_fill_gradient(..., low = XXXX_theme_colors["light"], high = XXXX_theme_colors["dark"])
 }
 
 #' @rdname scale_XXXX
@@ -139,7 +139,7 @@ scale_color_XXXX_b <- function(...) {
   if (!requireNamespace('scales', quietly = TRUE)) {
     stop('This function requires the `scales` R package.')
   }
-  ramp <- scales::colour_ramp(c(light_color_XXXX, dark_color_XXXX))
+  ramp <- scales::colour_ramp(c(XXXX_theme_colors["light"], XXXX_theme_colors["dark"]))
   ggplot2::binned_scale('color', 'XXXX', palette = ramp, ...)
 }
 
@@ -149,28 +149,21 @@ scale_fill_XXXX_b <- function(...) {
   if (!requireNamespace('scales', quietly = TRUE)) {
     stop('This function requires the `scales` R package.')
   }
-  ramp <- scales::colour_ramp(c(light_color_XXXX, dark_color_XXXX))
+  ramp <- scales::colour_ramp(c(XXXX_theme_colors["light"], XXXX_theme_colors["dark"]))
   ggplot2::binned_scale('fill', 'XXXX', palette = ramp, ...)
 }
-
-# DISCRETE PALETTE COLORS: Please update to some colors that work with your theme
-XXXX_colors <- c(
-  '#E9F4FB', '#FE691D', '#015DC2', '#FCDD2E', '#7867A0',
-  '#BE1D57', '#798A5A', '#005478','#1B1A3D'
-)
-
 #' @rdname scale_XXXX
 #' @export
 scale_color_XXXX_d <- function(...) {
   ggplot2::discrete_scale(aesthetics = 'color',
-                          palette = rot_pal(XXXX_colors), ...)
+                          palette = rot_pal(XXXX_palette), ...)
 }
 
 #' @rdname scale_XXXX
 #' @export
 scale_fill_XXXX_d <- function(...) {
   ggplot2::discrete_scale(aesthetics = 'fill', ...,
-                          palette = rot_pal(XXXX_colors))
+                          palette = rot_pal(XXXX_palette))
 }
 
 #' @rdname scale_XXXX
