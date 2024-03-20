@@ -15,11 +15,15 @@ rot_pal <- function(pal) {
 #' @param ... additional arguments to pass to `sysfonts::font_add_google`
 #' we don't want an R documentation file in `man/` for this, as it's internal
 #' @noRd
-initialize_font <- function(name, family = name, ...) {
+initialize_font <- function(name, family = name, local=NULL, ...) {
   if (missing(name)) stop('`name` must be specified.')
   curr_families <- sysfonts::font_families()
   if (!family %in% curr_families) {
-    sysfonts::font_add_google(name = name, family = family, ...)
+    if (is.null(local))  {
+      sysfonts::font_add_google(name = name, family = family, ...)
+    }  else  {
+      sysfonts::font_add(local, paste0(path.package("ThemePark"), "/fonts/", local, ".ttf"))
+    }
   } else {
     invisible(curr_families)
   }
