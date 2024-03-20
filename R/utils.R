@@ -22,7 +22,7 @@ initialize_font <- function(name, family = name, local=NULL, ...) {
     if (is.null(local))  {
       sysfonts::font_add_google(name = name, family = family, ...)
     }  else  {
-      sysfonts::font_add(local, paste0(path.package("ThemePark"), "/fonts/", local, ".ttf"))
+      sysfonts::font_add(family = family, paste0(path.package("ThemePark"), "/fonts/", local))
     }
   } else {
     invisible(curr_families)

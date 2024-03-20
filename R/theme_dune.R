@@ -67,7 +67,7 @@ theme_dune <- function(dune_font = TRUE, ...){
   # CUSTOM FONT: add a custom font from google fonts
   font_family = ifelse(dune_font,"Dune_Rise","sans") # use this line if you have a custom font
   if (dune_font) {
-    ThemePark:::initialize_font(name = "Dune_Rise", family = "Dune_Rise", local = "Dune_Rise")
+    ThemePark:::initialize_font(name = "Dune_Rise", family = "Dune_Rise", local = "Dune_Rise.ttf")
   }
 
   # CUSTOM THEME:
