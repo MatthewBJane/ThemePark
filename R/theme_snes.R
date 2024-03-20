@@ -34,8 +34,9 @@ snes_theme_colors <- c(
 #' snes_palette
 #'
 snes_palette <- c(
-  '#806BBA', '#C7C7E6', # original buttons
+  '#806BBA',  # original buttons 1
   '#00926C', '#0150A5', '#DC3A4A', '#FFBC56', # PAL region buttons
+  '#C7C7E6', # original buttons 2
   '#444872' # Japanese dpad (other colors too close)
 )
 
