@@ -58,6 +58,8 @@ add it or respond with suggested edits. Have fun with it!
 | **French Dispatch**      | `theme_french_dispatch()`  | Katya Kustova               |
 | **Moonrise Kingdom**     | `theme_moonrise_kingdom()` | Katya Kustova               |
 | **Elf**                  | `theme_elf()`              | Christopher T. Kenny        |
+| **SNES**                 | `theme_snes()`             | Christopher T. Kenny        |
+| **Dune**                 | `theme_dune()`             | Luke Pilling                |
 
 ## Installation
 
