@@ -65,6 +65,10 @@ reference:
   desc: "Themes inspired by the Star Wars movies"
 - contents:
   - has_concept("starwars")
+- title: "Super Nintendo"
+  desc: "Themes inspired by the Super Nintendo Entertainment System"
+- contents:
+  - has_concept("snes")
 - title: "Terminator"
   desc: "Themes inspired by the Terminator movies"
 - contents:
