@@ -17,6 +17,10 @@ reference:
   desc: "Themes inspired by the movie Barbie"
 - contents:
   - has_concept("barbie")
+- title: "Dune"
+  desc: "Themes inspired by the movie Dune"
+- contents:
+  - has_concept("dune")
 - title: "Elf"
   desc: "Themes inspired by the movie Elf"
 - contents:
@@ -29,7 +33,7 @@ reference:
   desc: "Themes inspired by the TV series Futurama"
 - contents:
   - has_concept("futurama")
-- title: "Gameofthrones"
+- title: "Game of Thrones"
   desc: "Themes inspired by the TV series Game of Thrones"
 - contents:
   - has_concept("gameofthrones")
@@ -41,7 +45,7 @@ reference:
   desc: "Themes inspired by the Harry Potter movies"
 - contents:
   - has_concept("hogwarts")
-- title: "Lordoftherings"
+- title: "Lord of the Rings"
   desc: "Themes inspired by the Lord of the Rings movies"
 - contents:
   - has_concept("lordoftherings")
@@ -57,6 +61,10 @@ reference:
   desc: "Themes inspired by the TV series The Simpsons"
 - contents:
   - has_concept("simpsons")
+- title: "Super Nintendo"
+  desc: "Themes inspired by the Super Nintendo Entertainment System"
+- contents:
+  - has_concept("snes")
 - title: "Spider-Man"
   desc: "Themes inspired by the Spider-Man movies"
 - contents:
@@ -73,6 +81,10 @@ reference:
   desc: "Themes inspired by the Terminator movies"
 - contents:
   - has_concept("terminator")
+- title: "The Tortured Poets Department"
+  desc: "Themes inspired by the The Tortured Poets Department album"
+- contents:
+  - has_concept("ttpd")
 - title: "Wes Anderson"
   desc: "Themes inspired by the Wes Anderson"
 - contents:
@@ -84,4 +96,4 @@ reference:
 - title: "Utility Functions"
   desc: "Other exported functions to support themes"
 - contents:
-  - lacks_concepts(c("alien", "avatar", "barbie", "elf", "friends", "futurama", "gameofthrones", "godfather", "hogwarts", "lordoftherings", "nemo", "oppenheimer", "simpsons", "spiderman", "starwars", "terminator", "wes_anderson", "zelda"))
+  - lacks_concepts(c("alien", "avatar", "barbie", "dune", "elf", "friends", "futurama", "gameofthrones", "godfather", "hogwarts", "lordoftherings", "nemo", "oppenheimer", "simpsons", "snes", "spiderman", "starwars", "terminator", "ttpd", "wes_anderson", "zelda"))

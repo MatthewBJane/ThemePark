@@ -32,34 +32,35 @@ add it or respond with suggested edits. Have fun with it!
 
 ## Themes contributed
 
-| Name                     | Theme                      | Creator(s)                  |
-|--------------------------|----------------------------|-----------------------------|
-| **Barbie**               | `theme_barbie()`           | Matthew B. Jané             |
-| **Oppenheimer**          | `theme_oppenheimer()`      | Matthew B. Jané & Toki Liam |
-| **Star Wars**            | `theme_starwars()`         | Matthew B. Jané             |
-| **Zelda**                | `theme_zelda()`            | Alex Slavenko               |
-| **Terminator**           | `theme_terminator()`       | Alex Slavenko               |
-| **Spiderman**            | `theme_spiderman()`        | Velu P.K. Immonen           |
-| **Avatar**               | `theme_avatar()`           | Velu P.K. Immonen           |
-| **Gryffindor**           | `theme_gryffindor()`       | Begum Ozemek                |
-| **Hufflepuff**           | `theme_hufflepuff()`       | Begum Ozemek                |
-| **Ravenclaw**            | `theme_ravenclaw()`        | Begum Ozemek                |
-| **Slytherin**            | `theme_slytherin()`        | Begum Ozemek                |
-| **Futurama**             | `theme_futurama()`         | Tylor J. Harlow             |
-| **Simpsons**             | `theme_simpsons()`         | Tylor J. Harlow             |
-| **Lord of the Rings**    | `theme_lordoftherings()`   | Ethan Milne                 |
-| **Game of Thrones**      | `theme_gameofthrones()`    | Brennan Antone              |
-| **Godfather**            | `theme_godfather()`        | Francisco Garre-Frutos      |
-| **Finding Nemo**         | `theme_nemo()`             | Christopher T. Kenny        |
-| **Friends**              | `theme_friends()`          | Alexis van STRAATEN         |
-| **Alien**                | `theme_alien()`            | Luke Pilling                |
-| **Grand Budapest Hotel** | `theme_grand_budapest()`   | Katya Kustova               |
-| **Asteroid City**        | `theme_asteroid_city()`    | Katya Kustova               |
-| **French Dispatch**      | `theme_french_dispatch()`  | Katya Kustova               |
-| **Moonrise Kingdom**     | `theme_moonrise_kingdom()` | Katya Kustova               |
-| **Elf**                  | `theme_elf()`              | Christopher T. Kenny        |
-| **SNES**                 | `theme_snes()`             | Christopher T. Kenny        |
-| **Dune**                 | `theme_dune()`             | Luke Pilling                |
+| Name                              | Theme                      | Creator(s)                  |
+|-----------------------------------|----------------------------|-----------------------------|
+| **Barbie**                        | `theme_barbie()`           | Matthew B. Jané             |
+| **Oppenheimer**                   | `theme_oppenheimer()`      | Matthew B. Jané & Toki Liam |
+| **Star Wars**                     | `theme_starwars()`         | Matthew B. Jané             |
+| **Zelda**                         | `theme_zelda()`            | Alex Slavenko               |
+| **Terminator**                    | `theme_terminator()`       | Alex Slavenko               |
+| **Spiderman**                     | `theme_spiderman()`        | Velu P.K. Immonen           |
+| **Avatar**                        | `theme_avatar()`           | Velu P.K. Immonen           |
+| **Gryffindor**                    | `theme_gryffindor()`       | Begum Ozemek                |
+| **Hufflepuff**                    | `theme_hufflepuff()`       | Begum Ozemek                |
+| **Ravenclaw**                     | `theme_ravenclaw()`        | Begum Ozemek                |
+| **Slytherin**                     | `theme_slytherin()`        | Begum Ozemek                |
+| **Futurama**                      | `theme_futurama()`         | Tylor J. Harlow             |
+| **Simpsons**                      | `theme_simpsons()`         | Tylor J. Harlow             |
+| **Lord of the Rings**             | `theme_lordoftherings()`   | Ethan Milne                 |
+| **Game of Thrones**               | `theme_gameofthrones()`    | Brennan Antone              |
+| **Godfather**                     | `theme_godfather()`        | Francisco Garre-Frutos      |
+| **Finding Nemo**                  | `theme_nemo()`             | Christopher T. Kenny        |
+| **Friends**                       | `theme_friends()`          | Alexis van STRAATEN         |
+| **Alien**                         | `theme_alien()`            | Luke Pilling                |
+| **Grand Budapest Hotel**          | `theme_grand_budapest()`   | Katya Kustova               |
+| **Asteroid City**                 | `theme_asteroid_city()`    | Katya Kustova               |
+| **French Dispatch**               | `theme_french_dispatch()`  | Katya Kustova               |
+| **Moonrise Kingdom**              | `theme_moonrise_kingdom()` | Katya Kustova               |
+| **Elf**                           | `theme_elf()`              | Christopher T. Kenny        |
+| **SNES**                          | `theme_snes()`             | Christopher T. Kenny        |
+| **Dune**                          | `theme_dune()`             | Luke Pilling                |
+| **The Tortured Poets Department** | `theme_ttpd()`             | Ashley Mullan               |
 
 ## Installation
 
@@ -187,7 +188,7 @@ ggplot(data.frame(x = rnorm(100), y = rnorm(100)), aes(x, y)) +
 
 ### BibTeX:
 
-    @software{JaneBarbie2023,
+    @software{Jane2023,
       author = {Jané, Matthew B. and Pilling, Luke C. and Kenny, Christopher T.},
       month = {6},
       title = {ThemePark: popular culture ggplot themes},
@@ -198,6 +199,6 @@ ggplot(data.frame(x = rnorm(100), y = rnorm(100)), aes(x, y)) +
 
 ### APA:
 
-Jané, M.B., Pilling, Luke C., & Kenny, Christopher T. (2023).
-ThemePark: popular culture ggplot themes (Version 0.0.9) \[Source
-Code\]. <https://github.com/MatthewBJane/ThemePark>
+Jané, M.B., Pilling, Luke C., & Kenny, Christopher T. (2023). ThemePark:
+popular culture ggplot themes (Version 0.0.9) \[Source Code\].
+<https://github.com/MatthewBJane/ThemePark>
