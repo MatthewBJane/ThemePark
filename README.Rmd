@@ -59,6 +59,7 @@ Name | Theme | Creator(s) |
 **Elf** | `theme_elf()` | Christopher T. Kenny |
 **SNES** | `theme_snes()` | Christopher T. Kenny |
 **Dune** | `theme_dune()` | Luke Pilling |
+**The Tortured Poets Department** | `theme_ttpd()` | Ashley Mullan |
 
 
 ## Installation
